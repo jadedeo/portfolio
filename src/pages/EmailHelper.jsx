@@ -203,7 +203,11 @@ const EmailHelper = () => {
                                     mat={false}
                                     imagePlacement="bottom"
                                 >
-                                    <p>{/* TODO: complete */}</p>
+                                    <p>
+                                        Use the custom input node to insert
+                                        template placeholderst to be completed
+                                        later
+                                    </p>
                                 </TextImage>
 
                                 <TextImage
@@ -261,12 +265,12 @@ const EmailHelper = () => {
                                     imagePlacement="bottom"
                                 >
                                     <p>
-                                        Fill the fields defined during template
-                                        creation
+                                        Fill the custom inputs defined during
+                                        template creation
                                     </p>
                                 </TextImage>
                                 <TextImage
-                                    subheading="Copy"
+                                    subheading="Copy your email"
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/copyPasteShort.gif"
                                     addImageShadow={false}
@@ -275,11 +279,12 @@ const EmailHelper = () => {
                                     imagePlacement="bottom"
                                 >
                                     <p>
-                                        Copy the completed email with formatting
+                                        Preserve formatting by copying the
+                                        completed email
                                     </p>
                                 </TextImage>
                                 <TextImage
-                                    subheading="... or create draft"
+                                    subheading="... or create a draft"
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/createDraftShort.gif"
                                     addImageShadow={false}

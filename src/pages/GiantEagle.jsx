@@ -296,7 +296,7 @@ const GiantEagle = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="flex flex-col gap-10 mt-5 ">
+                        <section className="flex flex-col gap-20 mt-5 ">
                             <TextImage
                                 heading="interactions & gestures"
                                 imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
@@ -311,23 +311,41 @@ const GiantEagle = () => {
                                     UI elements.
                                 </p>
                             </TextImage>
-                            <section className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2">
+                            <section className="max-w-screen-lg mx-auto flex flex-col gap-10">
                                 <TextImage
+                                    subheading="Cycling through the primary UI elements"
                                     imageAlt="Use of sliding gesture to navigate through the main 'on-screen' elements"
                                     image="gianteagle/navCircuit.gif"
                                     addImageShadow={false}
                                     addComponentShadow={false}
-                                    imagePlacement="bottom"
+                                    imagePlacement="right"
                                     mat={false}
-                                />
+                                >
+                                    <p>
+                                        The sliding gesture is used to navigate
+                                        through the main 'on-screen' elements.
+                                        Sliding forward moves to the next
+                                        element, while sliding backwards
+                                        revisits to the previous element.
+                                    </p>
+                                </TextImage>
                                 <TextImage
+                                    subheading="Skipping the current item"
                                     imageAlt="Use of sliding & single-tap gestures to skip current item/proceed to the next item on the list"
                                     image="gianteagle/skip.gif"
                                     addImageShadow={false}
                                     addComponentShadow={false}
-                                    imagePlacement="bottom"
+                                    imagePlacement="right"
                                     mat={false}
-                                />
+                                >
+                                    <p>
+                                        The sliding and single-tap gestures are
+                                        used in combination to skip the current
+                                        item and proceed to the next item on the
+                                        list. After a period of inactivity,
+                                        focus returns to the current item.
+                                    </p>
+                                </TextImage>
                             </section>
                         </section>
                     </FadeSection>

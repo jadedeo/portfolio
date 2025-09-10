@@ -4,8 +4,7 @@ import Chip from "./Chip";
 
 const Hero = ({ project, imagePath = "/" }) => {
     // console.log("image", image);
-    // const imageUrl =
-    // 	"/jade-portfolio/work/" + project.path + "/" + project.image;
+    // const imageUrl = "/portfolio/work/" + project.path + "/" + project.image;
 
     // console.log("imageUrl", imageUrl);
 

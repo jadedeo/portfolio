@@ -11,7 +11,7 @@ const ProjectCard = ({ id, project, orientation = "vertical" }) => {
             to={project.link}
             className="projectcard-component grid grid-rows-subgrid row-span-4 cursor-pointer gap-2 hover:shadow-xl bg-white  transition-[filter] duration-500 ease-in-out"
         >
-            <div className="w-full h-[350px]">
+            <div className="w-full h-[350px] bg-gray-100">
                 <img
                     src={project.image}
                     alt={project.title}
@@ -19,7 +19,7 @@ const ProjectCard = ({ id, project, orientation = "vertical" }) => {
                 />
             </div>
 
-            <div className="grid grid-cols-[auto,1fr] gap-5 px-5 mt-5">
+            <div className="grid grid-cols-[auto_1fr] gap-5 px-5 mt-5">
                 <h2 className="font-display">
                     {id.toLocaleString("en-US", {
                         minimumIntegerDigits: 2,
