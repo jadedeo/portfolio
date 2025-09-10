@@ -1,0 +1,87 @@
+[
+	{
+		"id": 1,
+		"path": "emailhelper",
+		"title": "Email Helper",
+		"client": ["San Francisco Recreation & Parks", "CMU MHCI Capstone"],
+		"roles": ["Product Designer (1 of 2)", "Sole Developer"],
+		"hook": "A browser extension for non-obtrusive customer service.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+		"image": "emailHelperProjectCard.png",
+		"tags": [
+			{ "text": "Case Study", "type": "filled" },
+			{ "text": "Product Design", "type": "outlined" },
+			{ "text": "Frontend Dev", "type": "outlined" },
+			{ "text": "Civic Tech 🏛", "type": "outlined" }
+		],
+		"link": "/work/emailhelper"
+	},
+	{
+		"id": 2,
+		"path": "gianteagle",
+		"title": "AR for Accessibility at Giant Eagle",
+		"client": ["CMU Coursework", "Advanced Interaction Design"],
+		"roles": [
+			"Product Designer (initially 1 of 5, later revised independently)"
+		],
+		"hook": "Smoothing the in-store experience of ADHD shoppers.",
+		"description": "An in-store AR experience for limiting visual stimuli & lessen the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
+		"image": "coverImage.png",
+		"tags": [
+			{ "text": "Case Study", "type": "filled" },
+			{ "text": "Product Design", "type": "outlined" },
+			{ "text": "AR/MR 👓", "type": "outlined" }
+		],
+		"link": "/work/gianteagle"
+	},
+	{
+		"id": 3,
+		"path": "libby",
+		"title": "TBR Integration for Libby",
+		"client": ["Personal Project"],
+		"roles": ["UX Designer"],
+		"hook": "Making finding your next read a breeze across platforms.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+		"image": "placeholder1.jpeg",
+		"tags": [
+			{ "text": "Mini", "type": "filled" },
+			{ "text": "UX Design", "type": "outlined" },
+			{ "text": "IYKYK 📚", "type": "outlined" }
+		],
+		"link": "/work/gianteagle"
+	},
+	{
+		"id": 4,
+		"path": "intouch",
+		"title": "inTouch",
+		"client": ["CMU Coursework"],
+		"roles": ["Service Designer (1 of 4)"],
+		"hook": "Long-distance communication for the chronically busy.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+		"image": "placeholder1.jpeg",
+		"tags": [
+			{ "text": "Mini", "type": "filled" },
+			{ "text": "Product Design", "type": "outlined" },
+			{ "text": "UX Design", "type": "outlined" },
+			{ "text": "Winning Pitch 🏆", "type": "outlined" }
+		],
+		"link": "/work/gianteagle"
+	},
+	{
+		"id": 5,
+		"path": "jahaji",
+		"title": "A Jahaji's Shadow",
+		"client": ["Personal Project"],
+		"roles": ["UI Designer", "Developer"],
+		"hook": "The consequences of indenture - in data.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+		"image": "placeholder1.jpeg",
+		"tags": [
+			{ "text": "Mini", "type": "filled" },
+			{ "text": "UI Design", "type": "outlined" },
+			{ "text": "Frontend Dev", "type": "outlined" },
+			{ "text": "Data Vis 📊", "type": "outlined" }
+		],
+		"link": "/work/gianteagle"
+	}
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "organization": "Organization Name",
+        "title": "Title at Organization",
+        "start": "Month 2023",
+        "end": "Month 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit.",
+        "tags": ["Skill One", "Skill Two"],
+        "image": "projectPlaceholder.png"
+    },
+    {
+        "organization": "Organization Name",
+        "title": "Title at Organization",
+        "start": "Month 2023",
+        "end": "Month 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit.",
+        "tags": ["Skill One", "Skill Two"],
+        "image": "projectPlaceholder.png"
+    },
+    {
+        "organization": "Organization Name",
+        "title": "Title at Organization",
+        "start": "Month 2023",
+        "end": "Month 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit.",
+        "tags": ["Skill One", "Skill Two"],
+        "image": "projectPlaceholder.png"
+    },
+    {
+        "organization": "Organization Name",
+        "title": "Title at Organization",
+        "start": "Month 2023",
+        "end": "Month 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit.",
+        "tags": ["Skill One", "Skill Two"],
+        "image": "projectPlaceholder.png"
+    }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "imagePath": "doodles/daughtersOfIzdihar.JPG",
+    "isPublished": false,
+    "title": "Malak's Office",
+    "aspectRatio": {
+      "width": 4,
+      "height": 5
+    },
+    "subtitle": null,
+    "description": "<span>An illustration inspired by <em>The Daughters of Izdihar</em>, written by Hadeer Elsbai and published by Harper Voyager.</span><span><br>Features the characters Malak Mamdouh and Nehal Darwish © Hadeer Elsbai</span>"
+  },
+  {
+    "imagePath": "doodles/houseOfBadawi.JPG",
+    "isPublished": true,
+    "title": "House of Badawi",
+    "aspectRatio": {
+      "width": 5,
+      "height": 4
+    },
+    "subtitle": "Bowne Street Press",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit."
+  },
+  {
+    "imagePath": "doodles/shae.JPG",
+    "isPublished": false,
+    "title": "The Weatherman",
+    "aspectRatio": {
+      "width": 1,
+      "height": 1
+    },
+    "subtitle": null,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit."
+  },
+  {
+    "imagePath": "doodles/tatreez.JPG",
+    "isPublished": false,
+    "title": "Tatreez",
+    "aspectRatio": {
+      "width": 4,
+      "height": 5
+    },
+    "subtitle": null,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit."
+  },
+  {
+    "imagePath": "doodles/fathomsZine.JPG",
+    "isPublished": true,
+    "title": "Leafy Seadragon",
+    "aspectRatio": {
+      "width": 9,
+      "height": 16
+    },
+    "subtitle": "Fathoms Mermay Zine",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit."
+  },
+  {
+    "imagePath": "doodles/maliyaDark.JPG",
+    "isPublished": false,
+    "title": "You Are Like Ink",
+    "aspectRatio": {
+      "width": 4,
+      "height": 5
+    },
+    "subtitle": null,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida arcu dui, ut eleifend felis congue sit amet. Vivamus tincidunt sapien et quam ultrices hendrerit."
+  }
+]

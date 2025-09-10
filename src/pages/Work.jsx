@@ -1,0 +1,81 @@
+// import React, { useState } from "react";
+import { LayoutGroup, motion } from "motion/react";
+import { itemVariants } from "../resources/utils";
+import projectList from "../resources/projectList.json";
+
+import Header from "../components/Header";
+import ProjectCard from "../components/ProjectCard";
+import Carousel from "../components/Carousel";
+
+const Work = () => {
+	return (
+		<div id="work-page">
+			<Header />
+
+			<main className="min-h-[100dvh] pb-10 pt-20 px-[0%]">
+				{/* <Carousel /> */}
+				{/* TODO: make less repetitive */}
+				<section
+					id="projects-list"
+					className="grid  sm:grid-cols-2 grid-cols-1 gap-y-6 py-5 w-full max-w-screen-lg mx-auto"
+				>
+					{projectList
+						.filter((project) =>
+							project.tags.some(
+								(tag) => tag.text === "Case Study"
+							)
+						)
+						.map((project, index) => {
+							return (
+								<motion.div
+									key={index}
+									variants={itemVariants}
+									whileHover={{ scale: 1.05 }}
+									initial="hidden"
+									animate="visible"
+									custom={index}
+									className="grid grid-rows-subgrid row-span-4 cursor-pointer hover:z-[1000]"
+								>
+									<ProjectCard
+										key={index}
+										id={project.id}
+										project={project}
+									/>
+								</motion.div>
+							);
+						})}
+				</section>
+
+				<section
+					id="projects-list"
+					className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-6 py-5 w-full max-w-screen-lg mx-auto"
+				>
+					{projectList
+						.filter((project) =>
+							project.tags.some((tag) => tag.text === "Mini")
+						)
+						.map((project, index) => {
+							return (
+								<motion.div
+									key={index}
+									variants={itemVariants}
+									whileHover={{ scale: 1.05 }}
+									initial="hidden"
+									animate="visible"
+									custom={index}
+									className="grid grid-rows-subgrid row-span-4 cursor-pointer hover:z-[1000]"
+								>
+									<ProjectCard
+										key={index}
+										id={project.id}
+										project={project}
+									/>
+								</motion.div>
+							);
+						})}
+				</section>
+			</main>
+		</div>
+	);
+};
+export default Work;
