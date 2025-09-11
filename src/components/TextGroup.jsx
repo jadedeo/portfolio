@@ -4,6 +4,7 @@ const TextGroup = ({
     subheading,
     children,
     subheadingFirst = false,
+    numbered = null,
 }) => {
     return (
         <section
@@ -24,7 +25,8 @@ const TextGroup = ({
                     <div className="flex flex-col gap-5">{children}</div>
                 </>
             ) : (
-                <>
+                <div className={`${numbered ? "flex gap-5" : ""}`}>
+                    {numbered && <h2 className="font-display">{numbered}</h2>}
                     {heading && <h2 className="font-display ">{heading}</h2>}
                     <div>
                         {subheading && (
@@ -32,7 +34,7 @@ const TextGroup = ({
                         )}
                         <div className="flex flex-col gap-5">{children}</div>
                     </div>
-                </>
+                </div>
             )}
         </section>
     );

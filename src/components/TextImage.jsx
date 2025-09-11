@@ -14,6 +14,7 @@ const TextImage = ({
     addImageShadow = true,
     addComponentShadow = true,
     mat = true,
+    numbered = null,
 }) => {
     return (
         <section
@@ -60,7 +61,11 @@ const TextImage = ({
                         : "order-1"
                 }`}
             >
-                <TextGroup heading={heading} subheading={subheading}>
+                <TextGroup
+                    heading={heading}
+                    subheading={subheading}
+                    numbered={numbered}
+                >
                     {children}
                 </TextGroup>
             </div>

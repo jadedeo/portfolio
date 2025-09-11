@@ -3,13 +3,17 @@ import Chip from "../components/Chip";
 
 // import PropTypes from "prop-types";
 
-const ProjectCard = ({ id, project, orientation = "vertical" }) => {
-    console.log(project);
+const ProjectCard = ({ id, project }) => {
+    console.log(project.title, project.status);
 
     return (
         <NavLink
             to={project.link}
-            className="projectcard-component grid grid-rows-subgrid row-span-4 cursor-pointer gap-2 hover:shadow-xl bg-white  transition-[filter] duration-500 ease-in-out"
+            className={`projectcard-component grid grid-rows-subgrid row-span-4 gap-2 hover:outline-1 hover:outline-gray-200 bg-white transition-[filter] duration-500 ease-in-out ${
+                project.status === "published"
+                    ? "published-project cursor-pointer"
+                    : "comingsoon-project cursor-not-allowed"
+            }`}
         >
             <div className="w-full h-[350px] bg-gray-100">
                 <img

@@ -3,10 +3,13 @@
         "id": 1,
         "path": "emailhelper",
         "title": "Email Helper",
-        "client": ["San Francisco Recreation & Parks", "CMU MHCI Capstone"],
+        "client": [
+            "San Francisco Recreation & Parks Department",
+            "CMU MHCI Capstone"
+        ],
         "roles": ["Product Designer (1 of 2)", "Sole Developer"],
         "hook": "A browser extension for non-obtrusive customer service.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+        "description": "A bite-sized browser extension for non-obtrusive customer service that proves little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -14,7 +17,8 @@
             { "text": "Frontend Dev", "type": "outlined" },
             { "text": "Civic Tech 🏛", "type": "outlined" }
         ],
-        "link": "/work/emailhelper"
+        "link": "/work/emailhelper",
+        "status": "published"
     },
     {
         "id": 2,
@@ -32,7 +36,8 @@
             { "text": "Product Design", "type": "outlined" },
             { "text": "AR/MR 👓", "type": "outlined" }
         ],
-        "link": "/work/gianteagle"
+        "link": "/work/gianteagle",
+        "status": "published"
     },
     {
         "id": 3,
@@ -48,7 +53,8 @@
             { "text": "UX Design", "type": "outlined" },
             { "text": "IYKYK 📚", "type": "outlined" }
         ],
-        "link": "/work"
+        "link": "/work",
+        "status": "comingsoon"
     },
     {
         "id": 4,
@@ -65,7 +71,8 @@
             { "text": "UX Design", "type": "outlined" },
             { "text": "Winning Pitch 🏆", "type": "outlined" }
         ],
-        "link": "/work"
+        "link": "/work",
+        "status": "comingsoon"
     },
     {
         "id": 5,
@@ -82,6 +89,7 @@
             { "text": "Frontend Dev", "type": "outlined" },
             { "text": "Data Vis 📊", "type": "outlined" }
         ],
-        "link": "/work"
+        "link": "/work",
+        "status": "comingsoon"
     }
 ]

@@ -10,8 +10,8 @@ const Hero = ({ project, imagePath = "/" }) => {
 
     return (
         <div
-            className={`hero-component h-full w-full  bg-slate-900 justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
-            style={{ backgroundImage: `url(${imagePath})` }}
+            className={`hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
+            // style={{ backgroundImage: `url(${imagePath})` }}
         >
             <section className=" w-full max-w-screen-lg m-auto ">
                 <div className=" text-white flex flex-col gap-10 justify-end">

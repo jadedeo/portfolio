@@ -31,10 +31,44 @@ const EmailHelper = () => {
 
                 <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
                     <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                            <TextGroup heading="context">
+                                <p>
+                                    SFRPD fields thousands of calls and emails
+                                    from residents looking for help with
+                                    reservations.{" "}
+                                    <strong className="highlight">
+                                        13,000 phone calls and 5,000 emails were
+                                        logged in the last year alone.
+                                    </strong>{" "}
+                                    A significant portion of these inquiries are
+                                    repetitive:{" "}
+                                    <strong className="highlight">
+                                        the same questions about permit
+                                        requirements, facility rules, and
+                                        availability resurface constantly.
+                                    </strong>{" "}
+                                    Staff also frequently need to reach out to
+                                    residents for clarification on standard
+                                    items like alcohol policies or equipment
+                                    restrictions for events.
+                                </p>
+                                <p>
+                                    If we can help staff respond to these
+                                    requests more quickly, they’ll have more
+                                    time to support residents who have complex
+                                    or urgent needs, or unique circumstances
+                                    that truly require human expertise and
+                                    judgement.
+                                </p>
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
                             <TextImage
                                 heading="what we designed"
-                                // subheading="a more straightforward shopping experience"
                                 imageAlt="giant eagle glasses"
                                 image="newGlassesAll.png"
                                 addImageShadow={false}
@@ -45,11 +79,8 @@ const EmailHelper = () => {
                                     Email Helper was created to{" "}
                                     <strong className="highlight">
                                         make the process of sending repetitive
-                                        emails more efficient
-                                    </strong>{" "}
-                                    for customer support staff in the San
-                                    Francisco Recreation and Parks Department’s
-                                    Permits and Reservations Division.
+                                        emails more efficient.
+                                    </strong>
                                 </p>
                                 <p>
                                     <strong className="highlight">
@@ -68,37 +99,6 @@ const EmailHelper = () => {
                                     stores for approval.
                                 </p>
                             </TextImage>
-                        </section>
-                    </FadeSection>
-
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <TextGroup heading="why we designed it">
-                                <p>
-                                    SFRPD fields thousands of calls and emails
-                                    from residents looking for help with
-                                    reservations. A significant portion of these
-                                    inquiries are repetitive:{" "}
-                                    <strong className="highlight">
-                                        the same questions about permit
-                                        requirements, facility rules, and
-                                        availability resurface constantly.
-                                    </strong>{" "}
-                                    Staff also frequently need to reach out to
-                                    residents for clarification on standard
-                                    items like alcohol policies or equipment
-                                    restrictions for events.
-                                </p>
-                                <p>
-                                    This challenge is made harder by SFRPD’s
-                                    lean staffing model. If we can help staff
-                                    respond to these requests more quickly,
-                                    they’ll have more time to support residents
-                                    who have complex or urgent needs, or unique
-                                    circumstances that truly require human
-                                    expertise and judgement.
-                                </p>
-                            </TextGroup>
                         </section>
                     </FadeSection>
 
@@ -146,19 +146,13 @@ const EmailHelper = () => {
                                     <div className="flex flex-col gap-2">
                                         <h3 className="text-xl font-bold">
                                             There could be no direct integration
-                                            with third-party system(s).
+                                            with third-parties.
                                         </h3>
                                         <p>
-                                            SFRPD currently utilizes ActiveNet,
-                                            a facility, registration and
-                                            membership management software often
-                                            used in the government space.
-                                            ActiveNet is not an open system, so
-                                            we can’t directly integrate or
-                                            modify its backend without the
-                                            provider’s involvement. The helper
-                                            needed to be its own standalone
-                                            solution.
+                                            SFRPD currently utilizes reservation
+                                            systems that we cannot integrate
+                                            with or modify. The helper needed to
+                                            be its own standalone solution.
                                         </p>
                                     </div>
                                     <StickyNote className="!max-w-full">
@@ -202,6 +196,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="01"
                                 >
                                     <p>
                                         Use the custom input node to insert
@@ -218,6 +213,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="02"
                                 >
                                     <p>
                                         Use a rich text editor to format your
@@ -234,6 +230,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="03"
                                 >
                                     <p>
                                         Uploads will be validated for correct
@@ -249,6 +246,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="04"
                                 >
                                     <p>
                                         Choose the templates needed to compose
@@ -263,6 +261,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="05"
                                 >
                                     <p>
                                         Fill the custom inputs defined during
@@ -277,6 +276,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="06"
                                 >
                                     <p>
                                         Preserve formatting by copying the
@@ -291,6 +291,7 @@ const EmailHelper = () => {
                                     addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
+                                    numbered="07"
                                 >
                                     <p>
                                         Create a plaintext draft within your
@@ -306,7 +307,7 @@ const EmailHelper = () => {
                             <TextGroup heading="key decisions & iteration"></TextGroup>
 
                             <TextImage
-                                subheading="Handling formatting and email draft creation"
+                                subheading="How can we handle both formatting and email draft creation?"
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/formatting.png"
                                 addImageShadow={false}
@@ -348,9 +349,9 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="w-full max-w-screen-lg mx-auto">
                             <TextImage
-                                subheading="Placing preview & inputs"
+                                subheading="What method of previewing an email & completing its inputs is most intuitive?"
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV1.png"
                                 addImageShadow={false}
@@ -358,14 +359,19 @@ const EmailHelper = () => {
                                 imagePlacement="bottom"
                             >
                                 <p>
-                                    Version 1 explored doing blah blah blah. But
-                                    we found that blah di blah blah.
+                                    <strong className="highlight">
+                                        Version 1
+                                    </strong>{" "}
+                                    of the email generation process required
+                                    users to search through the combined
+                                    templates to manually edit placeholder
+                                    values.
                                 </p>
                             </TextImage>
                         </section>
                     </FadeSection>
                     <FadeSection scrollDir={scrollDir}>
-                        <section className=" w-full max-w-screen-lg mx-auto ">
+                        <section className="w-full max-w-screen-lg mx-auto ">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV2.png"
@@ -374,14 +380,20 @@ const EmailHelper = () => {
                                 imagePlacement="bottom"
                             >
                                 <p>
-                                    Version 2 explored doing blah blah blah. But
-                                    we found that blah di blah blah.
+                                    <strong className="highlight">
+                                        Version 2
+                                    </strong>{" "}
+                                    explored collecting user input as its own
+                                    distinct step. These values were used to
+                                    complete the email previewed in a new
+                                    window, but this split view contained too
+                                    much repetition.
                                 </p>
                             </TextImage>
                         </section>
                     </FadeSection>
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="w-full max-w-screen-lg mx-auto ">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV3.png"
@@ -390,8 +402,14 @@ const EmailHelper = () => {
                                 imagePlacement="bottom"
                             >
                                 <p>
-                                    Version 3 explored doing blah blah blah. But
-                                    we found that blah di blah blah.
+                                    <strong className="highlight">
+                                        Version 3 (Final)
+                                    </strong>{" "}
+                                    placed both user input collection and
+                                    previewing within the same frame. Users can
+                                    see the effects of their inputs in real
+                                    time, without having to search through the
+                                    template to complete fields.
                                 </p>
                             </TextImage>
                         </section>
@@ -457,7 +475,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
                             <TextGroup heading="next steps"></TextGroup>
                             <TextImage
                                 subheading="Updating UI & implementing additional functionality"
@@ -467,6 +485,11 @@ const EmailHelper = () => {
                                 addComponentShadow={false}
                                 imagePlacement="bottom"
                             />
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
                             <TextGroup subheading="Exploring a centralized alternative">
                                 <p>
                                     We are interested in designing what a
