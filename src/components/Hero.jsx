@@ -14,7 +14,7 @@ const Hero = ({ project, imagePath = "/" }) => {
             // style={{ backgroundImage: `url(${imagePath})` }}
         >
             <section className=" w-full max-w-screen-lg m-auto ">
-                <div className=" text-white flex flex-col gap-10 justify-end">
+                <div className=" text-white flex flex-col gap-20 justify-end">
                     <div className="flex flex-col gap-2">
                         <h1 className="font-display min-w-lg">
                             {project.title}
@@ -23,7 +23,7 @@ const Hero = ({ project, imagePath = "/" }) => {
                             {project.description}
                         </div>
                     </div>
-                    <hr></hr>
+                    {/* <hr></hr> */}
                     <div className="flex gap-20">
                         <div className="flex flex-col gap-2">
                             <h6 className="uppercase font-bold">Client</h6>

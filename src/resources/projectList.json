@@ -9,7 +9,7 @@
         ],
         "roles": ["Product Designer (1 of 2)", "Sole Developer"],
         "hook": "Lightening the load for support staff at the San Francisco Recreation & Parks Department.",
-        "description": "A bite-sized browser extension for providing non-obtrusive customer service that proves little fixes can have a big impact.",
+        "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -29,7 +29,7 @@
             "Product Designer (initially 1 of 5, later revised independently)"
         ],
         "hook": "Smoothing the in-store experience of ADHD shoppers.",
-        "description": "An in-store AR experience for limiting visual stimuli & lessen the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
+        "description": "An in-store AR experience for limiting visual stimuli & lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
         "image": "work/gianteagle/giantEagleProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -47,7 +47,7 @@
         "roles": ["UX Designer"],
         "hook": "Making finding your next read a breeze across platforms.",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
-        "image": "placeholder1.jpeg",
+        "image": "work/libby/libbyProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "UX Design", "type": "outlined" },

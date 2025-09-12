@@ -5,13 +5,11 @@ import { useLocation } from "react-router-dom";
 import routes from "../resources/routes.json";
 
 const NavbarDesktop = ({ useLightText }) => {
-    // const location = useLocation();
-    // const isHomepage = location.pathname == "/" ? true : false;
+    const NavTag = "nav";
+    const LinkTag = motion.create(Link);
 
-    const NavTag = /*isHomepage ? motion.nav :*/ "nav";
-    const LinkTag = /*isHomepage ? Link :*/ motion.create(Link);
-
-    // console.log("isHomepage", isHomepage);
+    const resumeLink =
+        "https://drive.google.com/file/d/1ns0kZivpJ-iYPw6no1KE6jsNRlu28YLL/view?usp=sharing";
 
     return (
         <NavTag
@@ -24,27 +22,36 @@ const NavbarDesktop = ({ useLightText }) => {
             } `}
         >
             {routes
-                .filter(
-                    (route) =>
-                        route.component == "Work" ||
-                        route.component == "ForFun" ||
-                        route.component == "Resume" ||
-                        route.component == "About"
+                .filter((route) =>
+                    ["Work", "ForFun", "Resume", "About"].includes(
+                        route.component
+                    )
                 )
                 .map((route, index) => {
+                    const isResume = route.component === "Resume";
                     return (
                         <div key={index}>
-                            <LinkTag
-                                to={route.path}
-                                className="text-sm uppercase flex gap-2 items-center"
-                            >
-                                <div className="link-icon h-3 w-3 border-solid border-[1px] rounded-full"></div>
-                                {route.component == "ForFun" ? (
-                                    "For Fun"
-                                ) : (
-                                    <>{route.component}</>
-                                )}
-                            </LinkTag>
+                            {isResume ? (
+                                <a
+                                    href={resumeLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm uppercase flex gap-2 items-center"
+                                >
+                                    <div className="link-icon h-3 w-3 border-solid border-[1px] rounded-full"></div>
+                                    {route.component}
+                                </a>
+                            ) : (
+                                <LinkTag
+                                    to={route.path}
+                                    className="text-sm uppercase flex gap-2 items-center"
+                                >
+                                    <div className="link-icon h-3 w-3 border-solid border-[1px] rounded-full"></div>
+                                    {route.component === "ForFun"
+                                        ? "For Fun"
+                                        : route.component}
+                                </LinkTag>
+                            )}
                         </div>
                     );
                 })}

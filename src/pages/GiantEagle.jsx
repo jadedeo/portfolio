@@ -28,7 +28,7 @@ const GiantEagle = () => {
     return (
         <>
             <Header useLightLogo={isHeroInView} />
-            <main className=" mb-[50px] min-h-dvh ">
+            <main className="mb-[50px] min-h-dvh ">
                 <section ref={heroRef} className="h-dvh">
                     <Hero
                         project={projectData}

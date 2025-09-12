@@ -5,17 +5,15 @@ import projectList from "../resources/projectList.json";
 
 import Header from "../components/Header";
 import ProjectCard from "../components/ProjectCard";
-import Carousel from "../components/Carousel";
 
 const Work = () => {
     return (
         <div id="work-page">
             <Header />
 
-            <main className="min-h-[100dvh] pb-10 pt-25 px-[0%]">
-                {/* <Carousel /> */}
+            <main className="min-h-[100dvh] pb-10 pt-33 px-[5%] flex flex-col gap-8">
                 {/* TODO: make less repetitive */}
-                <section className="projects-list grid sm:grid-cols-2 grid-cols-1 gap-y-6 py-5 w-full max-w-screen-lg mx-auto gap-8">
+                <section className="projects-list grid md:grid-cols-2 grid-cols-1 gap-y-6  w-full max-w-screen-lg mx-auto gap-8">
                     {projectList
                         .filter((project) =>
                             project.tags.some(
@@ -43,7 +41,7 @@ const Work = () => {
                         })}
                 </section>
 
-                <section className="projects-list grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-6 py-5 w-full max-w-screen-lg mx-auto gap-8">
+                <section className="projects-list grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-6  w-full max-w-screen-lg mx-auto gap-8">
                     {projectList
                         .filter((project) =>
                             project.tags.some((tag) => tag.text === "Mini")
