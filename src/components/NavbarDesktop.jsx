@@ -19,14 +19,13 @@ const NavbarDesktop = ({ useLightText }) => {
             initial={{ y: 25, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
-            className={`w-full justify-end flex gap-10 px-10 mt-0  pt-8 pb-6 items-center ${
+            className={`w-full justify-end flex gap-10 px-10 mt-0  py-8 items-center ${
                 useLightText ? "light-nav text-white " : "text-black "
             } `}
         >
             {routes
                 .filter(
                     (route) =>
-                        route.component == "Home" ||
                         route.component == "Work" ||
                         route.component == "ForFun" ||
                         route.component == "Resume" ||
