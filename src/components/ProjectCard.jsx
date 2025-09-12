@@ -9,18 +9,25 @@ const ProjectCard = ({ id, project }) => {
     return (
         <NavLink
             to={project.link}
-            className={`projectcard-component grid grid-rows-subgrid row-span-4 gap-2 hover:outline-1 hover:outline-gray-200 bg-white transition-[filter] duration-500 ease-in-out ${
+            className={`projectcard-component grid grid-rows-subgrid row-span-4 gap-2  bg-white transition-[filter] duration-500 ease-in-out ${
                 project.status === "published"
                     ? "published-project cursor-pointer"
                     : "comingsoon-project cursor-not-allowed"
             }`}
         >
-            <div className="w-full h-[350px] bg-gray-100">
+            <div className="w-full h-[350px] bg-gray-100 relative">
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover  left-0 top-0"
                 />
+                {project.status === "comingsoon" && (
+                    <div className="w-full h-full absolute left-0 top-0 bg-slate-900/75 bg-opacity-25  flex justify-center items-center">
+                        <div className="text-white px-4 py-2 rounded-full">
+                            <p className="uppercase text-xs">Coming soon</p>
+                        </div>
+                    </div>
+                )}
             </div>
 
             <div className="grid grid-cols-[auto_1fr] gap-5 px-5 mt-5">

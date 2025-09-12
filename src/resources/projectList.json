@@ -8,8 +8,8 @@
             "CMU MHCI Capstone"
         ],
         "roles": ["Product Designer (1 of 2)", "Sole Developer"],
-        "hook": "A browser extension for non-obtrusive customer service.",
-        "description": "A bite-sized browser extension for non-obtrusive customer service that proves little fixes can have a big impact.",
+        "hook": "Lightening the load for support staff at the San Francisco Recreation & Parks Department.",
+        "description": "A bite-sized browser extension for providing non-obtrusive customer service that proves little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -64,7 +64,7 @@
         "roles": ["Service Designer (1 of 4)"],
         "hook": "Long-distance communication for the chronically busy.",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
-        "image": "placeholder1.jpeg",
+        "image": "work/intouch/inTouchProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },

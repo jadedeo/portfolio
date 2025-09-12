@@ -70,10 +70,11 @@ const EmailHelper = () => {
                             <TextImage
                                 heading="what we designed"
                                 imageAlt="giant eagle glasses"
-                                image="newGlassesAll.png"
+                                image="emailhelper/overview.gif"
                                 addImageShadow={false}
                                 addComponentShadow={false}
-                                imagePlacement="bottom"
+                                imagePlacement="right"
+                                mat={false}
                             >
                                 <p>
                                     Email Helper was created to{" "}
@@ -113,20 +114,45 @@ const EmailHelper = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextGroup heading="constraints">
-                                <div className="grid grid-cols-2 gap-10">
+                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    <div className="flex flex-col gap-5 items-center">
+                                        <img
+                                            className="max-h-[50%]"
+                                            src="emailhelper/nodevs.png"
+                                        />
+                                        <div className="flex flex-col gap-2">
+                                            <h3 className="text-xl font-bold">
+                                                SFRPD employs no in-house
+                                                developers.
+                                            </h3>
+                                            <p>
+                                                There is no one on staff to
+                                                maintain or customize a complex
+                                                system, so any solution
+                                                requiring extensive technical
+                                                upkeep would not be sustainable
+                                                for the team.
+                                            </p>
+                                        </div>
+                                    </div>
+
                                     <div className="flex flex-col gap-2">
+                                        <img
+                                            className="max-h-[50%]"
+                                            src="emailhelper/nointegrations.png"
+                                        />
                                         <h3 className="text-xl font-bold">
-                                            SFRPD employs no in-house
-                                            developers.
+                                            There could be no direct integration
+                                            with third-parties.
                                         </h3>
                                         <p>
-                                            There is no one on staff to maintain
-                                            or customize a complex system, so
-                                            any solution requiring extensive
-                                            technical upkeep would not be
-                                            sustainable for the team.
+                                            SFRPD currently utilizes reservation
+                                            systems that we cannot integrate
+                                            with or modify. The helper needed to
+                                            be its own standalone solution.
                                         </p>
                                     </div>
+
                                     <div className="flex flex-col gap-2">
                                         <h3 className="text-xl font-bold">
                                             The cost of hosting and data storage
@@ -141,43 +167,6 @@ const EmailHelper = () => {
                                             expenses.
                                         </p>
                                     </div>
-                                </div>
-                                <div className="grid grid-cols-2 gap-10">
-                                    <div className="flex flex-col gap-2">
-                                        <h3 className="text-xl font-bold">
-                                            There could be no direct integration
-                                            with third-parties.
-                                        </h3>
-                                        <p>
-                                            SFRPD currently utilizes reservation
-                                            systems that we cannot integrate
-                                            with or modify. The helper needed to
-                                            be its own standalone solution.
-                                        </p>
-                                    </div>
-                                    <StickyNote className="!max-w-full">
-                                        <p>
-                                            Using techniques like data scraping
-                                            to implement more "automation"
-                                            raised two major concerns:
-                                        </p>
-                                        <ol>
-                                            <li>
-                                                Doing so poses a potential
-                                                security risk that could create
-                                                vulnerabilities in a sensitive
-                                                government environment
-                                            </li>
-                                            <li>
-                                                These methods can violate
-                                                platform policies and best
-                                                practices, making it harder to
-                                                get the extension approved by
-                                                app and web stores and SFRPD’s
-                                                own IT team
-                                            </li>
-                                        </ol>
-                                    </StickyNote>
                                 </div>
                             </TextGroup>
                         </section>
