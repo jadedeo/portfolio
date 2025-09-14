@@ -104,9 +104,23 @@ const EmailHelper = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <TextGroup heading="impact & value">
-                                <p>...</p>
-                            </TextGroup>
+                            <TextImage
+                                heading="impact"
+                                image="emailhelper/timeChart.png"
+                                addImageShadow={false}
+                                mat={false}
+                                imagePlacement="right"
+                            >
+                                <p>
+                                    Use of Email Helper resulted in a{" "}
+                                    <strong className="highlight">
+                                        66.6% decrease in time on task.
+                                    </strong>{" "}
+                                    Staff saved a significant amount of time by
+                                    avoiding a lengthy Google doc of templates
+                                    and having to format on the fly.
+                                </p>
+                            </TextImage>
                         </section>
                     </FadeSection>
 
