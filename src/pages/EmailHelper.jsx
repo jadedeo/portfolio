@@ -54,12 +54,11 @@ const EmailHelper = () => {
                                     restrictions for events.
                                 </p>
                                 <p>
-                                    If we can help staff respond to these
-                                    requests more quickly, they’ll have more
-                                    time to support residents who have complex
-                                    or urgent needs, or unique circumstances
-                                    that truly require human expertise and
-                                    judgement.
+                                    If we could help staff respond to these
+                                    requests more quickly, they’d have more time
+                                    to support residents who have complex or
+                                    urgent needs, or unique circumstances that
+                                    truly require human expertise and judgement.
                                 </p>
                             </TextGroup>
                         </section>
@@ -114,33 +113,34 @@ const EmailHelper = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextGroup heading="constraints">
-                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    <div className="flex flex-col gap-5 items-center">
-                                        <img
-                                            className="max-h-[50%]"
-                                            src="emailhelper/nodevs.png"
-                                        />
-                                        <div className="flex flex-col gap-2">
-                                            <h3 className="text-xl font-bold">
-                                                SFRPD employs no in-house
-                                                developers.
-                                            </h3>
-                                            <p>
-                                                There is no one on staff to
-                                                maintain or customize a complex
-                                                system, so any solution
-                                                requiring extensive technical
-                                                upkeep would not be sustainable
-                                                for the team.
-                                            </p>
+                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
+                                    <div className="flex flex-col gap-2">
+                                        <div className="max-h-[300px]">
+                                            <img
+                                                className="h-full mx-auto"
+                                                src="emailhelper/noDevs.png"
+                                            />
                                         </div>
+                                        <h3 className="text-xl font-bold">
+                                            SFRPD employs no in-house
+                                            developers.
+                                        </h3>
+                                        <p>
+                                            There is no one on staff to maintain
+                                            or customize a complex system, so
+                                            any solution requiring extensive
+                                            technical upkeep would not be
+                                            sustainable for the team.
+                                        </p>
                                     </div>
 
                                     <div className="flex flex-col gap-2">
-                                        <img
-                                            className="max-h-[50%]"
-                                            src="emailhelper/nointegrations.png"
-                                        />
+                                        <div className="max-h-[300px]">
+                                            <img
+                                                className="h-full mx-auto"
+                                                src="emailhelper/noIntegrations.png"
+                                            />
+                                        </div>
                                         <h3 className="text-xl font-bold">
                                             There could be no direct integration
                                             with third-parties.
@@ -154,6 +154,12 @@ const EmailHelper = () => {
                                     </div>
 
                                     <div className="flex flex-col gap-2">
+                                        <div className="max-h-[300px]">
+                                            <img
+                                                className="h-full mx-auto"
+                                                src="emailhelper/noCost.png"
+                                            />
+                                        </div>
                                         <h3 className="text-xl font-bold">
                                             The cost of hosting and data storage
                                             had to be essentially zero.
@@ -174,7 +180,7 @@ const EmailHelper = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
-                            <TextGroup heading="workflow"></TextGroup>
+                            <TextGroup heading="how it works"></TextGroup>
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
                                 <TextImage
@@ -465,8 +471,8 @@ const EmailHelper = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
-                            <TextGroup heading="next steps"></TextGroup>
                             <TextImage
+                                heading="next steps"
                                 subheading="Updating UI & implementing additional functionality"
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/nextSteps.png"

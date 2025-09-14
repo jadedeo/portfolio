@@ -33,25 +33,11 @@ const ForFun = () => {
     return (
         <div id="forfun-page">
             <Header />
-            <main className="min-h-[100dvh] py-10 px-[5%]">
+            <main className="min-h-[100dvh] py-10 px-[5%] flex flex-col justify-center">
                 <section className="my-5">
-                    <h1 className="font-display">just for fun.</h1>
+                    <h1 className="font-display">under construction.</h1>
+                    <p>please check back soon!</p>
                 </section>
-                {/* <Masonry columns={columns} spacing={{ xs: 2, sm: 2, md: 3 }}>
-          {doodleList.map((image, index) => {
-            return (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-                custom={index}
-              >
-                <DoodleCard key={index} image={image} />
-              </motion.div>
-            );
-          })}
-        </Masonry> */}
             </main>
         </div>
     );

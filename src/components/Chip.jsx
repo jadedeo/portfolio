@@ -8,31 +8,26 @@ const Chip = ({ label, size = "sm", type }) => {
     if (size === "md") scale = 1.25;
     if (size === "lg") scale = 2;
 
-    const style = {
+    const calcPadding = {
         padding: `${scale * 0.5}rem ${scale * 1}rem ${scale * 0.3}rem ${
             scale * 1
         }rem`,
-        border: isOutlined ? "1px solid black" : "",
-        backgroundColor: isOutlined ? "#ffffff" : "#000000",
-        color: isOutlined ? "#000000" : "#ffffff",
     };
 
     return (
         <>
             <div
-                style={style}
-                className={`chip-component text-xs rounded-full w-fit uppercase`}
+                style={calcPadding}
+                className={`chip-component text-xs rounded-full w-fit uppercase ${
+                    isOutlined
+                        ? "border-1 border-black bg-white text-black "
+                        : "bg-black text-white"
+                }`}
             >
                 {label}
             </div>
         </>
     );
 };
-
-// Chip.propTypes = {
-//     label: PropTypes.string,
-//     size: PropTypes.oneOf(["sm", "md", "lg"]),
-//     type: PropTypes.oneOf(["outlined", "filled"]),
-// };
 
 export default Chip;

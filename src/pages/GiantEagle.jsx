@@ -127,6 +127,7 @@ const GiantEagle = () => {
                                             overload and decision fatigue, which
                                             can be debilitating.
                                         </p>
+                                        <img src="gianteagle/brain.png" />
                                     </StickyNote>
                                 </div>
                                 <div className="flex flex-col">
@@ -168,6 +169,7 @@ const GiantEagle = () => {
                                             shopping with a plan, but they still
                                             spend a lot of time in the store.
                                         </p>
+                                        <img src="gianteagle/list.png" />
                                     </StickyNote>
                                 </div>
                             </section>
@@ -260,12 +262,12 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
-                            <TextGroup heading="designing a more adaptable hardware solution"></TextGroup>
+                    {/* TODO: add a 'how it works' section */}
 
-                            {/* <div className=""> */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
                             <TextImage
+                                heading="designing a more adaptable hardware solution"
                                 subheading="Specifications"
                                 imageAlt="Annotated diagrams of the revised glasses"
                                 image="gianteagle/glassesAnnotated.png"
@@ -296,7 +298,7 @@ const GiantEagle = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="flex flex-col gap-20 mt-5 ">
+                        <section className="flex flex-col gap-10 mt-5">
                             <TextImage
                                 heading="interactions & gestures"
                                 imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
@@ -380,7 +382,7 @@ const GiantEagle = () => {
                                         </p>
                                     </div>
                                     <p>
-                                        Fully editing capabilities (searching,
+                                        Full editing capabilities (searching,
                                         reordering, etc.) would introduce too
                                         much complexity and require more
                                         granular controls, suggesting bulkier
@@ -517,9 +519,13 @@ const GiantEagle = () => {
                                 addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
-                                {/* <p>
-									TODO: write something here
-								</p> */}
+                                <p>
+                                    The original process for adding a located
+                                    item to one's cart was both unclear and
+                                    incomplete. This revision clarifies
+                                    available actions and more seamlessly feeds
+                                    into the rest of the experience.
+                                </p>
                             </TextImage>
                         </section>
                     </FadeSection>
@@ -593,104 +599,134 @@ const GiantEagle = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
-                            <TextGroup heading="other considerations & caveats">
-                                <AccordionItem
-                                    heading="Buisness Implications"
-                                    isOpenDefault={true}
-                                >
-                                    <p>
-                                        We recognize that essentially “hiding”
-                                        the vast majority of items may not be
-                                        seen to be in GE’s best interest -
-                                        retail relies on enticing shoppers by
-                                        keeping products in plain view.
-                                    </p>
-                                    <p>
-                                        We would like to make the case that
-                                        making stores more accessible to people
-                                        of varied sensitivities is a smarter
-                                        business move than forcing them to
-                                        endure an uncomfortable experience.
-                                    </p>
-                                    <p>
-                                        Investing in the comfort of customers is
-                                        likely to strengthen overall trust &
-                                        loyalty over time.
-                                    </p>
-                                </AccordionItem>
+                            <TextGroup heading="other considerations & caveats" />
 
-                                <AccordionItem heading="Reliance on Unchanging Organization">
-                                    <p>
-                                        The efficacy of this solution requires
-                                        that the placement of store inventory be
-                                        carefully regulated.
-                                    </p>
-                                    <p>
-                                        Shifting the location of items without
-                                        these changes being recorded
-                                        behind-the-scenes would make it
-                                        impossible to provide navigational
-                                        information.
-                                    </p>
-                                </AccordionItem>
-                                <AccordionItem heading="Assumptions of Ability">
-                                    <p>
-                                        In order to interact with the glasses’
-                                        controls,{" "}
-                                        <strong>
-                                            users will need to (at least
-                                            briefly) have one hand free
-                                        </strong>
-                                        . Looking into providing a voice-control
-                                        option could be a helpful alternative.
-                                    </p>
-                                    <p>
-                                        <strong>
-                                            As a medium, AR assumes some level
-                                            of visual acuity
-                                        </strong>
-                                        . However, the auditory component of the
-                                        experience & it’s reliance on the
-                                        contract of bright signals in a dulled
-                                        environment may still make it suitable
-                                        for those with partial/reduced vision.
-                                    </p>
-                                    <p>
-                                        <strong>
-                                            Subtitles/CC are not provided with
-                                            the experience
-                                        </strong>
-                                        , because audio is a purely optional
-                                        feature. The experience is, by default,
-                                        accessible to the hearing-impaired.
-                                    </p>
-                                </AccordionItem>
-                                <AccordionItem heading="(Current) Technological Limitations">
-                                    <p>
-                                        We acknowledge that our experience
-                                        assumes a level of performance just
-                                        beyond the current capabilities of AR
-                                        devices. However, we imagine that, with
-                                        constant advancement in the field, these
-                                        limitations will decrease in a few short
-                                        years.
-                                    </p>
-                                    <p>
-                                        <strong>Field of view (FoV)</strong>{" "}
-                                        will likely expand RayNeo X2’s currently
-                                        have a FoV of 25°, but the industry
-                                        average is about 30-50°
-                                    </p>
-                                    <p>
-                                        <strong>Resolutio</strong>n will likely
-                                        increase RayNeo X2’s currently have a
-                                        resolution of 640x480 per eye, but the
-                                        RayNeo Air 3S XREAL One both reach
-                                        1920x1080
-                                    </p>
-                                </AccordionItem>
-                            </TextGroup>
-                            <section className="flex flex-col gap-10 mt-5 "></section>
+                            <div className="flex flex-col gap-15">
+                                {/* TODO: make into component */}
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                    <img
+                                        src="gianteagle/money.png"
+                                        className="max-w-[200px] sm:w-auto "
+                                    />
+                                    <TextGroup subheading="Business Implications">
+                                        <p>
+                                            We recognize that essentially
+                                            “hiding” the vast majority of items
+                                            may not be seen to be in GE’s best
+                                            interest - retail relies on enticing
+                                            shoppers by keeping products in
+                                            plain view.
+                                        </p>
+                                        <p>
+                                            We would like to make the case that
+                                            making stores more accessible to
+                                            people of varied sensitivities is a
+                                            smarter business move than forcing
+                                            them to endure an uncomfortable
+                                            experience.
+                                        </p>
+                                        <p>
+                                            Investing in the comfort of
+                                            customers is likely to strengthen
+                                            overall trust & loyalty over time.
+                                        </p>
+                                    </TextGroup>
+                                </div>
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                    <img
+                                        src="gianteagle/inventory.png"
+                                        className="max-w-[200px] sm:w-auto "
+                                    />
+                                    <TextGroup subheading="Reliance on Unchanging Organization">
+                                        <p>
+                                            The efficacy of this solution
+                                            requires that the placement of store
+                                            inventory be carefully regulated.
+                                        </p>
+                                        <p>
+                                            Shifting the location of items
+                                            without these changes being recorded
+                                            behind-the-scenes would make it
+                                            impossible to provide accurate
+                                            navigational information.
+                                        </p>
+                                    </TextGroup>
+                                </div>
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                    <img
+                                        src="gianteagle/eye.png"
+                                        className="max-w-[200px] sm:w-auto "
+                                    />
+                                    <TextGroup subheading="Assumptions of Ability">
+                                        <p>
+                                            In order to interact with the
+                                            glasses’ controls,{" "}
+                                            <strong>
+                                                users will need to (at least
+                                                briefly) have one hand free
+                                            </strong>
+                                            . Looking into providing a
+                                            voice-control option could be a
+                                            helpful alternative.
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                As a medium, AR assumes some
+                                                level of visual acuity
+                                            </strong>
+                                            . However, the auditory component of
+                                            the experience & it’s reliance on
+                                            the contract of bright signals in a
+                                            dulled environment may still make it
+                                            suitable for those with
+                                            partial/reduced vision.
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Subtitles/CC are not provided
+                                                with the experience
+                                            </strong>
+                                            , because audio is a purely optional
+                                            feature. The experience is, by
+                                            default, accessible to the
+                                            hearing-impaired.
+                                        </p>
+                                    </TextGroup>
+                                </div>
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                    <img
+                                        src="gianteagle/glasses.png"
+                                        className="max-w-[200px] sm:w-auto "
+                                    />
+                                    <TextGroup subheading="Technological Limitations">
+                                        <p>
+                                            We acknowledge that our experience
+                                            assumes a level of performance just
+                                            beyond the current capabilities of
+                                            AR devices. However, we imagine
+                                            that, with constant advancement in
+                                            the field, these limitations will
+                                            decrease in a few short years.
+                                        </p>
+                                        <p>
+                                            <strong>Field of view (FoV)</strong>{" "}
+                                            will likely expand RayNeo X2’s
+                                            currently have a FoV of 25°, but the
+                                            industry average is about 30-50°
+                                        </p>
+                                        <p>
+                                            <strong>Resolutio</strong>n will
+                                            likely increase RayNeo X2’s
+                                            currently have a resolution of
+                                            640x480 per eye, but the RayNeo Air
+                                            3S XREAL One both reach 1920x1080
+                                        </p>
+                                    </TextGroup>
+                                </div>
+                            </div>
                         </section>
                     </FadeSection>
                 </div>

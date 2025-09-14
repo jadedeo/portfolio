@@ -27,7 +27,9 @@ const TextGroup = ({
             ) : (
                 <div className={`${numbered ? "flex gap-5" : ""}`}>
                     {numbered && <h2 className="font-display">{numbered}</h2>}
-                    {heading && <h2 className="font-display ">{heading}</h2>}
+                    {heading && (
+                        <h2 className="font-display mb-3">{heading}</h2>
+                    )}
                     <div>
                         {subheading && (
                             <h3 className="text-xl font-bold">{subheading}</h3>
