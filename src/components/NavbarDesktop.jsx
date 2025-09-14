@@ -2,25 +2,25 @@ import routes from "../resources/routes.json";
 import NavItem from "./NavItem";
 
 // Import your PNGs
-import moonOutlineDark from "../../public/images/icons/moonOutlineDark.png";
-import moonFilledDark from "../../public/images/icons/moonFilledDark.png";
-import moonOutlineLight from "../../public/images/icons/moonOutlineLight.png";
-import moonFilledLight from "../../public/images/icons/moonFilledLight.png";
+import moonOutlineDark from "/images/icons/moonOutlineDark.png";
+import moonFilledDark from "/images/icons/moonFilledDark.png";
+import moonOutlineLight from "/images/icons/moonOutlineLight.png";
+import moonFilledLight from "/images/icons/moonFilledLight.png";
 
-import starOutlineDark from "../../public/images/icons/starOutlineDark.png";
-import starFilledDark from "../../public/images/icons/starFilledDark.png";
-import starOutlineLight from "../../public/images/icons/starOutlineLight.png";
-import starFilledLight from "../../public/images/icons/starFilledLight.png";
+import starOutlineDark from "/images/icons/starOutlineDark.png";
+import starFilledDark from "/images/icons/starFilledDark.png";
+import starOutlineLight from "/images/icons/starOutlineLight.png";
+import starFilledLight from "/images/icons/starFilledLight.png";
 
-import sunOutlineDark from "../../public/images/icons/sunOutlineDark.png";
-import sunFilledDark from "../../public/images/icons/sunFilledDark.png";
-import sunOutlineLight from "../../public/images/icons/sunOutlineLight.png";
-import sunFilledLight from "../../public/images/icons/sunFilledLight.png";
+import sunOutlineDark from "/images/icons/sunOutlineDark.png";
+import sunFilledDark from "/images/icons/sunFilledDark.png";
+import sunOutlineLight from "/images/icons/sunOutlineLight.png";
+import sunFilledLight from "/images/icons/sunFilledLight.png";
 
-import cloudOutlineDark from "../../public/images/icons/cloudOutlineDark.png";
-import cloudFilledDark from "../../public/images/icons/cloudFilledDark.png";
-import cloudOutlineLight from "../../public/images/icons/cloudOutlineLight.png";
-import cloudFilledLight from "../../public/images/icons/cloudFilledLight.png";
+import cloudOutlineDark from "/images/icons/cloudOutlineDark.png";
+import cloudFilledDark from "/images/icons/cloudFilledDark.png";
+import cloudOutlineLight from "/images/icons/cloudOutlineLight.png";
+import cloudFilledLight from "/images/icons/cloudFilledLight.png";
 
 const NavbarDesktop = ({ useLightText }) => {
     const resumeLink =
