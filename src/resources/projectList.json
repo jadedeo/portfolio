@@ -7,7 +7,7 @@
             "San Francisco Recreation & Parks Department",
             "CMU MHCI Capstone"
         ],
-        "roles": ["Product Designer (1 of 2)", "Sole Developer"],
+        "roles": ["Product Designer (1/2)", "Sole Developer"],
         "hook": "Lightening the load for support staff at the San Francisco Recreation & Parks Department.",
         "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
@@ -23,13 +23,13 @@
     {
         "id": 2,
         "path": "gianteagle",
-        "title": "AR for Accessibility at Giant Eagle",
+        "title": "AR for Accessibility",
         "client": ["CMU Coursework", "Advanced Interaction Design"],
         "roles": [
-            "Product Designer (initially 1 of 5, later revised independently)"
+            "Product Designer (initially 1/5, later revised independently)"
         ],
-        "hook": "Smoothing the in-store experience of ADHD shoppers.",
-        "description": "An in-store AR experience for limiting visual stimuli & lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
+        "hook": "Smoothing the in-store experience of ADHD shoppers at Giant Eagle.",
+        "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli & lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
         "image": "work/gianteagle/giantEagleProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },

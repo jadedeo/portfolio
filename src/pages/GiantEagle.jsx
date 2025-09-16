@@ -17,7 +17,7 @@ import projectList from "../resources/projectList.json";
 
 const GiantEagle = () => {
     let projectData = projectList.find(
-        (project) => project.title === "AR for Accessibility at Giant Eagle"
+        (project) => project.title === "AR for Accessibility"
     );
     console.log("projectData", projectData);
 
@@ -32,8 +32,8 @@ const GiantEagle = () => {
                 <section ref={heroRef} className="h-dvh">
                     <Hero
                         project={projectData}
-                        imagePath="gianteagle/coverImage.png"
-                    ></Hero>
+                        image="gianteagle/groceryBagLight.png"
+                    />
                 </section>
                 <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
                     <FadeSection scrollDir={scrollDir}>

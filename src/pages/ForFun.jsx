@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
-// components
 import Header from "../components/Header";
 import DoodleCard from "../components/DoodleCard";
-// import { Masonry } from "@mui/lab";
+import FadeSection from "../components/FadeSection";
 
-// other imports
 import doodleList from "../resources/doodleList";
 import { itemVariants } from "../resources/utils";
+import useScrollDirection from "../hooks/useScrollDirection";
 
 const ForFun = () => {
+    const scrollDir = useScrollDirection();
     const [columns, setColumns] = useState(3);
 
     useEffect(() => {

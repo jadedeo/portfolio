@@ -26,7 +26,10 @@ const EmailHelper = () => {
             <Header useLightLogo={isHeroInView} />
             <main className="mb-[50px] min-h-dvh ">
                 <section ref={heroRef} className="h-dvh">
-                    <Hero project={projectData}></Hero>
+                    <Hero
+                        project={projectData}
+                        image="emailhelper/emailHelperLight.png"
+                    />
                 </section>
 
                 <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
