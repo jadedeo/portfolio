@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
+import StickyNote from "../components/StickyNote";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 
@@ -18,7 +19,7 @@ const About = () => {
 
                 <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             {/* TODO: get image without background */}
                             <TextImage
                                 heading="hey!"
@@ -53,17 +54,55 @@ const About = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <div className="grid grid-cols-4">
+                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
                                 <img src="images/general/hibiscus.png" />
-                                <img src="images/general/sketchbook.png" />
-                                <img src="images/general/tablet.png" />
+                                <StickyNote>
+                                    I identify as Indo-Caribbean American — my
+                                    family is from the West Indies (Guyana 🇬🇾
+                                    and Trinidad and Tobago 🇹🇹)
+                                </StickyNote>
+
                                 <img src="images/general/snail.png" />
+                                <StickyNote>
+                                    I'll happily do my civic duty of hunting
+                                    spotted lantern flies, but snails, slugs,
+                                    caterpillars and similarly squishy things
+                                    are a hard pass
+                                </StickyNote>
+
+                                <StickyNote>
+                                    It takes forever for me to fill a
+                                    sketchbook, but I love treating them like
+                                    little time capsules — each contains a
+                                    different version of Jade ehehe
+                                </StickyNote>
+                                <img src="images/general/sketchbook.png" />
+
+                                <img src="images/general/tablet.png" />
+                                <StickyNote>
+                                    I've been told I'm crazy for preferring a
+                                    screenless tablet over an iPad/Procreate in
+                                    the big 25, but it's me and my 2015 Wacom
+                                    Intuos against the world 🫶🏽
+                                </StickyNote>
 
                                 <img src="images/general/jewelry.png" />
-                                <img src="images/general/libby.png" />
+                                <StickyNote>
+                                    I have a weakness for shiny things,
+                                    ~especially~ South Asian jewelry ✨
+                                </StickyNote>
 
+                                <StickyNote>
+                                    "Coraline" scarred me in 2009 (literally
+                                    could not sleep for weeks) but I've since
+                                    recovered 💪🏽 and come to appreciate the film
+                                    for the artistry it is — still not a horror
+                                    girly, though
+                                </StickyNote>
                                 <img src="images/general/buttons.png" />
+
+                                {/* <img src="images/general/libby.png" /> */}
                             </div>
                         </section>
                     </FadeSection>

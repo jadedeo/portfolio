@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 // components
 
 import Header from "../components/Header";
+import StickyNote from "../components/StickyNote";
 
 const Home = () => {
     return (
@@ -21,6 +22,17 @@ const Home = () => {
                     </div>
 
                     <p>Pixie-dust-powered creative, forever + always</p>
+
+                    <StickyNote>
+                        <p className="font-bold">Portfolio TODOs:</p>
+                        <div>
+                            <p>{"\u2610"} Finish adding alt text</p>
+                            <p>{"\u2610"} Make mobile responsive</p>
+                            <p>{"\u2610"} Add "real" resume page</p>
+                            <p>{"\u2610"} Add mini projects</p>
+                            <p>{"\u2610"} Add illustration work</p>
+                        </div>
+                    </StickyNote>
                 </section>
             </main>
         </div>
