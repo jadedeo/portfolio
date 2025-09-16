@@ -9,6 +9,7 @@ const TextImage = ({
     image,
     imageAlt,
     imagePlacement = "right",
+    imageSize = "full",
     children,
     className,
     addImageShadow = true,
@@ -18,7 +19,7 @@ const TextImage = ({
 }) => {
     return (
         <section
-            className={`textimage-component ${imagePlacement}-variant max-w-screen-lg mx-auto grid w-full ${
+            className={`textimage-component content-between ${imagePlacement}-variant max-w-screen-lg mx-auto grid w-full ${
                 imagePlacement === "bottom" || imagePlacement === "top"
                     ? "md:grid-cols-1"
                     : "md:grid-cols-2"
@@ -28,7 +29,9 @@ const TextImage = ({
         >
             <motion.div
                 // whileHover={{ scale: 1.05 }}
-                className={`w-full h-full  overflow-hidden ${
+                className={`${
+                    imageSize === "small" ? "max-h-[300px]" : ""
+                } w-full h-full  overflow-hidden ${
                     mat ? "p-9 bg-gray-100" : "p-0"
                 }  place-content-center ${
                     imagePlacement === "right" || imagePlacement === "bottom"

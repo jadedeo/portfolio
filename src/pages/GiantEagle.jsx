@@ -178,177 +178,121 @@ const GiantEagle = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <TextImage
-                                heading="evaluating existing hardware"
-                                imageAlt="Image of the RayNeo X2s"
-                                image="gianteagle/rayneo.png"
-                                addImageShadow={false}
-                            >
-                                <p>
-                                    We had a checklist of requirements when
-                                    seeking out the best device to model our
-                                    experience around, but soon found that they
-                                    couldn’t all be met by an existing product.
-                                </p>
+                            <TextGroup heading="how it works"></TextGroup>
 
-                                <p>
-                                    The{" "}
-                                    <strong className="highlight">
-                                        <a
-                                            className="underline"
-                                            href="https://www.rayneo.com/products/tcl-rayneo-x2?srsltid=AfmBOoq9WdgyyYHJm3EXgnE_3tgTXjWF206wtdcatxhQnlsD42NwpA9w"
-                                        >
-                                            RayNeo X2s
-                                        </a>
-                                    </strong>{" "}
-                                    came the closest. In addition to
-                                    consolidated hardware, they offered a
-                                    limited set of interactions that remain
-                                    confined to the glasses themselves that
-                                    we’ve adopted for our experience. To satisfy
-                                    the other items on our list, we designed &
-                                    propose a more adaptable frame.
-                                </p>
-                            </TextImage>
-
-                            <section className="flex gap-5 flex-wrap mt-5 justify-center">
-                                <StickyNote>
-                                    <p className="font-semibold">
-                                        <strong>
-                                            Hardware use would not alienate user
-                                            in GE’s public setting.
-                                        </strong>
-                                    </p>
-                                    <p>
-                                        {"\u2611"} Reasonably inconspicuous
-                                        (likely won’t include hand or eye
-                                        tracking)
-                                    </p>
-                                </StickyNote>
-                                <StickyNote>
-                                    <p className="font-semibold">
-                                        <strong>
-                                            Hardware would not be overly
-                                            difficult for GE to monitor &
-                                            maintain.
-                                        </strong>
-                                    </p>
-                                    <p>
-                                        {"\u2611"} Does not require additional
-                                        equipment (puck, battery pack, etc.)
-                                    </p>
-                                    <p>
-                                        {"\u2610"} Does not require the purchase
-                                        of many slight variations to suit many
-                                        users
-                                    </p>
-                                </StickyNote>
-                                <StickyNote>
-                                    <p className="font-semibold">
-                                        <strong>
-                                            Hardware can be used communally.
-                                        </strong>
-                                    </p>
-                                    <p>
-                                        {"\u2610"} Can accommodate physical
-                                        differences in users
-                                    </p>
-                                    <p>
-                                        {"\u2610"} Can be worn with (most)
-                                        prescription eyewear
-                                    </p>
-                                </StickyNote>
-                            </section>
-                        </section>
-                    </FadeSection>
-
-                    {/* TODO: add a 'how it works' section */}
-
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
-                            <TextImage
-                                heading="designing a more adaptable hardware solution"
-                                subheading="Specifications"
-                                imageAlt="Annotated diagrams of the revised glasses"
-                                image="gianteagle/glassesAnnotated.png"
-                                addImageShadow={false}
-                                addComponentShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    Our imagined solution includes the following
-                                    features.
-                                </p>
-                            </TextImage>
-
-                            <TextImage
-                                subheading="Iteration"
-                                imageAlt="Before & after of glasses"
-                                image="gianteagle/glassesIteration.png"
-                                addImageShadow={false}
-                                addComponentShadow={false}
-                            >
-                                <p>
-                                    Hardware was revised with thicker frames to
-                                    better accommodate mechanical components.
-                                </p>
-                            </TextImage>
-                            {/* </div> */}
-                        </section>
-                    </FadeSection>
-
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="flex flex-col gap-10 mt-5">
-                            <TextImage
-                                heading="interactions & gestures"
-                                imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
-                                image="gianteagle/sliderAnnotated.png"
-                                addImageShadow={false}
-                                addComponentShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    Users may make these 3 gestures on either of
-                                    the glasses’ touch panels to interact with
-                                    UI elements.
-                                </p>
-                            </TextImage>
-                            <section className="max-w-screen-lg mx-auto flex flex-col gap-10">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
                                 <TextImage
-                                    subheading="Cycling through the primary UI elements"
-                                    imageAlt="Use of sliding gesture to navigate through the main 'on-screen' elements"
-                                    image="gianteagle/navCircuit.gif"
+                                    subheading="Create your shopping list"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/appUnchecked.png"
+                                    imageSize="small"
                                     addImageShadow={false}
                                     addComponentShadow={false}
-                                    imagePlacement="right"
                                     mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="01"
                                 >
                                     <p>
-                                        The sliding gesture is used to navigate
-                                        through the main 'on-screen' elements.
-                                        Sliding forward moves to the next
-                                        element, while sliding backwards
-                                        revisits to the previous element.
+                                        Use the existing Giant Eagle app to
+                                        create your shopping list. You may also
+                                        optionally configure your AR experience
+                                        ahead of time.
+                                    </p>
+                                </TextImage>
+
+                                <TextImage
+                                    subheading="Pick up your glasses"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/customerService.png"
+                                    imageSize="small"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="02"
+                                >
+                                    <p>
+                                        Once in-store, visit the customer
+                                        service desk to request a pair of
+                                        glasses. After your trip is completed,
+                                        they can also be dropped off here for
+                                        sanitizing.
+                                    </p>
+                                </TextImage>
+
+                                <TextImage
+                                    subheading="Sync your list & glasses"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/appQr.png"
+                                    imageSize="small"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="03"
+                                >
+                                    <p>
+                                        Pull up the QR code in-app and view
+                                        through your glasses to import your
+                                        shopping list. If needed, complete an
+                                        onboarding sequence to get the hang of
+                                        controls.
+                                    </p>
+                                </TextImage>
+
+                                <TextImage
+                                    subheading="Enter the experience"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/aisleColored.png"
+                                    imageSize="small"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="04"
+                                >
+                                    <p>
+                                        Filter out distractions and follow
+                                        optimized directions for a more
+                                        efficient shopping trip (before and
+                                        after above).
                                     </p>
                                 </TextImage>
                                 <TextImage
-                                    subheading="Skipping the current item"
-                                    imageAlt="Use of sliding & single-tap gestures to skip current item/proceed to the next item on the list"
-                                    image="gianteagle/skip.gif"
+                                    subheading="Locate your items"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/aisleItem.png"
+                                    imageSize="small"
                                     addImageShadow={false}
                                     addComponentShadow={false}
-                                    imagePlacement="right"
                                     mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="05"
                                 >
                                     <p>
-                                        The sliding and single-tap gestures are
-                                        used in combination to skip the current
-                                        item and proceed to the next item on the
-                                        list. After a period of inactivity,
-                                        focus returns to the current item.
+                                        Follow clear indicators and easily sort
+                                        out your target items from everything
+                                        extraneous.
                                     </p>
                                 </TextImage>
-                            </section>
+                                <TextImage
+                                    subheading="Complete your list"
+                                    imageAlt="TODO: add alt"
+                                    image="gianteagle/appChecked.png"
+                                    imageSize="small"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    mat={false}
+                                    imagePlacement="bottom"
+                                    numbered="06"
+                                >
+                                    <p>
+                                        Find everything you need, and get in and
+                                        out in record timing. Don't forget to
+                                        return your glasses to customer service!
+                                    </p>
+                                </TextImage>
+                            </div>
                         </section>
                     </FadeSection>
 
@@ -437,6 +381,180 @@ const GiantEagle = () => {
                                         default.
                                     </p>
                                 </StickyNote>
+                            </section>
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                            <TextImage
+                                heading="evaluating existing hardware"
+                                imageAlt="Image of the RayNeo X2s"
+                                image="gianteagle/rayneo.png"
+                                addImageShadow={false}
+                            >
+                                <p>
+                                    We had a checklist of requirements when
+                                    seeking out the best device to model our
+                                    experience around, but soon found that they
+                                    couldn’t all be met by an existing product.
+                                </p>
+
+                                <p>
+                                    The{" "}
+                                    <strong className="highlight">
+                                        <a
+                                            className="underline"
+                                            href="https://www.rayneo.com/products/tcl-rayneo-x2?srsltid=AfmBOoq9WdgyyYHJm3EXgnE_3tgTXjWF206wtdcatxhQnlsD42NwpA9w"
+                                        >
+                                            RayNeo X2s
+                                        </a>
+                                    </strong>{" "}
+                                    came the closest. In addition to
+                                    consolidated hardware, they offered a
+                                    limited set of interactions that remain
+                                    confined to the glasses themselves that
+                                    we’ve adopted for our experience. To satisfy
+                                    the other items on our list, we designed &
+                                    propose a more adaptable frame.
+                                </p>
+                            </TextImage>
+
+                            <section className="flex gap-5 flex-wrap mt-5 justify-center">
+                                <StickyNote>
+                                    <p className="font-semibold">
+                                        <strong>
+                                            Hardware use would not alienate user
+                                            in GE’s public setting.
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        {"\u2611"} Reasonably inconspicuous
+                                        (likely won’t include hand or eye
+                                        tracking)
+                                    </p>
+                                </StickyNote>
+                                <StickyNote>
+                                    <p className="font-semibold">
+                                        <strong>
+                                            Hardware would not be overly
+                                            difficult for GE to monitor &
+                                            maintain.
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        {"\u2611"} Does not require additional
+                                        equipment (puck, battery pack, etc.)
+                                    </p>
+                                    <p>
+                                        {"\u2610"} Does not require the purchase
+                                        of many slight variations to suit many
+                                        users
+                                    </p>
+                                </StickyNote>
+                                <StickyNote>
+                                    <p className="font-semibold">
+                                        <strong>
+                                            Hardware can be used communally.
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        {"\u2610"} Can accommodate physical
+                                        differences in users
+                                    </p>
+                                    <p>
+                                        {"\u2610"} Can be worn with (most)
+                                        prescription eyewear
+                                    </p>
+                                </StickyNote>
+                            </section>
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
+                            <TextImage
+                                heading="designing a more adaptable hardware solution"
+                                subheading="Specifications"
+                                imageAlt="Annotated diagrams of the revised glasses"
+                                image="gianteagle/glassesAnnotated.png"
+                                addImageShadow={false}
+                                addComponentShadow={false}
+                                imagePlacement="bottom"
+                            >
+                                <p>
+                                    Our imagined solution includes the following
+                                    features.
+                                </p>
+                            </TextImage>
+
+                            <TextImage
+                                subheading="Iteration"
+                                imageAlt="Before & after of glasses"
+                                image="gianteagle/glassesIteration.png"
+                                addImageShadow={false}
+                                addComponentShadow={false}
+                            >
+                                <p>
+                                    Hardware was revised with thicker frames to
+                                    better accommodate mechanical components.
+                                </p>
+                            </TextImage>
+                            {/* </div> */}
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="flex flex-col gap-10 mt-5">
+                            <TextImage
+                                heading="interactions & gestures"
+                                imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
+                                image="gianteagle/sliderAnnotated.png"
+                                addImageShadow={false}
+                                addComponentShadow={false}
+                                imagePlacement="bottom"
+                            >
+                                <p>
+                                    Users may make these 3 gestures on either of
+                                    the glasses’ touch panels to interact with
+                                    UI elements.
+                                </p>
+                            </TextImage>
+                            <section className="max-w-screen-lg mx-auto flex flex-col gap-10">
+                                <TextImage
+                                    subheading="Cycling through the primary UI elements"
+                                    imageAlt="Use of sliding gesture to navigate through the main 'on-screen' elements"
+                                    image="gianteagle/navCircuit.gif"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    imagePlacement="right"
+                                    mat={false}
+                                >
+                                    <p>
+                                        The sliding gesture is used to navigate
+                                        through the main 'on-screen' elements.
+                                        Sliding forward moves to the next
+                                        element, while sliding backwards
+                                        revisits to the previous element.
+                                    </p>
+                                </TextImage>
+                                <TextImage
+                                    subheading="Skipping the current item"
+                                    imageAlt="Use of sliding & single-tap gestures to skip current item/proceed to the next item on the list"
+                                    image="gianteagle/skip.gif"
+                                    addImageShadow={false}
+                                    addComponentShadow={false}
+                                    imagePlacement="right"
+                                    mat={false}
+                                >
+                                    <p>
+                                        The sliding and single-tap gestures are
+                                        used in combination to skip the current
+                                        item and proceed to the next item on the
+                                        list. After a period of inactivity,
+                                        focus returns to the current item.
+                                    </p>
+                                </TextImage>
                             </section>
                         </section>
                     </FadeSection>

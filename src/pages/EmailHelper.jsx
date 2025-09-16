@@ -131,6 +131,7 @@ const EmailHelper = () => {
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextGroup heading="constraints">
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
+                                    {/* TODO: swap divs out for small image variant of TextImage */}
                                     <div className="flex flex-col gap-2">
                                         <div className="max-h-[300px]">
                                             <img
