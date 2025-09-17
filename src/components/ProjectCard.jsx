@@ -4,8 +4,6 @@ import Chip from "../components/Chip";
 // import PropTypes from "prop-types";
 
 const ProjectCard = ({ id, project }) => {
-    console.log(project.title, project.status);
-
     return (
         <NavLink
             to={project.link}

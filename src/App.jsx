@@ -14,7 +14,7 @@ import EmailHelper from "../src/pages/EmailHelper.jsx";
 
 import routes from "../src/resources/routes.json";
 
-console.log(routes);
+// console.log(routes);
 
 const componentMap = {
     Home,

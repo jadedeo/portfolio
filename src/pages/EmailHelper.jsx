@@ -15,7 +15,6 @@ const EmailHelper = () => {
     const projectData = projectList.find(
         (project) => project.title === "Email Helper"
     );
-    console.log("projectData", projectData);
 
     const scrollDir = useScrollDirection();
     const heroRef = useRef(null);
