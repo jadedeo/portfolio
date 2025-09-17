@@ -2,6 +2,8 @@ import NavbarDesktop from "./NavbarDesktop";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
+import homeIcon from "/general/homeIcon.png";
+
 const Header = ({ useLightLogo }) => {
     const location = useLocation();
     const isHomepage = location.pathname === "/";
@@ -24,7 +26,7 @@ const Header = ({ useLightLogo }) => {
                         <Link to="/">
                             <img
                                 className="flex w-15 bg-white border-1 border-solid rounded-full aspect-square"
-                                src="/portfolio/homeIconSmall.png"
+                                src={homeIcon}
                             />
                         </Link>
                     </div>

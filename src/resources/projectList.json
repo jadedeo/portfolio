@@ -82,7 +82,7 @@
         "roles": ["UI Designer", "Developer"],
         "hook": "The consequences of indenture - in data.",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
-        "image": "placeholder1.jpeg",
+        "image": "work/jahajisshadow/jahajiProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "UI Design", "type": "outlined" },

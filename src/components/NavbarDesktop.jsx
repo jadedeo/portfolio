@@ -1,25 +1,25 @@
 import routes from "../resources/routes.json";
 import NavItem from "./NavItem";
 
-import moonOutlineDark from "/images/icons/moonOutlineDark.png";
-import moonFilledDark from "/images/icons/moonFilledDark.png";
-import moonOutlineLight from "/images/icons/moonOutlineLight.png";
-import moonFilledLight from "/images/icons/moonFilledLight.png";
+import moonOutlineDark from "/icons/moonOutlineDark.png";
+import moonFilledDark from "/icons/moonFilledDark.png";
+import moonOutlineLight from "/icons/moonOutlineLight.png";
+import moonFilledLight from "/icons/moonFilledLight.png";
 
-import starOutlineDark from "/images/icons/starOutlineDark.png";
-import starFilledDark from "/images/icons/starFilledDark.png";
-import starOutlineLight from "/images/icons/starOutlineLight.png";
-import starFilledLight from "/images/icons/starFilledLight.png";
+import starOutlineDark from "/icons/starOutlineDark.png";
+import starFilledDark from "/icons/starFilledDark.png";
+import starOutlineLight from "/icons/starOutlineLight.png";
+import starFilledLight from "/icons/starFilledLight.png";
 
-import sunOutlineDark from "/images/icons/sunOutlineDark.png";
-import sunFilledDark from "/images/icons/sunFilledDark.png";
-import sunOutlineLight from "/images/icons/sunOutlineLight.png";
-import sunFilledLight from "/images/icons/sunFilledLight.png";
+import sunOutlineDark from "/icons/sunOutlineDark.png";
+import sunFilledDark from "/icons/sunFilledDark.png";
+import sunOutlineLight from "/icons/sunOutlineLight.png";
+import sunFilledLight from "/icons/sunFilledLight.png";
 
-import cloudOutlineDark from "/images/icons/cloudOutlineDark.png";
-import cloudFilledDark from "/images/icons/cloudFilledDark.png";
-import cloudOutlineLight from "/images/icons/cloudOutlineLight.png";
-import cloudFilledLight from "/images/icons/cloudFilledLight.png";
+import cloudOutlineDark from "/icons/cloudOutlineDark.png";
+import cloudFilledDark from "/icons/cloudFilledDark.png";
+import cloudOutlineLight from "/icons/cloudOutlineLight.png";
+import cloudFilledLight from "/icons/cloudFilledLight.png";
 
 const NavbarDesktop = ({ useLightText }) => {
     const resumeLink =

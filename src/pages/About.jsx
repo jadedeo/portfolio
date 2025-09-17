@@ -23,7 +23,7 @@ const About = () => {
                         {/* TODO: get image without background */}
                         <TextImage
                             heading="hey!"
-                            image="images/general/jadePhoto.JPEG"
+                            image="general/jadePhoto.JPEG"
                             mat={false}
                         >
                             <p>
@@ -54,14 +54,14 @@ const About = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
-                                <img src="images/general/hibiscus.png" />
+                                <img src="general/hibiscus.png" />
                                 <StickyNote>
                                     I identify as Indo-Caribbean American — my
                                     family is from the West Indies (Guyana 🇬🇾
                                     and Trinidad and Tobago 🇹🇹)
                                 </StickyNote>
 
-                                <img src="images/general/snail.png" />
+                                <img src="general/snail.png" />
                                 <StickyNote>
                                     I'll happily do my civic duty of hunting
                                     spotted lantern flies, but snails, slugs,
@@ -75,9 +75,9 @@ const About = () => {
                                     little time capsules — each contains a
                                     different version of Jade ehehe
                                 </StickyNote>
-                                <img src="images/general/sketchbook.png" />
+                                <img src="general/sketchbook.png" />
 
-                                <img src="images/general/tablet.png" />
+                                <img src="general/tablet.png" />
                                 <StickyNote>
                                     Apparently I'm crazy for preferring a
                                     screenless tablet over an iPad/Procreate in
@@ -85,7 +85,7 @@ const About = () => {
                                     Intuos against the world 🫶🏽
                                 </StickyNote>
 
-                                <img src="images/general/jewelry.png" />
+                                <img src="general/jewelry.png" />
                                 <StickyNote>
                                     I have a weakness for shiny things,
                                     ~especially~ South Asian jewelry ✨
@@ -98,9 +98,9 @@ const About = () => {
                                     for the artistry it is — still not a horror
                                     girly, though
                                 </StickyNote>
-                                <img src="images/general/buttons.png" />
+                                <img src="general/buttons.png" />
 
-                                {/* <img src="images/general/libby.png" /> */}
+                                {/* <img src="general/libby.png" /> */}
                             </div>
                         </section>
                     </FadeSection>

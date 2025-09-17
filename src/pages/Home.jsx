@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
 
-import starOutlineDark from "/images/icons/starOutlineDark.png";
+import starOutlineDark from "/icons/starOutlineDark.png";
+import homeImage from "/general/homeImage.png";
 
 import Header from "../components/Header";
 import StickyNote from "../components/StickyNote";
@@ -37,7 +38,7 @@ const Home = () => {
                             I strive to design for simplicity while preserving
                             personality — which is why these intro blurb things
                             make me cringe. Thank you for taking a look at my
-                            work! I hope you'll find that I'm also an authentic
+                            work! I hope you'll also find that I'm an authentic
                             storyteller who creates accessible, data-driven
                             experiences.
                         </p>
@@ -59,7 +60,7 @@ const Home = () => {
                     <div className="hidden h-full max-h-[100dvh] md:flex items-center justify-center overflow-hidden">
                         <img
                             className="max-h-full w-auto object-contain"
-                            src="portfolioHomepage.png"
+                            src={homeImage}
                             alt="TODO: add alt"
                         />
                     </div>
