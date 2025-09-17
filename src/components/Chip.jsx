@@ -1,5 +1,3 @@
-// import PropTypes from "prop-types";
-
 const Chip = ({ label, size = "sm", type }) => {
     let scale = 1;
     let isOutlined = type === "outlined" ? true : false;

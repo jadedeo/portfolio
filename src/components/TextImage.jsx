@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 
-// import PropTypes from "prop-types";
 import TextGroup from "./TextGroup";
 
 const TextImage = ({

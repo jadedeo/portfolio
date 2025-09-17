@@ -7,7 +7,6 @@ import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
 import StickyNote from "../components/StickyNote";
 import ChatBubble from "../components/ChatBubble";
-import AccordionItem from "../components/AccordionItem";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";

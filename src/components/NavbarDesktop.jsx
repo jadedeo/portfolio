@@ -1,7 +1,6 @@
 import routes from "../resources/routes.json";
 import NavItem from "./NavItem";
 
-// Import your PNGs
 import moonOutlineDark from "/images/icons/moonOutlineDark.png";
 import moonFilledDark from "/images/icons/moonFilledDark.png";
 import moonOutlineLight from "/images/icons/moonOutlineLight.png";
@@ -67,6 +66,8 @@ const NavbarDesktop = ({ useLightText }) => {
                         label={
                             route.component === "ForFun"
                                 ? "For Fun"
+                                : route.component === "About"
+                                ? "About + Contact"
                                 : route.component
                         }
                         outlinedIcon={iconMap[route.component].outlined}

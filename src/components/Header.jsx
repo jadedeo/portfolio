@@ -24,7 +24,7 @@ const Header = ({ useLightLogo }) => {
                         <Link to="/">
                             <img
                                 className="flex w-15 bg-white border-1 border-solid rounded-full aspect-square"
-                                src="/portfolio/homeIcon.png"
+                                src="/portfolio/homeIconSmall.png"
                             />
                         </Link>
                     </div>
