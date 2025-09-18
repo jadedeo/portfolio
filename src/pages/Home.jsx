@@ -13,7 +13,6 @@ const Home = () => {
         <div id="home-page">
             <Header />
             <main className="min-h-[100dvh] md:max-h-[100dvh] pt-28 pb-10 px-[5%] flex flex-col md:flex-row justify-center relative">
-                {/* <div className="relative"> */}
                 <div className="max-w-screen-lg mx-auto justify-center grid md:grid-cols-2 items-center max-h-[100dvh] gap-0 ">
                     {/* Text */}
                     <motion.div
@@ -66,16 +65,8 @@ const Home = () => {
                         />
                     </motion.div>
                 </div>
-                <motion.div
-                // initial={{ opacity: 0, y: 25 }}
-                // animate={{ opacity: 1, y: 0 }}
-                // transition={{
-                //     duration: 2,
-                //     ease: "easeOut",
-                //     delay: 3.5,
-                // }}
-                >
-                    <StickyNote className="static md:flex md:absolute md:bottom-[5%] md:right-[10%] mt-10 md:mt-0  ">
+                <div>
+                    <StickyNote className="static md:flex md:absolute md:bottom-[5%] md:right-[5%] lg:right-[18%] mt-10 md:mt-0  ">
                         <p className="font-bold">Portfolio TODOs:</p>
                         <div>
                             <p>{"\u2610"} Make mobile responsive</p>
@@ -87,8 +78,7 @@ const Home = () => {
                             Make it exist first. Make it good later.
                         </p>
                     </StickyNote>
-                </motion.div>
-                {/* </div> */}
+                </div>
             </main>
         </div>
     );
