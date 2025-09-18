@@ -16,7 +16,6 @@ const Header = ({ useLightLogo }) => {
                     useLightLogo ? " border-gray-200" : "border-gray-900"
                 }`}
             >
-                {/* TODO: replace image */}
                 {!isHomepage && (
                     <div
                         className={`px-10 mt-0 flex items-center ${

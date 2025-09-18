@@ -12,9 +12,16 @@ const Home = () => {
     return (
         <div id="home-page">
             <Header />
-            <main className="min-h-[100dvh] md:max-h-[100dvh] pt-28 pb-10 px-[5%] flex justify-center relative">
+            <main className="min-h-[100dvh] md:max-h-[100dvh] pt-28 pb-10 px-[5%] flex flex-col md:flex-row justify-center relative">
+                {/* <div className="relative"> */}
                 <div className="max-w-screen-lg mx-auto justify-center grid md:grid-cols-2 items-center max-h-[100dvh] gap-0 ">
-                    <div className="flex flex-col gap-5">
+                    {/* Text */}
+                    <motion.div
+                        className="flex flex-col gap-5"
+                        initial={{ opacity: 0, y: 25 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <h1 className="font-display">jade deo</h1>
 
                         <div className="flex flex-col gap-2">
@@ -35,36 +42,53 @@ const Home = () => {
                         </div>
 
                         <p>
-                            I strive to design for simplicity while preserving
-                            personality — which is why these intro blurb things
-                            make me cringe. Thank you for taking a look at my
-                            work! I hope you'll also find that I'm an authentic
-                            storyteller who creates accessible, data-driven
-                            experiences.
+                            With an engineer’s mind, designer’s eye, and
+                            artist’s heart, I create for simplicity while
+                            preserving personality. Thank you for stopping by!
                         </p>
+                    </motion.div>
 
-                        <StickyNote className="md:absolute md:bottom-[10%] md:right-[10%] lg:right-[18%] mt-5 md:mt-0">
-                            <p className="font-bold">Portfolio TODOs:</p>
-                            <div>
-                                <p>{"\u2610"} Make mobile responsive</p>
-                                <p>{"\u2610"} Add a "real" resume page</p>
-                                <p>{"\u2610"} Add mini projects</p>
-                                <p>{"\u2610"} Add illustration work</p>
-                            </div>
-                            <p className="underline">
-                                Make it exist first. Make it good later.
-                            </p>
-                        </StickyNote>
-                    </div>
-
-                    <div className="hidden h-full max-h-[100dvh] md:flex items-center justify-center overflow-hidden">
+                    {/* Image */}
+                    <motion.div
+                        className="hidden relative h-full max-h-[100dvh] md:flex items-center justify-center overflow-hidden"
+                        initial={{ opacity: 0, y: 25 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut",
+                            delay: 0.25,
+                        }}
+                    >
                         <img
                             className="max-h-full w-auto object-contain"
                             src={homeImage}
                             alt="TODO: add alt"
                         />
-                    </div>
+                    </motion.div>
                 </div>
+                <motion.div
+                // initial={{ opacity: 0, y: 25 }}
+                // animate={{ opacity: 1, y: 0 }}
+                // transition={{
+                //     duration: 2,
+                //     ease: "easeOut",
+                //     delay: 3.5,
+                // }}
+                >
+                    <StickyNote className="static md:flex md:absolute md:bottom-[5%] md:right-[10%] mt-10 md:mt-0  ">
+                        <p className="font-bold">Portfolio TODOs:</p>
+                        <div>
+                            <p>{"\u2610"} Make mobile responsive</p>
+                            <p>{"\u2610"} Add a "real" resume page</p>
+                            <p>{"\u2610"} Add mini projects</p>
+                            <p>{"\u2610"} Add illustration work</p>
+                        </div>
+                        <p className="underline">
+                            Make it exist first. Make it good later.
+                        </p>
+                    </StickyNote>
+                </motion.div>
+                {/* </div> */}
             </main>
         </div>
     );

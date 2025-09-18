@@ -73,7 +73,6 @@ const EmailHelper = () => {
                                 imageAlt="giant eagle glasses"
                                 image="emailhelper/overview.gif"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="right"
                                 mat={false}
                             >
@@ -95,11 +94,12 @@ const EmailHelper = () => {
                                     and tailored to SFRPD’s specific
                                     environment.
                                 </p>
-                                <p>
+                                {/* TODO: update */}
+                                {/* <p>
                                     As of _______, Email Helper has been
                                     submitted to the Chrome and Microsoft web
                                     stores for approval.
-                                </p>
+                                </p> */}
                             </TextImage>
                         </section>
                     </FadeSection>
@@ -205,7 +205,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/typingShort.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="01"
@@ -222,7 +221,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/basicStyling.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="02"
@@ -239,7 +237,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/import.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="03"
@@ -255,7 +252,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/search.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="04"
@@ -270,7 +266,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/completeInputsShort.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="05"
@@ -285,7 +280,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/copyPasteShort.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="06"
@@ -300,7 +294,6 @@ const EmailHelper = () => {
                                     imageAlt="TODO: add alt"
                                     image="emailhelper/createDraftShort.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="07"
@@ -323,7 +316,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/formatting.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -367,7 +359,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV1.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -388,7 +379,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV2.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -410,7 +400,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV3.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -434,7 +423,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/windowsToSpa.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -468,7 +456,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/localChangesOnly.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                             >
                                 <p>
                                     As a means of accommodating client-side
@@ -494,7 +481,6 @@ const EmailHelper = () => {
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/nextSteps.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             />
                         </section>

@@ -14,7 +14,7 @@
         "tags": [
             { "text": "Case Study", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
-            { "text": "Frontend Dev", "type": "outlined" },
+            { "text": "Web Dev", "type": "outlined" },
             { "text": "Civic Tech 🏛", "type": "outlined" }
         ],
         "link": "/work/emailhelper",
@@ -26,7 +26,8 @@
         "title": "AR for Accessibility",
         "client": ["CMU Coursework", "Advanced Interaction Design"],
         "roles": [
-            "Product Designer (initially 1/5, later revised independently)"
+            "Product Designer",
+            "(initially 1/5, later revised independently)"
         ],
         "hook": "Smoothing the in-store experience of ADHD shoppers at Giant Eagle.",
         "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli & lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
@@ -86,7 +87,7 @@
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "UI Design", "type": "outlined" },
-            { "text": "Frontend Dev", "type": "outlined" },
+            { "text": "Web Dev", "type": "outlined" },
             { "text": "Data Vis 📊", "type": "outlined" }
         ],
         "link": "/work",

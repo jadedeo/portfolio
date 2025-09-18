@@ -1,4 +1,4 @@
-const Chip = ({ label, size = "sm", type }) => {
+const Chip = ({ label, size = "sm", type, link = null }) => {
     let scale = 1;
     let isOutlined = type === "outlined" ? true : false;
 
@@ -22,7 +22,14 @@ const Chip = ({ label, size = "sm", type }) => {
                         : "bg-black text-white"
                 }`}
             >
-                {label}
+                {link ? (
+                    <a target="_blank" rel="noreferrer" href={link}>
+                        {label}
+                    </a>
+                ) : (
+                    label
+                )}
+                {/* {label} */}
             </div>
         </>
     );

@@ -41,7 +41,6 @@ const GiantEagle = () => {
                                 imageAlt="Two images of key points in the AR experience"
                                 image="gianteagle/preview.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -78,104 +77,6 @@ const GiantEagle = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <TextGroup heading="why we designed it" />
-
-                            <section className="grid grid-cols-1 md:grid-cols-2 items-end justify-items-center gap-5">
-                                <div className="flex flex-col">
-                                    <div className="flex flex-col lg:flex-row lg:gap-5">
-                                        <ChatBubble direction="in">
-                                            <strong>
-                                                Grocery shopping is sensory
-                                                hell.
-                                            </strong>{" "}
-                                            The lights are too bright, there is
-                                            a lot of sounds, smells, and a lot
-                                            going on.
-                                            <a
-                                                href="https://www.reddit.com/r/ADHD/comments/wvn80k/comment/ilh6ldt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
-                                                className="hover:underline text-gray-400"
-                                            >
-                                                <small>
-                                                    r/ADHD | Overstimulated
-                                                    while grocery shopping?
-                                                </small>
-                                            </a>
-                                        </ChatBubble>
-                                        <ChatBubble direction="in">
-                                            ... if I need more than a couple of
-                                            things, my SO has to go with me.{" "}
-                                            <strong>
-                                                It's too overwhelming for me to
-                                                do by myself.
-                                            </strong>
-                                            <a
-                                                href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erc93va/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
-                                                className="hover:underline text-gray-400"
-                                            >
-                                                <small>
-                                                    r/ADHD | Grocery shopping is
-                                                    the natural enemy
-                                                </small>
-                                            </a>
-                                        </ChatBubble>
-                                    </div>
-                                    <StickyNote className="mx-auto mt-5">
-                                        <p className="font-semibold">
-                                            ADHD shoppers experience sensory
-                                            overload and decision fatigue, which
-                                            can be debilitating.
-                                        </p>
-                                        <img src="gianteagle/brain.png" />
-                                    </StickyNote>
-                                </div>
-                                <div className="flex flex-col">
-                                    <div className="">
-                                        {/* <div className="">
-											<TextGroup heading="why we designed it" />
-										</div> */}
-                                        <ChatBubble direction="out">
-                                            <p>
-                                                <strong>
-                                                    ... even if I go in with a
-                                                    list, once I get into the
-                                                    grocery store I'm
-                                                    overwhelmed by everything
-                                                </strong>{" "}
-                                                and find it hard to just go in
-                                                grab the things I need and get
-                                                out.
-                                            </p>
-                                            <p>
-                                                I get stuck looking at
-                                                everything and its time
-                                                consuming and often stressful.
-                                            </p>
-                                            <a
-                                                href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erbwi0x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
-                                                className="hover:underline text-gray-400"
-                                            >
-                                                <small>
-                                                    r/ADHD | Grocery shopping is
-                                                    the natural enemy
-                                                </small>
-                                            </a>
-                                        </ChatBubble>
-                                    </div>
-                                    <StickyNote className="mx-auto mt-5">
-                                        <p className="font-semibold">
-                                            Grocery lists help shoppers approach
-                                            shopping with a plan, but they still
-                                            spend a lot of time in the store.
-                                        </p>
-                                        <img src="gianteagle/list.png" />
-                                    </StickyNote>
-                                </div>
-                            </section>
-                        </section>
-                    </FadeSection>
-
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextGroup heading="how it works"></TextGroup>
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
@@ -185,7 +86,6 @@ const GiantEagle = () => {
                                     image="gianteagle/appUnchecked.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="01"
@@ -204,7 +104,6 @@ const GiantEagle = () => {
                                     image="gianteagle/customerService.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="02"
@@ -224,7 +123,6 @@ const GiantEagle = () => {
                                     image="gianteagle/appQr.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="03"
@@ -244,7 +142,6 @@ const GiantEagle = () => {
                                     image="gianteagle/aisleColored.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="04"
@@ -262,7 +159,6 @@ const GiantEagle = () => {
                                     image="gianteagle/aisleItem.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="05"
@@ -279,7 +175,6 @@ const GiantEagle = () => {
                                     image="gianteagle/appChecked.png"
                                     imageSize="small"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     mat={false}
                                     imagePlacement="bottom"
                                     numbered="06"
@@ -291,6 +186,118 @@ const GiantEagle = () => {
                                     </p>
                                 </TextImage>
                             </div>
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                            {/* TODO: add more explanation here */}
+                            <TextGroup heading="why we designed it">
+                                <p>
+                                    Through surveying a number of ADHD- and/or
+                                    neurodivergency-centered online spaces, we
+                                    identified several recurring painpoints that
+                                    surfaced when grocery shopping. These
+                                    influenced the characteristics of our
+                                    experience.
+                                </p>
+                            </TextGroup>
+
+                            <section className="grid grid-cols-1 md:grid-cols-2 items-end justify-items-center gap-5">
+                                <div className="flex flex-col">
+                                    <div className="flex flex-col lg:flex-row lg:gap-5">
+                                        <ChatBubble direction="in">
+                                            <strong>
+                                                Grocery shopping is sensory
+                                                hell.
+                                            </strong>{" "}
+                                            The lights are too bright, there is
+                                            a lot of sounds, smells, and a lot
+                                            going on.
+                                            <a
+                                                href="https://www.reddit.com/r/ADHD/comments/wvn80k/comment/ilh6ldt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="hover:underline text-gray-400"
+                                            >
+                                                <p className="text-sm text-right">
+                                                    r/ADHD | Overstimulated
+                                                    while grocery shopping?
+                                                </p>
+                                            </a>
+                                        </ChatBubble>
+                                        <ChatBubble direction="in">
+                                            ... if I need more than a couple of
+                                            things, my SO has to go with me.{" "}
+                                            <strong>
+                                                It's too overwhelming for me to
+                                                do by myself.
+                                            </strong>
+                                            <a
+                                                href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erc93va/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="hover:underline text-gray-400"
+                                            >
+                                                <p className="text-sm text-right">
+                                                    r/ADHD | Grocery shopping is
+                                                    the natural enemy
+                                                </p>
+                                            </a>
+                                        </ChatBubble>
+                                    </div>
+                                    <StickyNote className="mx-auto mt-5">
+                                        <p>
+                                            ADHD shoppers experience sensory
+                                            overload and decision fatigue ,
+                                            which can be debilitating.
+                                        </p>
+                                        <img src="gianteagle/brain.png" />
+                                    </StickyNote>
+                                </div>
+                                <div className="flex flex-col">
+                                    <div>
+                                        <ChatBubble direction="out">
+                                            <p>
+                                                <strong>
+                                                    ... even if I go in with a
+                                                    list, once I get into the
+                                                    grocery store I'm
+                                                    overwhelmed by everything
+                                                </strong>{" "}
+                                                and find it hard to just go in
+                                                grab the things I need and get
+                                                out.
+                                            </p>
+                                            <p>
+                                                I get stuck looking at
+                                                everything and its time
+                                                consuming and often stressful.
+                                            </p>
+                                            <a
+                                                href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erbwi0x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="hover:underline text-gray-400"
+                                            >
+                                                <p className="text-sm text-right">
+                                                    r/ADHD | Grocery shopping is
+                                                    the natural enemy
+                                                </p>
+                                            </a>
+                                        </ChatBubble>
+                                    </div>
+                                    <StickyNote className="mx-auto mt-5">
+                                        <p>
+                                            Grocery lists help shoppers approach
+                                            shopping with a plan , but they
+                                            still spend a lot of time in the
+                                            store.
+                                        </p>
+                                        <img src="gianteagle/list.png" />
+                                    </StickyNote>
+                                </div>
+                            </section>
                         </section>
                     </FadeSection>
 
@@ -477,7 +484,6 @@ const GiantEagle = () => {
                                 imageAlt="Annotated diagrams of the revised glasses"
                                 image="gianteagle/glassesAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -491,7 +497,6 @@ const GiantEagle = () => {
                                 imageAlt="Before & after of glasses"
                                 image="gianteagle/glassesIteration.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                             >
                                 <p>
                                     Hardware was revised with thicker frames to
@@ -509,7 +514,6 @@ const GiantEagle = () => {
                                 imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
                                 image="gianteagle/sliderAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -524,7 +528,6 @@ const GiantEagle = () => {
                                     imageAlt="Use of sliding gesture to navigate through the main 'on-screen' elements"
                                     image="gianteagle/navCircuit.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     imagePlacement="right"
                                     mat={false}
                                 >
@@ -541,7 +544,6 @@ const GiantEagle = () => {
                                     imageAlt="Use of sliding & single-tap gestures to skip current item/proceed to the next item on the list"
                                     image="gianteagle/skip.gif"
                                     addImageShadow={false}
-                                    addComponentShadow={false}
                                     imagePlacement="right"
                                     mat={false}
                                 >
@@ -564,7 +566,6 @@ const GiantEagle = () => {
                                 imageAlt="Annotated images of key components to the AR experience"
                                 image="gianteagle/fullAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             />
                         </section>
@@ -577,7 +578,6 @@ const GiantEagle = () => {
                                 imageAlt="giant eagle glasses"
                                 image="gianteagle/shoppingListAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -598,7 +598,6 @@ const GiantEagle = () => {
                                 imageAlt="Various states of the settings component"
                                 image="gianteagle/settingsComponent.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -632,7 +631,6 @@ const GiantEagle = () => {
                                 imageAlt="Annotated images of the current component used for adding an item to the cart, as well as the original design"
                                 image="gianteagle/addItemAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -653,7 +651,6 @@ const GiantEagle = () => {
                                 imageAlt="Focus states for various components"
                                 image="gianteagle/focusStatesAnnotated.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -676,7 +673,6 @@ const GiantEagle = () => {
                                 imageAlt="Settings that can be used to customize the AR experience from within the mobile app"
                                 image="gianteagle/allConfig.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>
@@ -698,7 +694,6 @@ const GiantEagle = () => {
                                 imageAlt="Basic flow showing progression from the user's shopping list to the QR code used to sync the glasses in-store"
                                 image="gianteagle/listToCode.png"
                                 addImageShadow={false}
-                                addComponentShadow={false}
                                 imagePlacement="bottom"
                             >
                                 <p>

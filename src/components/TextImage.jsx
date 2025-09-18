@@ -12,7 +12,6 @@ const TextImage = ({
     children,
     className,
     addImageShadow = true,
-    addComponentShadow = true,
     mat = true,
     numbered = null,
 }) => {
@@ -22,12 +21,9 @@ const TextImage = ({
                 imagePlacement === "bottom" || imagePlacement === "top"
                     ? "md:grid-cols-1"
                     : "md:grid-cols-2"
-            }  grid-cols-1 items-center ${
-                addComponentShadow ? "" : ""
-            }  ${className}`}
+            }  grid-cols-1 items-center   ${className}`}
         >
             <motion.div
-                // whileHover={{ scale: 1.05 }}
                 className={`${
                     imageSize === "small" ? "max-h-[300px]" : ""
                 } w-full h-full  overflow-hidden ${
