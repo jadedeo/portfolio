@@ -23,7 +23,7 @@ import cloudFilledLight from "/icons/cloudFilledLight.png";
 
 const NavbarDesktop = ({ useLightText }) => {
     const resumeLink =
-        "https://drive.google.com/file/d/1ns0kZivpJ-iYPw6no1KE6jsNRlu28YLL/view?usp=sharing";
+        "https://drive.google.com/file/d/1_6s7bxmdunCV2haa4LtgQL4eHXhasllk/view?usp=sharing";
 
     const iconMap = {
         ForFun: {
