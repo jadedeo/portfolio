@@ -1,13 +1,16 @@
-import React from "react";
-// import PropTypes from "prop-types";
-import Chip from "./Chip";
+import { motion } from "motion/react";
 
 const Hero = ({ project, image }) => {
     return (
         <div
             className={`hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
         >
-            <section className=" w-full max-w-screen-lg m-auto ">
+            <motion.section
+                className=" w-full max-w-screen-lg m-auto "
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <div className="flex gap-20 items-center">
                     <div className="text-white flex flex-col gap-20 justify-end">
                         <div className="flex flex-col gap-2">
@@ -18,7 +21,6 @@ const Hero = ({ project, image }) => {
                                 {project.description}
                             </div>
                         </div>
-                        {/* <hr></hr> */}
                         <div className="flex gap-10 text-nowrap">
                             <div className="flex flex-col gap-2">
                                 <h6 className="uppercase font-bold">Client</h6>
@@ -48,7 +50,7 @@ const Hero = ({ project, image }) => {
                         </div>
                     )}
                 </div>
-            </section>
+            </motion.section>
         </div>
     );
 };

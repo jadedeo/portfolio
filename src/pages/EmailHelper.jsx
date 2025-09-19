@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import TextGroup from "../components/TextGroup";
 import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
-import StickyNote from "../components/StickyNote";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";
@@ -94,12 +93,11 @@ const EmailHelper = () => {
                                     and tailored to SFRPD’s specific
                                     environment.
                                 </p>
-                                {/* TODO: update */}
-                                {/* <p>
-                                    As of _______, Email Helper has been
-                                    submitted to the Chrome and Microsoft web
-                                    stores for approval.
-                                </p> */}
+                                <p>
+                                    As of September 2025, Email Helper has been
+                                    submitted to the Chrome web store and is
+                                    pending approval.
+                                </p>
                             </TextImage>
                         </section>
                     </FadeSection>

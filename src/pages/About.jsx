@@ -203,7 +203,7 @@ const About = () => {
                                             type="outlined"
                                         />
                                         <Chip
-                                            label="🎶 Soca + Soca Chutney"
+                                            label="🎶 Soca + Chutney Soca"
                                             type="outlined"
                                         />
                                         <Chip
