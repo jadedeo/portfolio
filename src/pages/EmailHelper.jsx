@@ -307,9 +307,8 @@ const EmailHelper = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
-                            <TextGroup heading="key decisions & iteration"></TextGroup>
-
                             <TextImage
+                                heading="key decisions & iteration"
                                 subheading="How can we handle both formatting and email draft creation?"
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/formatting.png"
@@ -351,7 +350,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="w-full max-w-screen-lg mx-auto">
+                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
                             <TextImage
                                 subheading="What method of previewing an email & completing its inputs is most intuitive?"
                                 imageAlt="TODO: add alt"
@@ -393,7 +392,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="w-full max-w-screen-lg mx-auto ">
+                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto ">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV3.png"

@@ -11,6 +11,7 @@ import Splash from "./pages/Splash.jsx";
 import DivisionPlatform from "./pages/DivisionPlatform.jsx";
 import GiantEagle from "../src/pages/GiantEagle.jsx";
 import EmailHelper from "../src/pages/EmailHelper.jsx";
+import PrhProjects from "../src/pages/PrhProjects.jsx";
 
 import routes from "../src/resources/routes.json";
 
@@ -26,6 +27,7 @@ const componentMap = {
     DivisionPlatform,
     GiantEagle,
     EmailHelper,
+    PrhProjects,
 };
 
 function App() {
