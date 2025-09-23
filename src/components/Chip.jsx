@@ -19,7 +19,7 @@ const Chip = ({ label, size = "sm", type, link = null }) => {
                 className={`chip-component text-xs rounded-full w-fit uppercase ${
                     isOutlined
                         ? "border-1 border-black bg-white text-black "
-                        : "bg-black text-white"
+                        : "border-1 border-white bg-black text-white"
                 }`}
             >
                 {link ? (

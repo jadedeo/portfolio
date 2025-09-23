@@ -27,6 +27,7 @@ const EmailHelper = () => {
                     <Hero
                         project={projectData}
                         image="emailhelper/emailHelperLight.png"
+                        showTools
                     />
                 </section>
 

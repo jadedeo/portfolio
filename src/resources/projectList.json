@@ -17,6 +17,7 @@
             { "text": "Web Dev", "type": "outlined" },
             { "text": "Civic Tech 🏛", "type": "outlined" }
         ],
+        "tools": ["Vite", "Vue.js", "Tailwind CSS", "TipTap", "GitHub"],
         "link": "/work/emailhelper",
         "status": "published"
     },
@@ -45,13 +46,28 @@
         "path": "prh",
         "title": "Division Platform + Splash",
         "client": ["Penguin Random House"],
-        "roles": ["Associate Developer", "(prev.) Contract Web Developer"],
+        "roles": [
+            "Associate Developer (1/2-4 devs)",
+            "(prev.) Contract Web Developer"
+        ],
         "hook": "Building tools for marketing professonals at PRH.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+        "description": "Providing non-technical employees with easy-to-use, self-service tools that consolidate PRH's digital footprint.",
         "image": "work/prhProjects/prhProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "Web Dev", "type": "outlined" }
+        ],
+        "tools": [
+            "ReactJS",
+            "Vue.js",
+            "Tailwind CSS",
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "Wordpress",
+            "Cypress",
+            "Pantheon",
+            "GitLab"
         ],
         "link": "/work/prh",
         "status": "published"
