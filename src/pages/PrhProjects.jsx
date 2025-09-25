@@ -25,8 +25,9 @@ const EmailHelper = () => {
             <main className="mb-[50px] min-h-dvh ">
                 <section ref={heroRef} className="h-dvh">
                     <Hero
+                        className="prh-hero"
                         project={projectData}
-                        image="emailhelper/emailHelperLight.png"
+                        image="prhProjects/prhProjectsLight.png"
                         showTools
                     />
                 </section>
@@ -36,7 +37,7 @@ const EmailHelper = () => {
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextImage
                                 heading="impact"
-                                image="emailhelper/timeChart.png"
+                                image="prhProjects/footprints.png"
                                 addImageShadow={false}
                                 mat={false}
                                 imagePlacement="right"

@@ -31,6 +31,11 @@
     h1 {
         @apply text-8xl;
     }
+
+    .prh-hero h1 {
+        @apply text-[75px];
+    }
+
     h2 {
         @apply text-6xl;
     }

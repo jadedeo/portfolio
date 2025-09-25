@@ -50,12 +50,13 @@
             "Associate Developer (1/2-4 devs)",
             "(prev.) Contract Web Developer"
         ],
-        "hook": "Building tools for marketing professonals at PRH.",
+        "hook": "Building tools for marketers at Penguin Random House.",
         "description": "Providing non-technical employees with easy-to-use, self-service tools that consolidate PRH's digital footprint.",
         "image": "work/prhProjects/prhProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
-            { "text": "Web Dev", "type": "outlined" }
+            { "text": "Web Dev", "type": "outlined" },
+            { "text": "Tools 🔨", "type": "outlined" }
         ],
         "tools": [
             "ReactJS",

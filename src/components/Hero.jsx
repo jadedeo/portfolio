@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 import Chip from "./Chip";
 
-const Hero = ({ project, image, showTools = false }) => {
+const Hero = ({ project, image, showTools = false, className }) => {
     return (
         <div
-            className={`hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
+            className={`${className} hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
         >
             <motion.section
                 className=" w-full max-w-screen-lg m-auto "
@@ -12,7 +12,7 @@ const Hero = ({ project, image, showTools = false }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <div className="flex gap-20 items-center">
+                <div className="flex gap-10 items-center">
                     <div className="text-white flex flex-col gap-20 justify-end">
                         <div className="flex flex-col gap-2">
                             <h1 className="font-display min-w-lg">
