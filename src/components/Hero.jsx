@@ -4,7 +4,7 @@ import Chip from "./Chip";
 const Hero = ({ project, image, showTools = false, className }) => {
     return (
         <div
-            className={`${className} hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%]`}
+            className={`${className} hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%] pt-[80px]`}
         >
             <motion.section
                 className=" w-full max-w-screen-lg m-auto "

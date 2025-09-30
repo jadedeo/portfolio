@@ -84,20 +84,27 @@ const EmailHelper = () => {
                                     </strong>
                                 </p>
                                 <p>
+                                    The browser extension{" "}
                                     <strong className="highlight">
-                                        The browser extension facilitates the
-                                        creation and use of reusable templates,
-                                        while seamlessly complementing existing
-                                        staff workflows.
+                                        facilitates the creation and use of
+                                        reusable templates, while seamlessly
+                                        complementing existing staff workflows.
                                     </strong>{" "}
                                     It’s simple to adopt, cost-effective to run,
                                     and tailored to SFRPD’s specific
                                     environment.
                                 </p>
                                 <p>
-                                    As of September 2025, Email Helper has been
-                                    submitted to the Chrome web store and is
-                                    pending approval.
+                                    As of September 2025,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://chromewebstore.google.com/detail/pkfpioiafnabijjljillhhapccnphken?utm_source=item-share-cb"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Email Helper has been published to
+                                        Chrome web store.
+                                    </a>
                                 </p>
                             </TextImage>
                         </section>

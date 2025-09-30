@@ -58,7 +58,7 @@ const GiantEagle = () => {
                                         create overwhelming complexity for
                                         others.
                                     </strong>{" "}
-                                    We’ve identified this as a promising problem
+                                    We identified this as a promising problem
                                     space.
                                 </p>
                                 <p>
@@ -203,61 +203,77 @@ const GiantEagle = () => {
                                 </p>
                             </TextGroup>
 
-                            <section className="grid grid-cols-1 md:grid-cols-2 items-end justify-items-center gap-5">
-                                <div className="flex flex-col">
-                                    <div className="flex flex-col lg:flex-row lg:gap-5">
-                                        <ChatBubble direction="in">
-                                            <strong>
-                                                Grocery shopping is sensory
-                                                hell.
-                                            </strong>{" "}
-                                            The lights are too bright, there is
-                                            a lot of sounds, smells, and a lot
-                                            going on.
+                            <section className="mt-10 flex flex-col gap-10">
+                                <div className="grid grid-cols-2 gap-5 items-center">
+                                    <div className="grid grid-cols-1 gap-5">
+                                        <ChatBubble>
+                                            <div className="flex flex-col gap-3">
+                                                <p>
+                                                    <strong>
+                                                        Grocery shopping is
+                                                        sensory hell.
+                                                    </strong>{" "}
+                                                </p>
+                                                <p>
+                                                    The lights are too bright,
+                                                    there is a lot of sounds,
+                                                    smells, and a lot going on.
+                                                </p>
+                                            </div>
                                             <a
                                                 href="https://www.reddit.com/r/ADHD/comments/wvn80k/comment/ilh6ldt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="hover:underline text-gray-400"
+                                                className="hover:underline text-gray-400 text-sm text-right"
                                             >
-                                                <p className="text-sm text-right">
-                                                    r/ADHD | Overstimulated
-                                                    while grocery shopping?
-                                                </p>
+                                                {/* <p className="text-sm text-right"> */}
+                                                r/ADHD | Overstimulated while
+                                                grocery shopping?
+                                                {/* </p> */}
                                             </a>
                                         </ChatBubble>
-                                        <ChatBubble direction="in">
-                                            ... if I need more than a couple of
-                                            things, my SO has to go with me.{" "}
-                                            <strong>
-                                                It's too overwhelming for me to
-                                                do by myself.
-                                            </strong>
+
+                                        <ChatBubble>
+                                            <div className="flex flex-col gap-3">
+                                                <p>
+                                                    ... if I need more than a
+                                                    couple of things, my SO has
+                                                    to go with me.{" "}
+                                                </p>
+                                                <p>
+                                                    <strong>
+                                                        It's too overwhelming
+                                                        for me to do by myself.
+                                                    </strong>
+                                                </p>
+                                            </div>
                                             <a
                                                 href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erc93va/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="hover:underline text-gray-400"
+                                                className="hover:underline text-gray-400 text-sm text-right"
                                             >
-                                                <p className="text-sm text-right">
-                                                    r/ADHD | Grocery shopping is
-                                                    the natural enemy
-                                                </p>
+                                                r/ADHD | Grocery shopping is the
+                                                natural enemy
                                             </a>
                                         </ChatBubble>
                                     </div>
-                                    <StickyNote className="mx-auto mt-5">
+                                    <StickyNote
+                                        className="mx-auto mt-5 flex flex-row"
+                                        isWide
+                                    >
                                         <p>
                                             ADHD shoppers experience sensory
-                                            overload and decision fatigue ,
-                                            which can be debilitating.
+                                            overload and decision fatigue, which
+                                            can be debilitating.
                                         </p>
                                         <img src="gianteagle/brain.png" />
                                     </StickyNote>
                                 </div>
-                                <div className="flex flex-col">
-                                    <div>
-                                        <ChatBubble direction="out">
+
+                                <div className="grid grid-cols-2 items-center">
+                                    <ChatBubble>
+                                        <div className="flex flex-col gap-3">
                                             <p>
                                                 <strong>
                                                     ... even if I go in with a
@@ -267,27 +283,27 @@ const GiantEagle = () => {
                                                 </strong>{" "}
                                                 and find it hard to just go in
                                                 grab the things I need and get
-                                                out.
+                                                out
                                             </p>
                                             <p>
+                                                {" "}
                                                 I get stuck looking at
                                                 everything and its time
                                                 consuming and often stressful.
                                             </p>
-                                            <a
-                                                href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erbwi0x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="hover:underline text-gray-400"
-                                            >
-                                                <p className="text-sm text-right">
-                                                    r/ADHD | Grocery shopping is
-                                                    the natural enemy
-                                                </p>
-                                            </a>
-                                        </ChatBubble>
-                                    </div>
-                                    <StickyNote className="mx-auto mt-5">
+                                        </div>
+                                        <a
+                                            href="https://www.reddit.com/r/ADHD/comments/c1a3cm/comment/erbwi0x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="hover:underline text-gray-400 text-sm text-right"
+                                        >
+                                            r/ADHD | Grocery shopping is the
+                                            natural enemy
+                                        </a>
+                                    </ChatBubble>
+
+                                    <StickyNote className="mx-auto mt-5" isWide>
                                         <p>
                                             Grocery lists help shoppers approach
                                             shopping with a plan , but they
@@ -411,6 +427,8 @@ const GiantEagle = () => {
                                         <a
                                             className="underline"
                                             href="https://www.rayneo.com/products/tcl-rayneo-x2?srsltid=AfmBOoq9WdgyyYHJm3EXgnE_3tgTXjWF206wtdcatxhQnlsD42NwpA9w"
+                                            target="_blank"
+                                            rel="noreferrer"
                                         >
                                             RayNeo X2s
                                         </a>

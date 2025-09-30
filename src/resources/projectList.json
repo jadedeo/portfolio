@@ -14,8 +14,10 @@
         "tags": [
             { "text": "Case Study", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
+            { "text": "UX Research", "type": "outlined" },
             { "text": "Web Dev", "type": "outlined" },
-            { "text": "Civic Tech 🏛", "type": "outlined" }
+            { "text": "Civic Tech 🏛", "type": "outlined" },
+            { "text": "Tools 🔨", "type": "outlined" }
         ],
         "tools": ["Vite", "Vue.js", "Tailwind CSS", "TipTap", "GitHub"],
         "link": "/work/emailhelper",
@@ -36,6 +38,7 @@
         "tags": [
             { "text": "Case Study", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
+            { "text": "UX Design", "type": "outlined" },
             { "text": "AR/MR 👓", "type": "outlined" }
         ],
         "link": "/work/gianteagle",
@@ -102,7 +105,7 @@
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
-            { "text": "UX Design", "type": "outlined" },
+            { "text": "UX Research", "type": "outlined" },
             { "text": "Winning Pitch 🏆", "type": "outlined" }
         ],
         "link": "/work",
@@ -119,7 +122,6 @@
         "image": "work/jahajisshadow/jahajiProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
-            { "text": "UI Design", "type": "outlined" },
             { "text": "Web Dev", "type": "outlined" },
             { "text": "Data Vis 📊", "type": "outlined" }
         ],
