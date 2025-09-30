@@ -91,31 +91,3 @@ div.font-handwritten {
 .highlight {
     @apply bg-yellow-200 px-1;
 }
-
-#desktop-navbar:not(.light-nav) .link-icon {
-    @apply border-black;
-}
-
-#desktop-navbar.light-nav .link-icon {
-    @apply border-white;
-}
-
-#desktop-navbar.light-nav {
-    /* background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0)
-    ); */
-    background-color: black;
-}
-
-#desktop-navbar:not(.light-nav) {
-    /* background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0)
-    ); */
-    background-color: white;
-}

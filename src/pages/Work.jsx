@@ -12,7 +12,7 @@ const Work = () => {
 
             <main className="min-h-[100dvh] pb-10 pt-33 px-[5%] flex flex-col gap-8">
                 {/* TODO: make less repetitive */}
-                <section className="projects-list grid md:grid-cols-2 grid-cols-1 gap-y-6  w-full max-w-screen-lg mx-auto gap-8">
+                <section className="projects-list grid md:grid-cols-2 grid-cols-1 gap-y-6 w-full max-w-screen-lg mx-auto gap-8">
                     {projectList
                         .filter((project) =>
                             project.tags.some(

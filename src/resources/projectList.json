@@ -8,7 +8,7 @@
             "CMU MHCI Capstone"
         ],
         "roles": ["Product Designer (1/2)", "Sole Developer"],
-        "hook": "Lightening the load for support staff at the San Francisco Recreation & Parks Department.",
+        "hook": "Cutting response time in half for support staff at the San Francisco Recreation & Parks Department.",
         "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [

@@ -48,7 +48,9 @@ const NavbarDesktop = ({ useLightText }) => {
         <nav
             id="desktop-navbar"
             className={`w-full justify-end flex gap-10 px-10 mt-0 py-8 items-center ${
-                useLightText ? "light-nav text-white" : "text-black"
+                useLightText
+                    ? "light-nav text-white bg-black"
+                    : "text-black bg-white"
             }`}
         >
             {routes
