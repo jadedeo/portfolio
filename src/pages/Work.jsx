@@ -1,5 +1,4 @@
-// import React, { useState } from "react";
-import { LayoutGroup, motion } from "motion/react";
+import { motion } from "motion/react";
 import { itemVariants } from "../resources/utils";
 import projectList from "../resources/projectList.json";
 

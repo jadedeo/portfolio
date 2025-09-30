@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
 import Header from "../components/Header";
-import DoodleCard from "../components/DoodleCard";
 import FadeSection from "../components/FadeSection";
 
 import doodleList from "../resources/doodleList";
