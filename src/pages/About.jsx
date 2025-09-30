@@ -50,8 +50,9 @@ const About = () => {
                                 one.
                             </p>
                             <p>
-                                Freshly out of Carnegie Mellon's MHCI program,
-                                I'm eager to see where my journey takes me next.
+                                Newly graduated from Carnegie Mellon's MHCI
+                                program, I'm eager to see where my journey takes
+                                me next.
                             </p>
                             <div className="flex gap-1">
                                 <Chip

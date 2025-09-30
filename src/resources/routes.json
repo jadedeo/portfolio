@@ -2,15 +2,9 @@
     { "component": "Home", "path": "/" },
     { "component": "Work", "path": "/work" },
     { "component": "EmailHelper", "path": "/work/emailhelper" },
-    { "component": "ForFun", "path": "/forfun" },
-
-    { "component": "Splash", "path": "/development/splash" },
-    {
-        "component": "DivisionPlatform",
-        "path": "/development/divisionplatform"
-    },
     { "component": "GiantEagle", "path": "/work/gianteagle" },
     { "component": "PrhProjects", "path": "/work/prh" },
+    { "component": "ForFun", "path": "/forfun" },
     { "component": "Resume", "path": "/resume" },
     { "component": "About", "path": "/about" }
 ]

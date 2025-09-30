@@ -7,8 +7,6 @@ import Resume from "./pages/Resume.jsx";
 import About from "./pages/About.jsx";
 import Work from "./pages/Work.jsx";
 import ForFun from "./pages/ForFun.jsx";
-import Splash from "./pages/Splash.jsx";
-import DivisionPlatform from "./pages/DivisionPlatform.jsx";
 import GiantEagle from "../src/pages/GiantEagle.jsx";
 import EmailHelper from "../src/pages/EmailHelper.jsx";
 import PrhProjects from "../src/pages/PrhProjects.jsx";
@@ -23,8 +21,6 @@ const componentMap = {
     ForFun,
     Resume,
     About,
-    Splash,
-    DivisionPlatform,
     GiantEagle,
     EmailHelper,
     PrhProjects,
