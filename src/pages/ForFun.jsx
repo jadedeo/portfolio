@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import FadeSection from "../components/FadeSection";
+import TextGroup from "../components/TextGroup";
+import Chip from "../components/Chip";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 
@@ -9,55 +11,324 @@ const ForFun = () => {
     return (
         <div id="forfun-page">
             <Header />
-            <main className="min-h-[100dvh] pt-33 pb-10 px-[5%] flex flex-col justify-center">
+            <main className="min-h-[100dvh] pt-23 pb-10 px-[5%] flex flex-col justify-center">
                 <FadeSection scrollDir={scrollDir}>
-                    <section className="w-full max-w-screen-lg mx-auto ">
-                        <img
-                            className="w-full mb-5"
-                            src="doodles/BHEJacket.png"
-                        />
+                    <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <TextGroup heading="illustration">
+                            <p>
+                                I have been fortunate to contribute to a number
+                                of publishing-related commercial projects, such
+                                as covers, dustjackets, tip-in pages, and
+                                endpapers. Clients include{" "}
+                                <a
+                                    className="underline"
+                                    href="https://illumicrate.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Illumicrate
+                                </a>
+                                ,{" "}
+                                <a
+                                    className="underline"
+                                    href="https://litjoycrate.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    LitJoy Crate
+                                </a>
+                                ,{" "}
+                                <a
+                                    className="underline"
+                                    href="https://knightsof.media/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Knights Of
+                                </a>
+                                ,{" "}
+                                <a
+                                    className="underline"
+                                    href="https://www.bonnierbooks.co.uk/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Bonnier Books UK
+                                </a>
+                                ,{" "}
+                                <a
+                                    className="underline"
+                                    href="https://www.harpercollins.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    HarperCollins Publishers
+                                </a>
+                                ,{" "}
+                                <a
+                                    className="underline"
+                                    href="https://stonekite.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Stone Kite
+                                </a>
+                                , and{" "}
+                                <a
+                                    className="underline"
+                                    href="https://www.riotgames.com/en"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Riot Games
+                                </a>
+                                .
+                            </p>
+                            <p>
+                                I often incorporate cultural details into my
+                                works, and enjoy performing the research to do
+                                so with authenticity and utmost respect. I
+                                gravitate towards fantastical themes, serene
+                                environments, and fancy ladies.
+                            </p>
+                            <div className="flex gap-1">
+                                <Chip
+                                    label="jadeddraws@gmail.com"
+                                    type="outlined"
+                                    link="mailto:jadeddraws@gmail.com"
+                                />
+                                <Chip
+                                    label="instagram"
+                                    type="outlined"
+                                    link="https://www.instagram.com/jaded.draws/"
+                                />
+                            </div>
+                        </TextGroup>
                     </section>
                 </FadeSection>
                 <FadeSection scrollDir={scrollDir}>
+                    <section className=" pb-10 w-full max-w-screen-lg mx-auto">
+                        <img
+                            className="w-full mb-5"
+                            src="forFun/doodles/BHEJacket.png"
+                        />
+                    </section>
+
                     <section className="pb-[50px] w-full max-w-screen-lg mx-auto ">
-                        <div className="list columns-1 sm:columns-2 md:columns-[300px]">
+                        <div className="grid grid-cols-3 gap-10 items-center">
+                            {/* <div className="list columns-1 sm:columns-2 md:columns-[300px]"> */}
                             <img
                                 className="w-full mb-5"
-                                src="doodles/daughtersOfIzdihar.JPG"
+                                src="forFun/doodles/daughtersOfIzdihar.JPG"
                             />
 
                             <img
                                 className="w-full mb-5"
-                                src="doodles/LAFFCover.png"
+                                src="forFun/doodles/LAFFCover.png"
                             />
 
                             <img
                                 className="w-full mb-5"
-                                src="doodles/maliyaDark.JPG"
+                                src="forFun/doodles/maliyaDark.JPG"
                             />
                             <img
                                 className="w-full mb-5"
-                                src="doodles/damesFantasyWarriors.PNG"
+                                src="forFun/doodles/damesFantasyWarriors.PNG"
                             />
                             <img
                                 className="w-full mb-5"
-                                src="doodles/classics3.png"
-                            />
-
-                            <img
-                                className="w-full mb-5"
-                                src="doodles/hereToSlay.jpeg"
-                            />
-                            <img
-                                className="w-full mb-5"
-                                src="doodles/ayaCropped.JPG"
+                                src="forFun/doodles/classics3.png"
                             />
 
                             <img
                                 className="w-full mb-5"
-                                src="doodles/tatreez.JPG"
+                                src="forFun/doodles/hereToSlay.jpeg"
+                            />
+                            <img
+                                className="w-full mb-5"
+                                src="forFun/doodles/ayaCropped.JPG"
+                            />
+
+                            <img
+                                className="w-full mb-5"
+                                src="forFun/doodles/tatreez.JPG"
                             />
                         </div>
+                    </section>
+                </FadeSection>
+
+                <FadeSection scrollDir={scrollDir}>
+                    <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <TextGroup
+                            heading="marketing + social media design"
+                            subheading="SJU Muse"
+                        >
+                            <p>
+                                Muse is St. John's University's student art and
+                                design organization, fostering a community for
+                                creatives and hosting variety of other
+                                multidisciplinary hands-on workshops. The club's
+                                Pop-Up Shop — first launched in 2022 —
+                                consistently draws dozens of vendors from
+                                throughout the student body and is among the
+                                most anticipated events on campus each year.
+                            </p>
+                            <p>
+                                Initial branding developed by{" "}
+                                <a
+                                    className="underline"
+                                    href="https://www.millenacecilia.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Millena Cecilia
+                                </a>{" "}
+                                and{" "}
+                                <a
+                                    className="underline"
+                                    href="https://www.winniesworking.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Winnie Lam
+                                </a>
+                                .
+                            </p>
+
+                            <div className="grid grid-cols-4 gap-5">
+                                {/* new row */}
+                                <img
+                                    className="w-full col-span-3"
+                                    src="forFun/muse/popUp.png"
+                                />
+                                <div className="bg-gray-100 place-content-center">
+                                    <img
+                                        className="w-full"
+                                        src="forFun/muse/activitiesFair.png"
+                                    />
+                                </div>
+
+                                {/* new row */}
+                                <img
+                                    className="w-full col-span-2"
+                                    src="forFun/muse/tatreez.png"
+                                />
+                                <img
+                                    className="w-full col-span-2"
+                                    src="forFun/muse/bookmarks.png"
+                                />
+
+                                {/* new row */}
+                                <img
+                                    className="w-full col-span-4"
+                                    src="forFun/muse/afa.png"
+                                />
+
+                                {/* new row */}
+                                <div className="bg-gray-100 place-content-center">
+                                    <img
+                                        className="w-full"
+                                        src="forFun/muse/bookbinding.png"
+                                    />
+                                </div>
+                                <div className="bg-gray-100 place-content-center">
+                                    <img
+                                        className="w-full"
+                                        src="forFun/muse/activitiesFair.png"
+                                    />
+                                </div>
+
+                                <img
+                                    className="w-full col-span-2"
+                                    src="forFun/muse/papercraft.png"
+                                />
+                            </div>
+                        </TextGroup>
+                    </section>
+                </FadeSection>
+
+                <FadeSection scrollDir={scrollDir}>
+                    <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <TextGroup subheading="SJU ACM Student Chapter">
+                            <p>
+                                As St. John's University's premier organization
+                                for Computer Science and Cyber Security, SJU
+                                ACM's focus is on providing students with
+                                hands-on experience, industry connections, and a
+                                supportive community of tech enthusiasts. The
+                                org aim to enhance the experience of STJ tech
+                                students by providing a platform to learn,
+                                share, and collaborate through labs and
+                                presentations.
+                            </p>
+
+                            <div className="grid grid-cols-4 gap-5">
+                                {/* new row */}
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/alumni.png"
+                                />
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/dos.png"
+                                />
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/rats.png"
+                                />
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/nfts.png"
+                                />
+
+                                {/* new row */}
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/analytics.png"
+                                />
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/gameDev.png"
+                                />
+                                <img
+                                    className="w-full"
+                                    src="forFun/acm/research.png"
+                                />
+                            </div>
+                        </TextGroup>
+                    </section>
+                </FadeSection>
+
+                <FadeSection scrollDir={scrollDir}>
+                    <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <TextGroup subheading="Blk + Brwn Book Designers">
+                            <p>
+                                BBBD is a non-profit dedicated to providing
+                                underrepresented artists and designers in the
+                                book publishing industry with resources and
+                                professional development opportunities. In
+                                addition to educational materials, the
+                                organization hosts recreational events for
+                                creating and connecting, both independently and
+                                in collaboration with others.
+                            </p>
+
+                            <div className="grid grid-cols-4 gap-5">
+                                {/* new row */}
+                                <img
+                                    className="w-full col-span-2"
+                                    src="forFun/bbbd/nypl.png"
+                                />
+                                {/* <img
+                                    className="w-full"
+                                    src="forFun/bbbd/hike.png"
+                                /> */}
+                                <img
+                                    className="w-full col-span-2"
+                                    src="forFun/bbbd/grolier.png"
+                                />
+                            </div>
+                        </TextGroup>
                     </section>
                 </FadeSection>
             </main>

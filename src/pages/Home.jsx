@@ -72,7 +72,6 @@ const Home = () => {
                             <p>{"\u2610"} Make mobile responsive</p>
                             <p>{"\u2610"} Add a "real" resume page</p>
                             <p>{"\u2610"} Add mini projects</p>
-                            <p>{"\u2610"} Add illustration work</p>
                         </div>
                         <p className="underline">
                             Make it exist first. Make it good later.
