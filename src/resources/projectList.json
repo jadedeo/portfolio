@@ -113,6 +113,24 @@
     },
     {
         "id": 6,
+        "path": "bbbd",
+        "title": "Blk + Brwn Book Designers",
+        "client": ["Personal Project"],
+        "roles": ["UI/UX Designer"],
+        "hook": "Redesigns for better brand alignment & inclusivity.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+        "image": "work/bbbd/bbbdProjectCard.png",
+        "tags": [
+            { "text": "Mini", "type": "filled" },
+            { "text": "UI Design", "type": "outlined" },
+            { "text": "UX Design", "type": "outlined" },
+            { "text": "Web Design", "type": "outlined" }
+        ],
+        "link": "/work",
+        "status": "comingsoon"
+    },
+    {
+        "id": 7,
         "path": "jahaji",
         "title": "A Jahaji's Shadow",
         "client": ["Personal Project"],
