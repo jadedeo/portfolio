@@ -19,7 +19,7 @@ const ForFun = () => {
                                 I have been fortunate to contribute to a number
                                 of publishing-related commercial projects, such
                                 as covers, dustjackets, tip-in pages, and
-                                endpapers. Clients include{" "}
+                                endpapers, for which clients have included{" "}
                                 <a
                                     className="underline"
                                     href="https://illumicrate.com/"
@@ -152,6 +152,10 @@ const ForFun = () => {
                             <img
                                 className="w-full mb-5"
                                 src="forFun/doodles/tatreez.JPG"
+                            />
+                            <img
+                                className="w-full mb-5"
+                                src="forFun/doodles/goya.jpg"
                             />
                         </div>
                     </section>
