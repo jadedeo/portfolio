@@ -10,7 +10,7 @@ import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";
 import projectList from "../resources/projectList.json";
 
-const EmailHelper = () => {
+const PrhProjects = () => {
     const projectData = projectList.find(
         (project) => project.title === "Division Platform + Splash"
     );
@@ -297,4 +297,4 @@ const EmailHelper = () => {
     );
 };
 
-export default EmailHelper;
+export default PrhProjects;

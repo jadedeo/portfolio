@@ -4,6 +4,7 @@
     { "component": "EmailHelper", "path": "/work/emailhelper" },
     { "component": "GiantEagle", "path": "/work/gianteagle" },
     { "component": "PrhProjects", "path": "/work/prh" },
+    { "component": "InTouch", "path": "/work/intouch" },
     { "component": "ForFun", "path": "/forfun" },
     { "component": "Resume", "path": "/resume" },
     { "component": "About", "path": "/about" }

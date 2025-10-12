@@ -9,6 +9,7 @@ import ForFun from "./pages/ForFun.jsx";
 import GiantEagle from "../src/pages/GiantEagle.jsx";
 import EmailHelper from "../src/pages/EmailHelper.jsx";
 import PrhProjects from "../src/pages/PrhProjects.jsx";
+import InTouch from "../src/pages/InTouch.jsx";
 
 import routes from "../src/resources/routes.json";
 
@@ -23,6 +24,7 @@ const componentMap = {
     GiantEagle,
     EmailHelper,
     PrhProjects,
+    InTouch,
 };
 
 function App() {
