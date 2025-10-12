@@ -29,9 +29,7 @@ const Hero = ({ project, image, showTools = false, className }) => {
                         >
                             <div className="flex gap-10 text-nowrap">
                                 <div className="flex flex-col gap-2">
-                                    <h6 className="uppercase font-bold">
-                                        Client
-                                    </h6>
+                                    <h6 className="uppercase font-bold">For</h6>
                                     <div>
                                         {project.client.map((client, index) => {
                                             return <p key={index}>{client}</p>;

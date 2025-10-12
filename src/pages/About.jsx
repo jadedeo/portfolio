@@ -35,19 +35,18 @@ const About = () => {
                             <p>
                                 After graduating in 2022 from St. John's
                                 University with a degree in Computer Science, I
-                                was immensely fortunate to find myself at
-                                Penguin Random House in what can only be
-                                described as a dream come true for a lifelong
-                                reader. It was during my time at PRH that I
-                                learned what it was like to work on a complete
-                                product team and gained exposure to the realm of
-                                UX and product design.
+                                found myself at Penguin Random House in what can
+                                only be described as a dream come true for a
+                                lifelong reader. It was during my time at PRH
+                                that I learned what it was like to work on a
+                                cross-functional product team and gained
+                                exposure to the realm of UX and product design.
                             </p>
                             <p>
-                                For an arts-oriented student whose interests
-                                were consistently underrepresented in computer
-                                science, the fall into HCI has been a natural
-                                one.
+                                For an visual arts-oriented student whose
+                                interests were consistently underrepresented in
+                                computer science, the fall into HCI has been a
+                                natural one.
                             </p>
                             <p>
                                 Newly graduated from Carnegie Mellon's MHCI
