@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import TextGroup from "../components/TextGroup";
 import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
+import StickyNote from "../components/StickyNote";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";
@@ -30,111 +31,212 @@ const EmailHelper = () => {
                         showTools
                     />
                 </section>
-
-                <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
-                            <TextGroup heading="context">
-                                <p>
-                                    SFRPD fields thousands of calls and emails
-                                    from residents looking for help with
-                                    reservations.{" "}
-                                    <strong className="highlight">
-                                        13,000 phone calls and 5,000 emails were
-                                        logged in the last year alone.
-                                    </strong>{" "}
-                                    A significant portion of these inquiries are
-                                    repetitive:{" "}
-                                    <strong className="highlight">
-                                        the same questions about permit
-                                        requirements, facility rules, and
-                                        availability resurface constantly.
-                                    </strong>{" "}
-                                    Staff also frequently need to reach out to
-                                    residents for clarification on standard
-                                    items like alcohol policies or equipment
-                                    restrictions for events.
-                                </p>
-                                <p>
-                                    If we could help staff respond to these
-                                    requests more quickly, they’d have more time
-                                    to support residents who have complex or
-                                    urgent needs, or unique circumstances that
-                                    truly require human expertise and judgement.
-                                </p>
-                            </TextGroup>
-                        </section>
-                    </FadeSection>
-
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                {/* gap-[25px] md:gap-[50px] lg:gap-[100px] mt-[100px] */}
+                <div className="flex flex-col">
+                    {/* overview */}
+                    <FadeSection scrollDir={scrollDir} isFilled>
+                        <section className="py-[50px]">
                             <TextImage
-                                heading="what we designed"
-                                imageAlt="giant eagle glasses"
+                                heading="overview"
+                                // subheading="Email Helper is a browser extension that cuts staff response time by 67%"
+                                imageAlt="TODO: add alt text"
                                 image="emailhelper/overview.gif"
                                 addImageShadow={false}
                                 imagePlacement="right"
                                 mat={false}
                             >
                                 <p>
-                                    Email Helper was created to{" "}
+                                    The San Francisco Recreation & Parks
+                                    Department services a city's worth of park
+                                    goers through their Reservations & Permits
+                                    Divison. The team's support staff must
+                                    satisfy thousands of inquiries annually.
+                                </p>
+                                <p>
                                     <strong className="highlight">
-                                        make the process of sending repetitive
-                                        emails more efficient.
+                                        To make their job easier, we designed a
+                                        suite of solutions tailored to a tightly
+                                        constrained government environment.
                                     </strong>
                                 </p>
                                 <p>
-                                    The browser extension{" "}
-                                    <strong className="highlight">
-                                        facilitates the creation and use of
-                                        reusable templates, while seamlessly
-                                        complementing existing staff workflows.
-                                    </strong>{" "}
-                                    It’s simple to adopt, cost-effective to run,
-                                    and tailored to SFRPD’s specific
-                                    environment.
-                                </p>
-                                <p>
-                                    As of September 2025,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://chromewebstore.google.com/detail/pkfpioiafnabijjljillhhapccnphken?utm_source=item-share-cb"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Email Helper has been published to
-                                        Chrome web store.
-                                    </a>
+                                    One component of this is Email Helper — a
+                                    browser extension created to make the task
+                                    of replying to repetitive quicker & easier
+                                    for support staff.
                                 </p>
                             </TextImage>
                         </section>
                     </FadeSection>
 
+                    {/* context + problem */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
+                            <TextGroup heading="context + problem">
+                                <p>
+                                    <strong className="highlight">
+                                        SFRPD logged 13,000 phone calls and
+                                        5,000 emails in the last year alone,
+                                    </strong>{" "}
+                                    a majority of which come from city residents
+                                    who experience a multitude of frustrations
+                                    with the current reservation & permitting
+                                    system.
+                                </p>
+                                <div className="p-4 border-1 rounded-md">
+                                    <p>
+                                        Is there a way to reduce service
+                                        delivery costs for staff, while
+                                        improving the reservation process for
+                                        residents?
+                                    </p>
+                                </div>
+
+                                {/* A significant portion of these inquiries are
+                                repetitive:{" "}
+                                <strong className="highlight">
+                                    the same questions about permit
+                                    requirements, facility rules, and
+                                    availability resurface constantly.
+                                </strong>{" "}
+                                Staff also frequently need to reach out to
+                                residents for clarification on standard items
+                                like alcohol policies or equipment restrictions
+                                for events. */}
+                                {/* <p>
+                                    If we could help staff respond to these
+                                    requests more quickly, they’d have more time
+                                    to support residents who have complex or
+                                    urgent needs, or unique circumstances that
+                                    truly require human expertise and judgement.
+                                </p> */}
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="pt-[50px]">
                             <TextImage
-                                heading="impact"
-                                image="emailhelper/timeChart.png"
+                                heading="research + findings"
+                                subheading="Methods & Analysis"
+                                imageAlt="TODO: add alt text"
+                                image="emailhelper/clustering.png"
                                 addImageShadow={false}
+                                imagePlacement="bottom"
                                 mat={false}
-                                imagePlacement="right"
+                            >
+                                <p>Lorem ipsum</p>
+                            </TextImage>
+                        </section>
+                    </FadeSection>
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="pb-[50px]">
+                            <TextGroup subheading="Key Takeaways">
+                                <p>
+                                    Analysis of our data yielded the following
+                                    key findings:
+                                </p>
+                            </TextGroup>
+                            <section className="max-w-screen-lg columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-5 mx-auto">
+                                <StickyNote>
+                                    <p className="font-semibold">
+                                        Big tooling changes are a no-go.
+                                    </p>
+
+                                    <p>
+                                        SFRPD is beholden to contracted
+                                        agreements with vendors & can't afford
+                                        labor-intensive updates.
+                                    </p>
+                                </StickyNote>
+
+                                <StickyNote>
+                                    <div>
+                                        <p className="font-semibold">
+                                            Major usability issues need to be
+                                            addressed by a more holistic system.
+                                        </p>
+                                    </div>
+                                    <p>
+                                        There are limits to what can be done to
+                                        improve the technical process of making
+                                        a reservation.
+                                    </p>
+                                </StickyNote>
+
+                                <StickyNote>
+                                    <div>
+                                        <p className="font-semibold">
+                                            Disorganized web content & a
+                                            difficult-to-navigate reservation
+                                            system pushes the public to call &
+                                            email.
+                                        </p>
+                                    </div>
+                                </StickyNote>
+
+                                <StickyNote>
+                                    <div>
+                                        <p className="font-semibold">
+                                            More than 70% of communications are
+                                            informational or repetitively
+                                            procedural.
+                                        </p>
+                                    </div>
+                                </StickyNote>
+
+                                <StickyNote>
+                                    <p className="font-semibold">
+                                        Staff are forced to fill the gaps in an
+                                        incomplete service experience when
+                                        people can't find or accomplish what
+                                        they need to.
+                                    </p>
+                                </StickyNote>
+                            </section>
+                        </section>
+                    </FadeSection>
+
+                    {/* ... */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px]">
+                            <TextImage
+                                heading="pivoting"
+                                // subheading="Methods & Analysis"
+                                imageAlt="TODO: add alt text"
+                                image="emailhelper/solutionDiagram.png"
+                                addImageShadow={false}
+                                imagePlacement="bottom"
+                                mat={false}
                             >
                                 <p>
-                                    Use of Email Helper resulted in a{" "}
-                                    <strong className="highlight">
-                                        66.6% decrease in time on task.
-                                    </strong>{" "}
-                                    Staff saved a significant amount of time by
-                                    avoiding a lengthy Google doc of templates
-                                    and having to format on the fly.
+                                    With some serious limits on what could
+                                    realistically be accomplished by the
+                                    division, we sought to make our proposed
+                                    solution as simultaneously effective &
+                                    low-lift as possible. There were several
+                                    artifacts we could provide the RPD team with
+                                    to tackle the
                                 </p>
                             </TextImage>
                         </section>
                     </FadeSection>
 
+                    {/* constraints */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
                             <TextGroup heading="constraints">
+                                <p>
+                                    Though a goalpost was in sight, we needed to
+                                    be aware of any & all guardrails when
+                                    brainstorming.{" "}
+                                    <strong className="highlight">
+                                        Any piece of software or technical
+                                        tooling that we conceived of needed to
+                                        respect the following in order to be
+                                        feasibly adopted by the team.
+                                    </strong>
+                                </p>
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
                                     {/* TODO: swap divs out for small image variant of TextImage */}
                                     <div className="flex flex-col gap-2">
@@ -201,11 +303,49 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* staff-side solution */}
+                    <FadeSection scrollDir={scrollDir} isFilled>
+                        <section className="py-[50px]">
+                            <TextGroup heading="staff-side solution">
+                                <p>
+                                    <strong className="highlight">
+                                        Email Helper is a browser extension that
+                                        cuts email response time by 67%.
+                                    </strong>
+                                </p>
+
+                                <p>
+                                    <strong className="highlight">
+                                        It facilitates the creation and use of
+                                        reusable templates,
+                                    </strong>{" "}
+                                    while seamlessly complementing existing
+                                    staff workflows. It’s simple to adopt,
+                                    cost-effective to run, and tailored to
+                                    SFRPD’s specific environment.
+                                </p>
+                                <p>
+                                    As of September 2025,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://chromewebstore.google.com/detail/pkfpioiafnabijjljillhhapccnphken?utm_source=item-share-cb"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Email Helper has been published to
+                                        Chrome web store.
+                                    </a>
+                                </p>
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
+                    {/* how it works */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
+                        <section className="py-[50px]">
                             <TextGroup heading="how it works"></TextGroup>
 
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
+                            <div className="mx-auto max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
                                 <TextImage
                                     subheading="Create your templates from scratch"
                                     imageAlt="TODO: add alt"
@@ -314,7 +454,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="key decisions & iteration"
                                 subheading="How can we handle both formatting and email draft creation?"
@@ -358,7 +498,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="pt-[50px]">
                             <TextImage
                                 subheading="What method of previewing an email & completing its inputs is most intuitive?"
                                 imageAlt="TODO: add alt"
@@ -379,7 +519,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="w-full max-w-screen-lg mx-auto ">
+                        <section className="">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV2.png"
@@ -400,7 +540,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="pb-[50px]">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/layoutV3.png"
@@ -422,7 +562,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="py-[50px]">
                             <TextImage
                                 subheading="Shifting from window-based design to a single-page application (SPA)"
                                 imageAlt="TODO: add alt"
@@ -455,7 +595,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="Limitations"
                                 imageAlt="TODO: add alt"
@@ -479,7 +619,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="next steps"
                                 subheading="Updating UI & implementing additional functionality"
@@ -492,7 +632,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pb-[50px]">
                             <TextGroup subheading="Exploring a centralized alternative">
                                 <p>
                                     We are interested in designing what a

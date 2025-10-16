@@ -7,7 +7,11 @@
             "San Francisco Recreation & Parks Department",
             "CMU MHCI Capstone"
         ],
-        "roles": ["Product Designer (1/2)", "Sole Developer"],
+        "roles": [
+            "Product Designer (1/2)",
+            "Sole Developer",
+            "Researcher (1/5)"
+        ],
         "hook": "Cutting response time in half for support staff at the San Francisco Recreation and Parks Department.",
         "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
@@ -16,10 +20,16 @@
             { "text": "Product Design", "type": "outlined" },
             { "text": "UX Research", "type": "outlined" },
             { "text": "Web Dev", "type": "outlined" },
-            { "text": "Civic Tech 🏛", "type": "outlined" },
-            { "text": "Tools 🔨", "type": "outlined" }
+            { "text": "Civic Tech 🏛", "type": "outlined" }
         ],
-        "tools": ["Vite", "Vue.js", "Tailwind CSS", "TipTap", "GitHub"],
+        "tools": [
+            "Vite",
+            "Vue.js",
+            "Tailwind CSS",
+            "TipTap",
+            "GitHub",
+            "Figma"
+        ],
         "link": "/work/emailhelper",
         "status": "published"
     },
@@ -59,7 +69,7 @@
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "Web Dev", "type": "outlined" },
-            { "text": "Tools 🔨", "type": "outlined" }
+            { "text": "Consumer Apps 🛍", "type": "outlined" }
         ],
         "tools": [
             "ReactJS",

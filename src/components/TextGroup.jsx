@@ -1,43 +1,54 @@
 // import PropTypes from "prop-types";
 const TextGroup = ({
     heading,
-    subheading,
+    subheading = null,
     children,
     subheadingFirst = false,
     numbered = null,
+    className,
 }) => {
     return (
-        <section
-            className={`textgroup-component max-w-screen-lg flex flex-col ${
-                subheading || children ? "gap-3" : ""
-            }`}
-        >
-            {subheadingFirst ? (
-                <>
-                    <div className="flex flex-col gap-2">
-                        {subheading && (
-                            <h3 className="text-xl font-bold">{subheading}</h3>
+        <section className={`textgroup-wrapper min-w-full ${className}`}>
+            <div
+                className={` textgroup-component max-w-screen-lg mx-auto flex flex-col ${
+                    subheading || children ? "gap-3" : ""
+                } `}
+            >
+                {subheadingFirst ? (
+                    <>
+                        <div className="flex flex-col gap-2">
+                            {subheading && (
+                                <h3 className="text-xl font-bold">
+                                    {subheading}
+                                </h3>
+                            )}
+                            {heading && (
+                                <h2 className="font-display ">{heading}</h2>
+                            )}
+                        </div>
+                        <div className="flex flex-col gap-5">{children}</div>
+                    </>
+                ) : (
+                    <div className={`${numbered ? "flex gap-5" : ""}`}>
+                        {numbered && (
+                            <h2 className="font-display">{numbered}</h2>
                         )}
                         {heading && (
-                            <h2 className="font-display ">{heading}</h2>
+                            <h2 className={`font-display mb-3`}>{heading}</h2>
                         )}
+                        <div>
+                            {subheading && (
+                                <h3 className="text-xl font-bold">
+                                    {subheading}
+                                </h3>
+                            )}
+                            <div className="flex flex-col gap-5">
+                                {children}
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-5">{children}</div>
-                </>
-            ) : (
-                <div className={`${numbered ? "flex gap-5" : ""}`}>
-                    {numbered && <h2 className="font-display">{numbered}</h2>}
-                    {heading && (
-                        <h2 className="font-display mb-3">{heading}</h2>
-                    )}
-                    <div>
-                        {subheading && (
-                            <h3 className="text-xl font-bold">{subheading}</h3>
-                        )}
-                        <div className="flex flex-col gap-5">{children}</div>
-                    </div>
-                </div>
-            )}
+                )}
+            </div>
         </section>
     );
 };

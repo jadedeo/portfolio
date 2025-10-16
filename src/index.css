@@ -91,3 +91,7 @@ div.font-handwritten {
 .highlight {
     @apply bg-yellow-200 px-1;
 }
+
+/* .bg-gray-100 .highlight {
+    @apply bg-transparent underline decoration-3 decoration-yellow-200;
+} */

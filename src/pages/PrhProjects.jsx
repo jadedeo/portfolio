@@ -32,7 +32,8 @@ const PrhProjects = () => {
                     />
                 </section>
 
-                <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
+                {/* gap-[25px] md:gap-[50px] lg:gap-[100px]  mt-[100px] */}
+                <div className="flex flex-col">
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <TextImage
