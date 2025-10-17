@@ -23,12 +23,12 @@
             { "text": "Civic Tech 🏛", "type": "outlined" }
         ],
         "tools": [
+            "Figma",
             "Vite",
             "Vue.js",
             "Tailwind CSS",
             "TipTap",
-            "GitHub",
-            "Figma"
+            "GitHub"
         ],
         "link": "/work/emailhelper",
         "status": "published"

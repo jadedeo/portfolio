@@ -48,9 +48,16 @@ const EmailHelper = () => {
                                 <p>
                                     The San Francisco Recreation & Parks
                                     Department services a city's worth of park
-                                    goers through their Reservations & Permits
-                                    Divison. The team's support staff must
-                                    satisfy thousands of inquiries annually.
+                                    goers via their Reservations & Permits
+                                    Divison.
+                                </p>
+                                <p>
+                                    Through processing 70,000+ reservations for
+                                    230 parks & 100 recreation centers,{" "}
+                                    <strong className="highlight">
+                                        the team's support staff must satisfy
+                                        thousands of inquiries annually.
+                                    </strong>
                                 </p>
                                 <p>
                                     <strong className="highlight">
@@ -69,19 +76,32 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
-                    {/* context + problem */}
+                    {/* problem */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="context + problem">
+                            <TextGroup heading="the problem">
                                 <p>
                                     <strong className="highlight">
                                         SFRPD logged 13,000 phone calls and
                                         5,000 emails in the last year alone,
                                     </strong>{" "}
                                     a majority of which come from city residents
-                                    who experience a multitude of frustrations
-                                    with the current reservation & permitting
-                                    system.
+                                    experiencing frustration with the current
+                                    reservation & permitting system. From
+                                    website to permit reception, residents pass
+                                    through 4+ platforms, creating a disjointed
+                                    & often circular user journey.
+                                </p>
+                                <p>
+                                    Though there are intentions to replace the
+                                    main platform (ActiveNet) soon,{" "}
+                                    <strong className="highlight">
+                                        staff are stuck with performing
+                                        excessive follow-ups & carrying out
+                                        corrective measures
+                                    </strong>{" "}
+                                    for the faulty system in the interim. We
+                                    asked ourselves:
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
@@ -103,13 +123,6 @@ const EmailHelper = () => {
                                 residents for clarification on standard items
                                 like alcohol policies or equipment restrictions
                                 for events. */}
-                                {/* <p>
-                                    If we could help staff respond to these
-                                    requests more quickly, they’d have more time
-                                    to support residents who have complex or
-                                    urgent needs, or unique circumstances that
-                                    truly require human expertise and judgement.
-                                </p> */}
                             </TextGroup>
                         </section>
                     </FadeSection>
@@ -118,14 +131,94 @@ const EmailHelper = () => {
                         <section className="pt-[50px]">
                             <TextImage
                                 heading="research + findings"
-                                subheading="Methods & Analysis"
-                                imageAlt="TODO: add alt text"
-                                image="emailhelper/clustering.png"
-                                addImageShadow={false}
+                                // subheading="Methods & Analysis"
+                                // imageAlt="TODO: add alt text"
+                                // image="emailhelper/clustering.png"
+                                // addImageShadow={false}
                                 imagePlacement="bottom"
                                 mat={false}
                             >
-                                <p>Lorem ipsum</p>
+                                <p>
+                                    To ensure we had a complete an understanding
+                                    of the problem space & it's main
+                                    stakeholders, we set out to execute a
+                                    thorough research effort. This included
+                                    analysis of various large datasets, as well
+                                    as performing field research.
+                                </p>
+
+                                <section className="sm:grid grid-cols-3">
+                                    <h6 className="hidden sm:block font-bold">
+                                        Method
+                                    </h6>
+                                    <h6 className="hidden sm:block font-bold">
+                                        Volume
+                                    </h6>
+                                    <h6 className="hidden sm:block font-bold">
+                                        Purpose
+                                    </h6>
+
+                                    <hr className="hidden sm:block col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Email analysis
+                                    </p>
+                                    <p>4,900+ messages</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Identify repetitive workload patterns
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Call log review
+                                    </p>
+                                    <p>800+ calls</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Categorize recurring questions
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Staff interviews
+                                    </p>
+                                    <p>5 participants</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Understand daily workflows & pain points
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Co-design workshop
+                                    </p>
+                                    <p>12 participants</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Identify breakdowns & opportunities
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Resident surveys
+                                    </p>
+                                    <p>50+ responses</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Gauge satisfaction and usability
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Park intercept interviews
+                                    </p>
+                                    <p>60+ participants</p>
+                                    <p className="mt-3 sm:mt-0">
+                                        Observe & gather real-time feedback from
+                                        San Francisco park-goers
+                                    </p>
+                                </section>
                             </TextImage>
                         </section>
                     </FadeSection>
@@ -153,14 +246,14 @@ const EmailHelper = () => {
                                 <StickyNote>
                                     <div>
                                         <p className="font-semibold">
-                                            Major usability issues need to be
-                                            addressed by a more holistic system.
+                                            There are limits to what can be done
+                                            to improve the technical process of
+                                            making a reservation.
                                         </p>
                                     </div>
                                     <p>
-                                        There are limits to what can be done to
-                                        improve the technical process of making
-                                        a reservation.
+                                        Major usability issues need to be
+                                        addressed by a more holistic system.
                                     </p>
                                 </StickyNote>
 
@@ -169,7 +262,7 @@ const EmailHelper = () => {
                                         <p className="font-semibold">
                                             Disorganized web content & a
                                             difficult-to-navigate reservation
-                                            system pushes the public to call &
+                                            system push the public to call &
                                             email.
                                         </p>
                                     </div>
@@ -183,6 +276,11 @@ const EmailHelper = () => {
                                             procedural.
                                         </p>
                                     </div>
+                                    <p>
+                                        The same questions about permit
+                                        requirements, facility rules, and
+                                        availability resurface constantly.
+                                    </p>
                                 </StickyNote>
 
                                 <StickyNote>
@@ -201,8 +299,7 @@ const EmailHelper = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="pivoting"
-                                // subheading="Methods & Analysis"
+                                heading="adjusting our perspective"
                                 imageAlt="TODO: add alt text"
                                 image="emailhelper/solutionDiagram.png"
                                 addImageShadow={false}
@@ -216,7 +313,15 @@ const EmailHelper = () => {
                                     solution as simultaneously effective &
                                     low-lift as possible. There were several
                                     artifacts we could provide the RPD team with
-                                    to tackle the
+                                    to tackle usability concerns, but nothing
+                                    yet to handle inefficiencies from the
+                                    business's side.
+                                </p>
+                                <p>
+                                    <strong className="highlight">
+                                        This suggested a clear opportunity for
+                                        an impactful design intervention.
+                                    </strong>
                                 </p>
                             </TextImage>
                         </section>
@@ -225,7 +330,7 @@ const EmailHelper = () => {
                     {/* constraints */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="constraints">
+                            <TextGroup heading="technical constraints">
                                 <p>
                                     Though a goalpost was in sight, we needed to
                                     be aware of any & all guardrails when
@@ -306,7 +411,7 @@ const EmailHelper = () => {
                     {/* staff-side solution */}
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px]">
-                            <TextGroup heading="staff-side solution">
+                            <TextGroup heading="the staff-side solution">
                                 <p>
                                     <strong className="highlight">
                                         Email Helper is a browser extension that
@@ -323,6 +428,14 @@ const EmailHelper = () => {
                                     staff workflows. It’s simple to adopt,
                                     cost-effective to run, and tailored to
                                     SFRPD’s specific environment.
+                                </p>
+
+                                <p>
+                                    By helping staff respond to inquiries
+                                    requests more quickly, they’d have more time
+                                    to support residents who have complex,
+                                    urgent, or unique needs that truly require
+                                    human expertise & judgement.
                                 </p>
                                 <p>
                                     As of September 2025,{" "}

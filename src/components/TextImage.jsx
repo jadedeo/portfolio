@@ -53,8 +53,8 @@ const TextImage = ({
                             : imagePlacement === "top"
                             ? "pt-10"
                             : imagePlacement === "left"
-                            ? "md:py-10 pl-10"
-                            : "md:py-10 pr-10"
+                            ? "md:py-10 md:pl-10 md:pb-0 pb-5"
+                            : "md:py-10 md:pr-10 md:pb-0 pb-5"
                     } ${
                         imagePlacement === "right" ||
                         imagePlacement === "bottom"
