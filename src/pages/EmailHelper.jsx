@@ -35,9 +35,23 @@ const EmailHelper = () => {
                 <div className="flex flex-col">
                     {/* overview */}
                     <FadeSection scrollDir={scrollDir} isFilled>
-                        <section className="py-[50px]">
+                        <section className="py-[50px] flex flex-col gap-10">
+                            <TextGroup heading="overview + impact">
+                                <p>
+                                    The San Francisco Recreation & Parks
+                                    Department services a city's worth of park
+                                    goers via their Reservations & Permits
+                                    Divison. Through processing 70,000+
+                                    reservations for 230 parks & 100 recreation
+                                    centers,{" "}
+                                    <strong className="highlight">
+                                        the team's support staff must satisfy
+                                        thousands of inquiries annually.
+                                    </strong>
+                                </p>
+                            </TextGroup>
                             <TextImage
-                                heading="overview"
+                                // heading="overview"
                                 // subheading="Email Helper is a browser extension that cuts staff response time by 67%"
                                 imageAlt="TODO: add alt text"
                                 image="emailhelper/overview.gif"
@@ -45,20 +59,6 @@ const EmailHelper = () => {
                                 imagePlacement="right"
                                 mat={false}
                             >
-                                <p>
-                                    The San Francisco Recreation & Parks
-                                    Department services a city's worth of park
-                                    goers via their Reservations & Permits
-                                    Divison.
-                                </p>
-                                <p>
-                                    Through processing 70,000+ reservations for
-                                    230 parks & 100 recreation centers,{" "}
-                                    <strong className="highlight">
-                                        the team's support staff must satisfy
-                                        thousands of inquiries annually.
-                                    </strong>
-                                </p>
                                 <p>
                                     To make their job easier,{" "}
                                     <strong className="highlight">
@@ -75,6 +75,15 @@ const EmailHelper = () => {
                                     task of replying to repetitive quicker &
                                     easier for support staff.
                                 </p>
+                                <div className="p-4 border-1 rounded-md">
+                                    <p>
+                                        {/* <strong className="highlight"> */}
+                                        When tested against current workflows,
+                                        Email Helper produced a 66% faster
+                                        response time.
+                                        {/* </strong> */}
+                                    </p>
+                                </div>
                             </TextImage>
                         </section>
                     </FadeSection>

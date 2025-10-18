@@ -191,7 +191,11 @@ const About = () => {
                                             type="outlined"
                                         />
                                         <Chip
-                                            label="📚 The Locked Tomb series"
+                                            label="📚 The Locked Tomb series by T. Muir"
+                                            type="outlined"
+                                        />
+                                        <Chip
+                                            label="📚 Disorientation by E. Chou"
                                             type="outlined"
                                         />
                                         <Chip

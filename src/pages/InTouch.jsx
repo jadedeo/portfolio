@@ -35,7 +35,7 @@ const InTouch = () => {
 
                 <div className="flex flex-col">
                     {/* overview */}
-                    <FadeSection scrollDir={scrollDir}>
+                    <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px] ">
                             <TextImage
                                 heading="overview"
@@ -70,6 +70,44 @@ const InTouch = () => {
                                     businesses placing second and third.
                                 </p>
                             </TextImage>
+                        </section>
+                    </FadeSection>
+
+                    {/* task */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px]">
+                            <TextGroup heading="the task">
+                                <div className="p-4 border-1 rounded-md">
+                                    <p>
+                                        Pitch an innovative digital service to a
+                                        panel of investors, clearly
+                                        communicating value provided to
+                                        stakeholders & showcasing a well-thought
+                                        out business plan.
+                                    </p>
+                                </div>
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
+                    {/* task */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="py-[50px]">
+                            <TextGroup heading="the starting point">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Vestibulum malesuada
+                                    fermentum nibh, non tristique risus
+                                    vestibulum et. Maecenas arcu ex, malesuada
+                                    ac mauris nec, elementum bibendum tellus.
+                                    Proin ac commodo ligula. Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit.
+                                    Vestibulum malesuada fermentum nibh, non
+                                    tristique risus vestibulum et. Maecenas arcu
+                                    ex, malesuada ac mauris nec, elementum
+                                    bibendum tellus. Proin ac commodo ligula.
+                                </p>
+                            </TextGroup>
                         </section>
                     </FadeSection>
 
@@ -117,7 +155,7 @@ const InTouch = () => {
                                 </p>
                             </TextGroup>
 
-                            <section className="mt-10 flex flex-col gap-10">
+                            <section className="mx-auto max-w-screen-lg mt-10 flex flex-col gap-10">
                                 <div className="grid grid-cols-2 gap-5 items-center">
                                     <ChatBubble>
                                         <div className="flex flex-col gap-3">
@@ -191,11 +229,35 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* staff-side solution */}
+                    <FadeSection scrollDir={scrollDir} isFilled>
+                        <section className="py-[50px]">
+                            <TextGroup heading="the final concept">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Praesent at egestas tellus.
+                                    Sed ullamcorper tellus sit amet quam egestas
+                                    iaculis. Morbi finibus, erat vel consectetur
+                                    sagittis, metus lacus semper magna, vel
+                                    maximus diam ipsum quis urna.{" "}
+                                </p>
+
+                                {/* youtube link, if needed: https://www.youtube.com/watch?v=jdjxqBqDNXg */}
+                                <video controls>
+                                    <source
+                                        src="intouch/intouchVideo.mp4"
+                                        type="video/mp4"
+                                    ></source>
+                                </video>
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
                     {/* design assets */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
+                        <section className="py-[50px]">
                             <TextImage
-                                heading="final concept + design assets"
+                                heading="ui mockups"
                                 imageAlt="TODO: add alt"
                                 image="intouch/screensAnnotated.png"
                                 imagePlacement="bottom"
@@ -213,17 +275,9 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
-                    {/* video */}
-                    {/* https://www.youtube.com/watch?v=jdjxqBqDNXg */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px]">
-                            <TextImage
-                                subheading="Pitch Video"
-                                imageAlt="TODO: add alt"
-                                image="intouch/screensAnnotated.png"
-                                imagePlacement="right"
-                                addImageShadow={false}
-                            >
+                        <section className="py-[50px]">
+                            <TextGroup heading="proposed business model">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Vestibulum malesuada
@@ -232,7 +286,7 @@ const InTouch = () => {
                                     ac mauris nec, elementum bibendum tellus.
                                     Proin ac commodo ligula.
                                 </p>
-                            </TextImage>
+                            </TextGroup>
                         </section>
                     </FadeSection>
                 </div>
