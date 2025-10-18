@@ -32,10 +32,10 @@ const PrhProjects = () => {
                     />
                 </section>
 
-                {/* gap-[25px] md:gap-[50px] lg:gap-[100px]  mt-[100px] */}
                 <div className="flex flex-col">
+                    {/* impact */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="impact"
                                 image="prhProjects/footprints.png"
@@ -70,8 +70,9 @@ const PrhProjects = () => {
                         </section>
                     </FadeSection>
 
+                    {/* division platform */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="division platform"
                                 imageAlt="TODO: add alt"
@@ -95,8 +96,9 @@ const PrhProjects = () => {
                         </section>
                     </FadeSection>
 
+                    {/* dp usage */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pb-[50px]">
                             <TextGroup>
                                 <p>
                                     Among others, the theme is currently in use
@@ -159,8 +161,9 @@ const PrhProjects = () => {
                         </section>
                     </FadeSection>
 
+                    {/* splash public */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className=" pt-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="splash"
                                 imageAlt="TODO: add alt"
@@ -198,8 +201,9 @@ const PrhProjects = () => {
                         </section>
                     </FadeSection>
 
+                    {/* splash admin */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="w-full max-w-screen-lg mx-auto ">
+                        <section className="">
                             <TextImage
                                 imageAlt="TODO: add alt"
                                 image="prhProjects/gwpAdmin.png"
@@ -228,8 +232,9 @@ const PrhProjects = () => {
                         </section>
                     </FadeSection>
 
+                    {/* splash sites */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5 ">
+                        <section className="pb-[50px]">
                             <TextGroup>
                                 <p>
                                     Splash has been used to host 1,000+

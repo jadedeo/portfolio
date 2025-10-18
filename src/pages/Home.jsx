@@ -41,7 +41,7 @@ const Home = () => {
                         </div>
 
                         <p>
-                            With an engineer’s mind, designer’s eye, and
+                            With a developer’s mind, designer’s eye, and
                             artist’s heart, I create for simplicity while
                             preserving personality. Thank you for stopping by!
                         </p>

@@ -31,7 +31,7 @@ const EmailHelper = () => {
                         showTools
                     />
                 </section>
-                {/* gap-[25px] md:gap-[50px] lg:gap-[100px] mt-[100px] */}
+
                 <div className="flex flex-col">
                     {/* overview */}
                     <FadeSection scrollDir={scrollDir} isFilled>
@@ -60,17 +60,20 @@ const EmailHelper = () => {
                                     </strong>
                                 </p>
                                 <p>
+                                    To make their job easier,{" "}
                                     <strong className="highlight">
-                                        To make their job easier, we designed a
-                                        suite of solutions tailored to a tightly
-                                        constrained government environment.
+                                        we designed a suite of solutions
+                                        tailored to a tightly constrained
+                                        government environment.
                                     </strong>
                                 </p>
                                 <p>
-                                    One component of this is Email Helper — a
-                                    browser extension created to make the task
-                                    of replying to repetitive quicker & easier
-                                    for support staff.
+                                    <strong className="highlight">
+                                        One component of this is Email Helper
+                                    </strong>{" "}
+                                    — a browser extension created to make the
+                                    task of replying to repetitive quicker &
+                                    easier for support staff.
                                 </p>
                             </TextImage>
                         </section>
@@ -105,10 +108,9 @@ const EmailHelper = () => {
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
-                                        Is there a way to reduce service
-                                        delivery costs for staff, while
-                                        improving the reservation process for
-                                        residents?
+                                        How might we reduce service delivery
+                                        costs for staff, while improving the
+                                        reservation process for residents?
                                     </p>
                                 </div>
 
@@ -127,6 +129,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* research + findings */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
@@ -183,7 +186,7 @@ const EmailHelper = () => {
                                     <p className="font-bold sm:font-normal">
                                         Staff interviews
                                     </p>
-                                    <p>5 participants</p>
+                                    <p>5 participants, 8 sessions</p>
                                     <p className="mt-3 sm:mt-0">
                                         Understand daily workflows & pain points
                                     </p>
@@ -222,6 +225,7 @@ const EmailHelper = () => {
                             </TextImage>
                         </section>
                     </FadeSection>
+                    {/* key takeaways */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px]">
                             <TextGroup subheading="Key Takeaways">
@@ -295,7 +299,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
-                    {/* ... */}
+                    {/* adjusting our pov */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
@@ -566,6 +570,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* key decisions + iteration */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
@@ -610,6 +615,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* layout 1 */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
@@ -631,6 +637,7 @@ const EmailHelper = () => {
                             </TextImage>
                         </section>
                     </FadeSection>
+                    {/* layout 2 */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="">
                             <TextImage
@@ -652,6 +659,7 @@ const EmailHelper = () => {
                             </TextImage>
                         </section>
                     </FadeSection>
+                    {/* layout 3 */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px]">
                             <TextImage
@@ -707,6 +715,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* limitations */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
@@ -731,6 +740,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* next steps */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
@@ -744,6 +754,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* centralized alt */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px]">
                             <TextGroup subheading="Exploring a centralized alternative">

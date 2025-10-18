@@ -33,9 +33,10 @@ const GiantEagle = () => {
                         image="gianteagle/groceryBagLight.png"
                     />
                 </section>
-                <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
+                <div className="flex flex-col">
+                    {/* what we designed */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="what we designed"
                                 imageAlt="Two images of key points in the AR experience"
@@ -75,11 +76,12 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* how it works */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
                             <TextGroup heading="how it works"></TextGroup>
 
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
+                            <div className="mx-auto max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
                                 <TextImage
                                     subheading="Create your shopping list"
                                     imageAlt="TODO: add alt"
@@ -189,8 +191,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* why we designed it */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
                             {/* TODO: add more explanation here */}
                             <TextGroup heading="why we designed it">
                                 <p>
@@ -203,7 +206,7 @@ const GiantEagle = () => {
                                 </p>
                             </TextGroup>
 
-                            <section className="mt-10 flex flex-col gap-10">
+                            <section className="mx-auto max-w-screen-lg mt-10 flex flex-col gap-10">
                                 <div className="grid grid-cols-2 gap-5 items-center">
                                     <div className="grid grid-cols-1 gap-5">
                                         <ChatBubble>
@@ -317,10 +320,11 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* overall functionality */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="py-[50px]">
                             <TextGroup heading="overall functionality" />
-                            <section className="columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-5">
+                            <section className="mx-auto max-w-screen-lg columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-5">
                                 <StickyNote>
                                     <div>
                                         <p className="line-through decoration-[1px] text-yellow-600">
@@ -406,8 +410,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* eval existing hw */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="evaluating existing hardware"
                                 imageAlt="Image of the RayNeo X2s"
@@ -443,7 +448,7 @@ const GiantEagle = () => {
                                 </p>
                             </TextImage>
 
-                            <section className="flex gap-5 flex-wrap mt-5 justify-center">
+                            <section className="columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-10">
                                 <StickyNote>
                                     <p className="font-semibold">
                                         <strong>
@@ -494,8 +499,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* more adaptable hw */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-10 ">
+                        <section className="py-[50px] flex flex-col gap-10">
                             <TextImage
                                 heading="designing a more adaptable hardware solution"
                                 subheading="Specifications"
@@ -525,8 +531,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* interactions + gestures */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="flex flex-col gap-10 mt-5">
+                        <section className="py-[50px] flex flex-col gap-10">
                             <TextImage
                                 heading="interactions & gestures"
                                 imageAlt="Close-up of glasses touch panels & annotations of gestures users can perform"
@@ -577,8 +584,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* components + ui */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="components & ui design"
                                 imageAlt="Annotated images of key components to the AR experience"
@@ -589,8 +597,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* shopping list component */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="">
                             <TextImage
                                 subheading="Shopping List Component"
                                 imageAlt="giant eagle glasses"
@@ -609,8 +618,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* setting controls */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="">
                             <TextImage
                                 subheading="Setting Controls"
                                 imageAlt="Various states of the settings component"
@@ -642,8 +652,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* iteration on item addition */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="">
                             <TextImage
                                 subheading="Iteration on Item Addition"
                                 imageAlt="Annotated images of the current component used for adding an item to the cart, as well as the original design"
@@ -662,8 +673,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* added focus states */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto">
+                        <section className="pb-[50px]">
                             <TextImage
                                 subheading="Addition of Focus States"
                                 imageAlt="Focus states for various components"
@@ -683,8 +695,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* mobile app integration */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="mobile app integration"
                                 subheading="Configuring the Experience"
@@ -705,8 +718,9 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* launching experience */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="pb-[50px]">
                             <TextImage
                                 subheading="Launching the Experience"
                                 imageAlt="Basic flow showing progression from the user's shopping list to the QR code used to sync the glasses in-store"
@@ -726,13 +740,14 @@ const GiantEagle = () => {
                         </section>
                     </FadeSection>
 
+                    {/* other considerations */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto ">
+                        <section className="py-[50px]">
                             <TextGroup heading="other considerations & caveats" />
 
-                            <div className="flex flex-col gap-15">
+                            <div className="mx-auto max-w-screen-lg flex flex-col gap-10 mt-5 sm:mt-0">
                                 {/* TODO: make into component */}
-                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
                                     <img
                                         src="gianteagle/money.png"
                                         className="max-w-[200px] sm:w-auto "
@@ -762,7 +777,9 @@ const GiantEagle = () => {
                                     </TextGroup>
                                 </div>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                <hr className="" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
                                     <img
                                         src="gianteagle/inventory.png"
                                         className="max-w-[200px] sm:w-auto "
@@ -783,7 +800,9 @@ const GiantEagle = () => {
                                     </TextGroup>
                                 </div>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                <hr className="" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
                                     <img
                                         src="gianteagle/eye.png"
                                         className="max-w-[200px] sm:w-auto "
@@ -825,7 +844,9 @@ const GiantEagle = () => {
                                     </TextGroup>
                                 </div>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-0 sm:gap-5 justify-items-center">
+                                <hr className="" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
                                     <img
                                         src="gianteagle/glasses.png"
                                         className="max-w-[200px] sm:w-auto "

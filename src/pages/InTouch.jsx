@@ -33,9 +33,10 @@ const InTouch = () => {
                     />
                 </section>
 
-                <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] mt-[100px]">
+                <div className="flex flex-col">
+                    {/* overview */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="py-[50px] ">
                             <TextImage
                                 heading="overview"
                                 image="intouch/poster.png"
@@ -72,8 +73,9 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* testing mvp */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5">
+                        <section className="pt-[50px]">
                             <TextImage
                                 heading="launching an mvp"
                                 imageAlt="TODO: add alt"
@@ -101,8 +103,9 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* findings */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5">
+                        <section className="pb-[50px]">
                             <TextGroup subheading="Findings">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
@@ -166,8 +169,9 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* user journey */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5">
+                        <section className="py-[50px]">
                             <TextImage
                                 heading="mapping the user journey"
                                 imageAlt="TODO: add alt"
@@ -187,10 +191,11 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* design assets */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5">
+                        <section className="pt-[50px]">
                             <TextImage
-                                heading="design assets"
+                                heading="final concept + design assets"
                                 imageAlt="TODO: add alt"
                                 image="intouch/screensAnnotated.png"
                                 imagePlacement="bottom"
@@ -208,9 +213,10 @@ const InTouch = () => {
                         </section>
                     </FadeSection>
 
+                    {/* video */}
                     {/* https://www.youtube.com/watch?v=jdjxqBqDNXg */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-5">
+                        <section className="pb-[50px]">
                             <TextImage
                                 subheading="Pitch Video"
                                 imageAlt="TODO: add alt"

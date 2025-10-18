@@ -14,14 +14,10 @@ const About = () => {
     return (
         <div id="about-page">
             <Header />
-            <main className="min-h-[100dvh] py-10 px-[5%] flex flex-col justify-center">
-                <div className="flex flex-col gap-[25px] md:gap-[50px] lg:gap-[100px] px-[5%] ">
-                    <motion.section
-                        className="pt-18 w-full max-w-screen-lg mx-auto flex flex-col gap-2"
-                        initial={{ opacity: 0, y: 25 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
+            <main className="min-h-[100dvh] pt-25 py-10 flex flex-col justify-center">
+                <div className="flex flex-col gap-10">
+                    {/* intro */}
+                    <FadeSection scrollDir={scrollDir}>
                         <TextImage
                             heading="hello!"
                             image="general/aboutPhoto.png"
@@ -66,8 +62,9 @@ const About = () => {
                                 />
                             </div>
                         </TextImage>
-                    </motion.section>
+                    </FadeSection>
 
+                    {/* row 1 */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className=" w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
@@ -90,6 +87,7 @@ const About = () => {
                         </section>
                     </FadeSection>
 
+                    {/* ethos + principles */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -136,8 +134,9 @@ const About = () => {
                         </section>
                     </FadeSection>
 
+                    {/* notes 2 */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className=" w-full max-w-screen-lg mx-auto flex flex-col gap-2">
+                        <section className="w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
                                 <img src="general/hibiscus.png" />
                                 <StickyNote>
@@ -157,6 +156,7 @@ const About = () => {
                         </section>
                     </FadeSection>
 
+                    {/* when im not working + faves */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className=" w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -224,6 +224,7 @@ const About = () => {
                         </section>
                     </FadeSection>
 
+                    {/* notes 3 */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
