@@ -448,7 +448,7 @@ const GiantEagle = () => {
                                 </p>
                             </TextImage>
 
-                            <section className="columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-10">
+                            <section className="mx-auto max-w-screen-lg columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-10">
                                 <StickyNote>
                                     <p className="font-semibold">
                                         <strong>
@@ -745,7 +745,7 @@ const GiantEagle = () => {
                         <section className="py-[50px]">
                             <TextGroup heading="other considerations & caveats" />
 
-                            <div className="mx-auto max-w-screen-lg flex flex-col gap-10 mt-5 sm:mt-0">
+                            <div className="mx-auto max-w-screen-lg flex flex-col gap-10 mt-3">
                                 {/* TODO: make into component */}
                                 <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
                                     <img
