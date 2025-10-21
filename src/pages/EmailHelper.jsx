@@ -6,6 +6,8 @@ import TextGroup from "../components/TextGroup";
 import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
 import StickyNote from "../components/StickyNote";
+import Accordion from "../components/Accordion";
+import AccordionItem from "../components/AccordionItem";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";
@@ -77,11 +79,9 @@ const EmailHelper = () => {
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
-                                        {/* <strong className="highlight"> */}
                                         When tested against current workflows,
-                                        Email Helper produced a 66% faster
+                                        Email Helper produced a 67% faster
                                         response time.
-                                        {/* </strong> */}
                                     </p>
                                 </div>
                             </TextImage>
@@ -245,40 +245,19 @@ const EmailHelper = () => {
                             </TextGroup>
                             <section className="max-w-screen-lg columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-5 mx-auto">
                                 <StickyNote>
-                                    <p className="font-semibold">
-                                        Big tooling changes are a no-go.
-                                    </p>
-
-                                    <p>
-                                        SFRPD is beholden to contracted
-                                        agreements with vendors & can't afford
-                                        labor-intensive updates.
-                                    </p>
-                                </StickyNote>
-
-                                <StickyNote>
                                     <div>
                                         <p className="font-semibold">
-                                            There are limits to what can be done
-                                            to improve the technical process of
-                                            making a reservation.
+                                            Staff are forced to fill the gaps in
+                                            an incomplete service experience
+                                            when people can't find or accomplish
+                                            what they need to.
                                         </p>
                                     </div>
                                     <p>
-                                        Major usability issues need to be
-                                        addressed by a more holistic system.
+                                        Disorganized web content & a
+                                        difficult-to-navigate reservation system
+                                        push the public to call & email.
                                     </p>
-                                </StickyNote>
-
-                                <StickyNote>
-                                    <div>
-                                        <p className="font-semibold">
-                                            Disorganized web content & a
-                                            difficult-to-navigate reservation
-                                            system push the public to call &
-                                            email.
-                                        </p>
-                                    </div>
                                 </StickyNote>
 
                                 <StickyNote>
@@ -298,10 +277,19 @@ const EmailHelper = () => {
 
                                 <StickyNote>
                                     <p className="font-semibold">
-                                        Staff are forced to fill the gaps in an
-                                        incomplete service experience when
-                                        people can't find or accomplish what
-                                        they need to.
+                                        Big tooling changes are a no-go.
+                                    </p>
+
+                                    <p>
+                                        SFRPD is beholden to contracted
+                                        agreements with vendors & can't afford
+                                        labor-intensive updates.
+                                    </p>
+                                    <p>
+                                        {" "}
+                                        Major usability issues, however, need to
+                                        be addressed by swapping in a more
+                                        holistic system.
                                     </p>
                                 </StickyNote>
                             </section>
@@ -343,7 +331,7 @@ const EmailHelper = () => {
                     {/* constraints */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="technical constraints">
+                            <TextGroup heading="designing within technical constraints">
                                 <p>
                                     Though a goalpost was in sight, we needed to
                                     be aware of any & all guardrails when
@@ -428,13 +416,7 @@ const EmailHelper = () => {
                                 <p>
                                     <strong className="highlight">
                                         Email Helper is a browser extension that
-                                        cuts email response time by 67%.
-                                    </strong>
-                                </p>
-
-                                <p>
-                                    <strong className="highlight">
-                                        It facilitates the creation and use of
+                                        facilitates the creation and use of
                                         reusable templates,
                                     </strong>{" "}
                                     while seamlessly complementing existing
@@ -579,6 +561,70 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* research + findings */}
+                    {/* <FadeSection scrollDir={scrollDir}>
+                        <section className="pt-[50px]">
+                            <TextImage
+                                heading="measuring impact"
+                                // subheading="Methods & Analysis"
+                                // imageAlt="TODO: add alt text"
+                                // image="emailhelper/clustering.png"
+                                // addImageShadow={false}
+                                imagePlacement="bottom"
+                                mat={false}
+                            >
+                                <p>
+                                    To ensure we had a complete an understanding
+                                    of the problem space & it's main
+                                    stakeholders, we set out to execute a
+                                    thorough research effort. This included
+                                    analysis of various large datasets, as well
+                                    as performing field research.
+                                </p>
+
+                                <section className="sm:grid grid-cols-2">
+                                    <h6 className="hidden sm:block font-bold">
+                                        Measurement
+                                    </h6>
+                                    <h6 className="hidden sm:block font-bold">
+                                        Outcome
+                                    </h6>
+
+                                    <hr className="hidden sm:block col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Time on task
+                                    </p>
+
+                                    <p className="mt-3 sm:mt-0">
+                                        Identify repetitive workload patterns
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Staff satisfaction
+                                    </p>
+
+                                    <p className="mt-3 sm:mt-0">
+                                        "The next best thing short of replacing
+                                        the entire system"
+                                    </p>
+
+                                    <hr className="col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Staff interviews
+                                    </p>
+
+                                    <p className="mt-3 sm:mt-0">
+                                        Understand daily workflows & pain points
+                                    </p>
+                                </section>
+                            </TextImage>
+                        </section>
+                    </FadeSection> */}
+
                     {/* key decisions + iteration */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
@@ -691,6 +737,7 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
+                    {/* window to spa */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
@@ -725,7 +772,7 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     {/* limitations */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
                                 heading="Limitations"
@@ -747,7 +794,7 @@ const EmailHelper = () => {
                                 </p>
                             </TextImage>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     {/* next steps */}
                     <FadeSection scrollDir={scrollDir}>

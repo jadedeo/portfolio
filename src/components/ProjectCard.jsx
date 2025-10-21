@@ -1,8 +1,6 @@
 import { NavLink } from "react-router";
 import Chip from "../components/Chip";
 
-// import PropTypes from "prop-types";
-
 const ProjectCard = ({ id, project }) => {
     return (
         <NavLink
@@ -51,11 +49,5 @@ const ProjectCard = ({ id, project }) => {
         </NavLink>
     );
 };
-
-// ProjectCard.propTypes = {
-// 	id: PropTypes.number,
-// 	project: PropTypes.object,
-// 	orientation: PropTypes.string,
-// };
 
 export default ProjectCard;

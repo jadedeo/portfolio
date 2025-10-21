@@ -9,6 +9,11 @@
     src: local("Murmure"), url(./fonts/LeMurmure-Regular.woff) format("woff");
 }
 
+@font-face {
+    font-family: "Soria";
+    src: local("Soria"), url(./fonts/soria-font.ttf) format("truetype");
+}
+
 @theme {
     --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font-display: "Murmure", "sans-serif";
@@ -72,16 +77,16 @@ ol {
 }
 
 li {
-    text-decoration: dotted;
+    @apply decoration-dotted;
 }
 
 li + li {
-    margin-top: 10px;
+    @apply mt-[10px];
 }
 
 h1,
 h2 {
-    text-transform: lowercase;
+    @apply lowercase;
 }
 
 div.font-handwritten {
