@@ -411,7 +411,7 @@ const EmailHelper = () => {
 
                     {/* staff-side solution */}
                     <FadeSection scrollDir={scrollDir} isFilled>
-                        <section className="py-[50px]">
+                        <section className="py-[50px] flex flex-col gap-10">
                             <TextGroup heading="the staff-side solution">
                                 <p>
                                     <strong className="highlight">
@@ -445,6 +445,30 @@ const EmailHelper = () => {
                                     </a>
                                 </p>
                             </TextGroup>
+
+                            <TextImage
+                                subheading="Template creation & management"
+                                image="emailhelper/templatesScreens.png"
+                                imagePlacement="bottom"
+                                addImageShadow={false}
+                                mat={false}
+                            />
+
+                            <TextImage
+                                subheading="Template selection & email creation"
+                                image="emailhelper/selectionScreens.png"
+                                imagePlacement="bottom"
+                                addImageShadow={false}
+                                mat={false}
+                            />
+
+                            <TextImage
+                                subheading="Empty states"
+                                image="emailhelper/emptyScreens.png"
+                                imagePlacement="bottom"
+                                addImageShadow={false}
+                                mat={false}
+                            />
                         </section>
                     </FadeSection>
 
@@ -770,31 +794,6 @@ const EmailHelper = () => {
                             </TextImage>
                         </section>
                     </FadeSection>
-
-                    {/* limitations */}
-                    {/* <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px]">
-                            <TextImage
-                                heading="Limitations"
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/localChangesOnly.png"
-                                addImageShadow={false}
-                            >
-                                <p>
-                                    As a means of accommodating client-side
-                                    restrictions,{" "}
-                                    <strong className="highlight">
-                                        Email Helper is decentralized by design.
-                                    </strong>{" "}
-                                    Template management is not controlled at a
-                                    single source, so despite allowing users to
-                                    share templates via file upload, there is
-                                    currently no way to further enforce
-                                    consistency.
-                                </p>
-                            </TextImage>
-                        </section>
-                    </FadeSection> */}
 
                     {/* next steps */}
                     <FadeSection scrollDir={scrollDir}>
