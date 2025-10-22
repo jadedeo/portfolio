@@ -14,7 +14,19 @@ const AccordionItem = ({ isOpen = false, children, onClick, itemNumber }) => {
                     {/* {!isOpen && subheading} */}
                 </div>
 
-                <h3>{isOpen ? "-" : " +"}</h3>
+                <h3>
+                    {isOpen ? (
+                        <img
+                            src="/icons/eyeClosed.png"
+                            className="max-h-[30px]"
+                        />
+                    ) : (
+                        <img
+                            src="/icons/eyeOpen.png"
+                            className="max-h-[30px]"
+                        />
+                    )}
+                </h3>
             </div>
 
             {isOpen && <div className="mt-2">{content}</div>}
