@@ -2,12 +2,14 @@ const ChatBubble = ({ direction = "left", children }) => {
     const isLeft = direction === "left";
 
     return (
-        <div
-            className={`px-5 py-5 rounded-t-2xl ${
-                isLeft ? "rounded-br-2xl" : "rounded-bl-2xl"
-            } text-black border-1 border-black h-fit `}
-        >
-            <div className="h-full flex flex-col gap-5">{children}</div>
+        // ${ isLeft ? "rounded-br-2xl" : "rounded-bl-2xl"}
+        <div className={`pt-8 text-black h-fit relative`}>
+            <div className="border-l-1 border-black mt-2 pl-5">
+                <h1 className="ml-[-8px] absolute top-0 left-0">"</h1>
+                <div className="h-full flex flex-col gap-5 text-lg">
+                    {children}
+                </div>
+            </div>
         </div>
     );
 };

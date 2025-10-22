@@ -7,7 +7,7 @@ const AccordionItem = ({ isOpen = false, heading, children }) => {
             </div>
 
             <span>{isOpen}</span>
-            <div>{children}</div>
+            {isOpen && <div>{children}</div>}
         </section>
     );
 };

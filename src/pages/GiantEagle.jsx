@@ -206,8 +206,8 @@ const GiantEagle = () => {
                                 </p>
                             </TextGroup>
 
-                            <section className="mx-auto max-w-screen-lg mt-10 flex flex-col gap-10">
-                                <div className="grid grid-cols-2 gap-5 items-center">
+                            <section className="mx-auto max-w-screen-lg mt-10 flex flex-col gap-10 gap-y-15">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                                     <div className="grid grid-cols-1 gap-5">
                                         <ChatBubble>
                                             <div className="flex flex-col gap-3">
@@ -274,7 +274,7 @@ const GiantEagle = () => {
                                     </StickyNote>
                                 </div>
 
-                                <div className="grid grid-cols-2 items-center">
+                                <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                                     <ChatBubble>
                                         <div className="flex flex-col gap-3">
                                             <p>
@@ -592,6 +592,7 @@ const GiantEagle = () => {
                                 imageAlt="Annotated images of key components to the AR experience"
                                 image="gianteagle/fullAnnotated.png"
                                 addImageShadow={false}
+                                mat={false}
                                 imagePlacement="bottom"
                             />
                         </section>
@@ -605,6 +606,7 @@ const GiantEagle = () => {
                                 imageAlt="giant eagle glasses"
                                 image="gianteagle/shoppingListAnnotated.png"
                                 addImageShadow={false}
+                                mat={false}
                                 imagePlacement="bottom"
                             >
                                 <p>

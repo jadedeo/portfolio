@@ -38,7 +38,7 @@ const EmailHelper = () => {
                     {/* overview */}
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px] flex flex-col gap-10">
-                            <TextGroup heading="overview + impact">
+                            <TextGroup heading="overview">
                                 <p>
                                     The San Francisco Recreation & Parks
                                     Department services a city's worth of park
@@ -53,8 +53,6 @@ const EmailHelper = () => {
                                 </p>
                             </TextGroup>
                             <TextImage
-                                // heading="overview"
-                                // subheading="Email Helper is a browser extension that cuts staff response time by 67%"
                                 imageAlt="TODO: add alt text"
                                 image="emailhelper/overview.gif"
                                 addImageShadow={false}
@@ -449,6 +447,7 @@ const EmailHelper = () => {
                             <TextImage
                                 subheading="Template creation & management"
                                 image="emailhelper/templatesScreens.png"
+                                imageAlt="TODO: add image alt"
                                 imagePlacement="bottom"
                                 addImageShadow={false}
                                 mat={false}
@@ -457,6 +456,7 @@ const EmailHelper = () => {
                             <TextImage
                                 subheading="Template selection & email creation"
                                 image="emailhelper/selectionScreens.png"
+                                imageAlt="TODO: add image alt"
                                 imagePlacement="bottom"
                                 addImageShadow={false}
                                 mat={false}
@@ -465,6 +465,7 @@ const EmailHelper = () => {
                             <TextImage
                                 subheading="Empty states"
                                 image="emailhelper/emptyScreens.png"
+                                imageAlt="TODO: add image alt"
                                 imagePlacement="bottom"
                                 addImageShadow={false}
                                 mat={false}
@@ -585,25 +586,19 @@ const EmailHelper = () => {
                         </section>
                     </FadeSection>
 
-                    {/* research + findings */}
-                    {/* <FadeSection scrollDir={scrollDir}>
+                    {/* measured impact */}
+                    <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
-                                heading="measuring impact"
-                                // subheading="Methods & Analysis"
-                                // imageAlt="TODO: add alt text"
-                                // image="emailhelper/clustering.png"
-                                // addImageShadow={false}
+                                heading="measured impact"
                                 imagePlacement="bottom"
                                 mat={false}
                             >
                                 <p>
-                                    To ensure we had a complete an understanding
-                                    of the problem space & it's main
-                                    stakeholders, we set out to execute a
-                                    thorough research effort. This included
-                                    analysis of various large datasets, as well
-                                    as performing field research.
+                                    Email Helper had a proven positive impact on
+                                    staff workflows - it more than delivers on
+                                    promises of greater speed and convenience
+                                    than current workarounds.
                                 </p>
 
                                 <section className="sm:grid grid-cols-2">
@@ -617,12 +612,21 @@ const EmailHelper = () => {
                                     <hr className="hidden sm:block col-span-3 my-3" />
 
                                     <p className="font-bold sm:font-normal">
-                                        Time on task
+                                        Time on task per email
                                     </p>
 
                                     <p className="mt-3 sm:mt-0">
-                                        Identify repetitive workload patterns
+                                        67% faster; average decrease of 115.9s
+                                        to 38.7s
                                     </p>
+
+                                    <hr className="hidden sm:block col-span-3 my-3" />
+
+                                    <p className="font-bold sm:font-normal">
+                                        Time saved per week
+                                    </p>
+
+                                    <p className="mt-3 sm:mt-0">~11 hours</p>
 
                                     <hr className="col-span-3 my-3" />
 
@@ -638,16 +642,18 @@ const EmailHelper = () => {
                                     <hr className="col-span-3 my-3" />
 
                                     <p className="font-bold sm:font-normal">
-                                        Staff interviews
+                                        Big-picture value
                                     </p>
 
                                     <p className="mt-3 sm:mt-0">
-                                        Understand daily workflows & pain points
+                                        Effective serves as an intermediary step
+                                        while the department procures a new
+                                        reservation system
                                     </p>
                                 </section>
                             </TextImage>
                         </section>
-                    </FadeSection> */}
+                    </FadeSection>
 
                     {/* key decisions + iteration */}
                     <FadeSection scrollDir={scrollDir}>

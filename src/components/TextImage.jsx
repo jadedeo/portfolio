@@ -6,7 +6,7 @@ const TextImage = ({
     heading,
     subheading,
     image,
-    imageAlt = "TODO: add image alt",
+    imageAlt,
     imagePlacement = "right",
     imageSize = "full",
     children,
