@@ -7,7 +7,6 @@ import TextImage from "../components/TextImage";
 import FadeSection from "../components/FadeSection";
 import StickyNote from "../components/StickyNote";
 import Accordion from "../components/Accordion";
-import AccordionItem from "../components/AccordionItem";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 import useInView from "../hooks/useInView";
@@ -223,62 +222,63 @@ const EmailHelper = () => {
                     {/* key takeaways */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px]">
-                            <TextGroup subheading="Key Takeaways">
-                                <p>
-                                    Analysis of our data yielded the following
-                                    key findings:
-                                </p>
-                            </TextGroup>
-                            <section className="max-w-screen-lg columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5 mt-5 mx-auto">
-                                <StickyNote>
-                                    <div>
-                                        <p className="font-semibold">
-                                            Staff are forced to fill the gaps in
-                                            an incomplete service experience
-                                            when people can't find or accomplish
-                                            what they need to.
-                                        </p>
+                            <div className="mx-auto max-w-screen-lg grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
+                                {/* TODO: swap divs out for small image variant of TextImage */}
+                                <div className="flex flex-col gap-2">
+                                    <div className="max-h-[300px]">
+                                        <img
+                                            className="h-full mx-auto"
+                                            src="emailhelper/inbox.png"
+                                        />
                                     </div>
+                                    <h3 className="text-xl font-bold">
+                                        Staff are forced to fill the gaps in an
+                                        incomplete service experience.
+                                    </h3>
                                     <p>
                                         Disorganized web content & a
                                         difficult-to-navigate reservation system
                                         push the public to call & email.
                                     </p>
-                                </StickyNote>
+                                </div>
 
-                                <StickyNote>
-                                    <div>
-                                        <p className="font-semibold">
-                                            More than 70% of communications are
-                                            informational or repetitively
-                                            procedural.
-                                        </p>
+                                <div className="flex flex-col gap-2">
+                                    <div className="max-h-[300px]">
+                                        <img
+                                            className="h-full mx-auto"
+                                            src="emailhelper/repeat.png"
+                                        />
                                     </div>
+                                    <h3 className="text-xl font-bold">
+                                        70%+ of communications are informational
+                                        or repetitively procedural.
+                                    </h3>
                                     <p>
                                         The same questions about permit
                                         requirements, facility rules, and
                                         availability resurface constantly.
                                     </p>
-                                </StickyNote>
+                                </div>
 
-                                <StickyNote>
-                                    <p className="font-semibold">
+                                <div className="flex flex-col gap-2">
+                                    <div className="max-h-[300px]">
+                                        <img
+                                            className="h-full mx-auto"
+                                            src="emailhelper/noChanges.png"
+                                        />
+                                    </div>
+                                    <h3 className="text-xl font-bold">
                                         Big tooling changes are a no-go.
-                                    </p>
-
+                                    </h3>
                                     <p>
                                         SFRPD is beholden to contracted
                                         agreements with vendors & can't afford
-                                        labor-intensive updates.
+                                        labor-intensive updates. Major usability
+                                        issues, however, need to be addressed by
+                                        swapping in a more holistic system.
                                     </p>
-                                    <p>
-                                        {" "}
-                                        Major usability issues, however, need to
-                                        be addressed by swapping in a more
-                                        holistic system.
-                                    </p>
-                                </StickyNote>
-                            </section>
+                                </div>
+                            </div>
                         </section>
                     </FadeSection>
 

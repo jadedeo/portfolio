@@ -29,7 +29,7 @@ const InTouch = () => {
                     <Hero
                         className="prh-hero"
                         project={projectData}
-                        image="prhProjects/prhProjectsLight.png"
+                        image="intouch/inTouchLight.png"
                     />
                 </section>
 
