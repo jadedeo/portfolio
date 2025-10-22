@@ -1,13 +1,23 @@
-const AccordionItem = ({ isOpen = false, heading, children }) => {
+const AccordionItem = ({ isOpen = false, children, onClick, itemNumber }) => {
+    const heading = children.props?.children?.[0];
+    const subheading = children.props?.children?.[1];
+    const content = children.props?.children?.slice(2);
+
     return (
-        <section>
-            <div className="flex justify-between">
-                <h3>{heading}</h3> <h3>{isOpen ? "-" : " +"}</h3>
-                {/* <span>{isOpen}</span> */}
+        <section className="accordionitem-component my-3 pt-3 border-t-1 border-black">
+            <div
+                className="flex justify-between items-center"
+                onClick={onClick}
+            >
+                <div>
+                    {heading}
+                    {/* {!isOpen && subheading} */}
+                </div>
+
+                <h3>{isOpen ? "-" : " +"}</h3>
             </div>
 
-            <span>{isOpen}</span>
-            {isOpen && <div>{children}</div>}
+            {isOpen && <div className="mt-2">{content}</div>}
         </section>
     );
 };

@@ -120,18 +120,6 @@ const EmailHelper = () => {
                                         reservation process for residents?
                                     </p>
                                 </div>
-
-                                {/* A significant portion of these inquiries are
-                                repetitive:{" "}
-                                <strong className="highlight">
-                                    the same questions about permit
-                                    requirements, facility rules, and
-                                    availability resurface constantly.
-                                </strong>{" "}
-                                Staff also frequently need to reach out to
-                                residents for clarification on standard items
-                                like alcohol policies or equipment restrictions
-                                for events. */}
                             </TextGroup>
                         </section>
                     </FadeSection>
@@ -587,13 +575,9 @@ const EmailHelper = () => {
                     </FadeSection>
 
                     {/* measured impact */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
-                            <TextImage
-                                heading="measured impact"
-                                imagePlacement="bottom"
-                                mat={false}
-                            >
+                    <FadeSection scrollDir={scrollDir} isFilled>
+                        <section className="py-[50px]">
+                            <TextGroup heading="measured impact">
                                 <p>
                                     Email Helper had a proven positive impact on
                                     staff workflows - it more than delivers on
@@ -651,153 +635,163 @@ const EmailHelper = () => {
                                         reservation system
                                     </p>
                                 </section>
-                            </TextImage>
+                            </TextGroup>
                         </section>
                     </FadeSection>
 
                     {/* key decisions + iteration */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextImage
-                                heading="key decisions & iteration"
-                                subheading="How can we handle both formatting and email draft creation?"
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/formatting.png"
-                                addImageShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    Staff frequently used additional styling in
-                                    their emails to emphasize and distinguish
-                                    important information, so{" "}
-                                    <strong className="highlight">
-                                        we knew from the start that
-                                        incorporating a rich text editor would
-                                        be necessary.
-                                    </strong>
-                                </p>
-                                <p>
-                                    <strong className="highlight">
-                                        We also knew that we’d be unable to send
-                                        emails directly from the Email Helper
-                                        extension
-                                    </strong>{" "}
-                                    — this is not permitted by TCP/IP
-                                    restrictions. A mailto link used to create
-                                    an email draft would allow us to get as
-                                    close to this functionality as possible …
-                                    but it wouldn’t support intricate
-                                    formatting.
-                                </p>
-                                <p>
-                                    As a midway point between this requirement
-                                    and technical limitation, we provide the
-                                    user with the option to either copy a
-                                    formatted email or create a plaintext draft
-                                    within their desktop email client.
-                                </p>
-                            </TextImage>
-                        </section>
-                    </FadeSection>
+                            <TextGroup heading="key decisions + iteration" />
+                            <Accordion>
+                                {/* ITEM 1 */}
+                                <div>
+                                    <h3 className="text-xl font-bold">
+                                        What method of previewing an email &
+                                        completing its inputs is most intuitive?
+                                    </h3>
+                                    <p className="mt-3">
+                                        Minimizing repetition and maximizing
+                                        efficiency
+                                    </p>
+                                    <section className="pb-10">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/layoutV1.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                <strong className="highlight">
+                                                    Version 1
+                                                </strong>{" "}
+                                                of the email generation process
+                                                required users to search through
+                                                the combined templates to
+                                                manually edit placeholder
+                                                values.
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                    <section className="py-10">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/layoutV2.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                <strong className="highlight">
+                                                    Version 2
+                                                </strong>{" "}
+                                                explored collecting user input
+                                                as its own distinct step. These
+                                                values were used to complete the
+                                                email previewed in a new window,
+                                                but this split view contained
+                                                too much repetition.
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                    <section className="pt-10 pb-3">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/layoutV3.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                <strong className="highlight">
+                                                    Version 3 (Final)
+                                                </strong>{" "}
+                                                placed both user input
+                                                collection and previewing within
+                                                the same frame. Users can see
+                                                the effects of their inputs in
+                                                real time, without having to
+                                                search through the template to
+                                                complete fields.
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                </div>
 
-                    {/* layout 1 */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
-                            <TextImage
-                                subheading="What method of previewing an email & completing its inputs is most intuitive?"
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/layoutV1.png"
-                                addImageShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    <strong className="highlight">
-                                        Version 1
-                                    </strong>{" "}
-                                    of the email generation process required
-                                    users to search through the combined
-                                    templates to manually edit placeholder
-                                    values.
-                                </p>
-                            </TextImage>
-                        </section>
-                    </FadeSection>
-                    {/* layout 2 */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="">
-                            <TextImage
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/layoutV2.png"
-                                addImageShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    <strong className="highlight">
-                                        Version 2
-                                    </strong>{" "}
-                                    explored collecting user input as its own
-                                    distinct step. These values were used to
-                                    complete the email previewed in a new
-                                    window, but this split view contained too
-                                    much repetition.
-                                </p>
-                            </TextImage>
-                        </section>
-                    </FadeSection>
-                    {/* layout 3 */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px]">
-                            <TextImage
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/layoutV3.png"
-                                addImageShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    <strong className="highlight">
-                                        Version 3 (Final)
-                                    </strong>{" "}
-                                    placed both user input collection and
-                                    previewing within the same frame. Users can
-                                    see the effects of their inputs in real
-                                    time, without having to search through the
-                                    template to complete fields.
-                                </p>
-                            </TextImage>
-                        </section>
-                    </FadeSection>
+                                {/* ITEM 2 */}
+                                <div>
+                                    <h3 className="text-xl font-bold">
+                                        How can we handle both formatting and
+                                        email draft creation?
+                                    </h3>
+                                    <p className="mt-3">
+                                        Balancing technical limitations with
+                                        user needs
+                                    </p>
+                                    <section className="pb-3">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/formatting.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                Staff frequently used additional
+                                                styling in their emails to
+                                                emphasize and distinguish
+                                                important information, so{" "}
+                                                <strong className="highlight">
+                                                    we knew from the start that
+                                                    incorporating a rich text
+                                                    editor would be necessary.
+                                                </strong>
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                </div>
 
-                    {/* window to spa */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px]">
-                            <TextImage
-                                subheading="Shifting from window-based design to a single-page application (SPA)"
-                                imageAlt="TODO: add alt"
-                                image="emailhelper/windowsToSpa.png"
-                                addImageShadow={false}
-                                imagePlacement="bottom"
-                            >
-                                <p>
-                                    During development, we discovered that using
-                                    independent windows for template creation
-                                    and email generator proved to be counter
-                                    intuitive. Closing either of these resulted
-                                    in dismissing the root pop-up as well — a
-                                    drawback of the impermanent nature of
-                                    browser extensions.{" "}
-                                    <strong className="highlight">
-                                        Having to repeatedly relaunch the
-                                        extension not only created an
-                                        aggravating user experience, but it
-                                        significantly increased time on task.
-                                    </strong>
-                                </p>
-                                <p>
-                                    The revised design consolidates all
-                                    functionality to the limited dimensions of
-                                    the extension pop-up.
-                                </p>
-                            </TextImage>
+                                {/* ITEM 3 */}
+                                <div>
+                                    <h3 className="text-xl font-bold">
+                                        Shifting from window-based design to a
+                                        single-page application (SPA)
+                                    </h3>
+                                    <p className="mt-3">subheading 3 test</p>
+                                    <section className="pb-3">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/windowsToSpa.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                During development, we
+                                                discovered that using
+                                                independent windows for template
+                                                creation and email generator
+                                                proved to be counter intuitive.
+                                                Closing either of these resulted
+                                                in dismissing the root pop-up as
+                                                well — a drawback of the
+                                                impermanent nature of browser
+                                                extensions.{" "}
+                                                <strong className="highlight">
+                                                    Having to repeatedly
+                                                    relaunch the extension not
+                                                    only created an aggravating
+                                                    user experience, but it
+                                                    significantly increased time
+                                                    on task.
+                                                </strong>
+                                            </p>
+                                            <p>
+                                                The revised design consolidates
+                                                all functionality to the limited
+                                                dimensions of the extension
+                                                pop-up.
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                </div>
+                            </Accordion>
                         </section>
                     </FadeSection>
 
