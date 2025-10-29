@@ -101,6 +101,7 @@
             { "text": "UX Research", "type": "outlined" },
             { "text": "Winning Pitch 🏆", "type": "outlined" }
         ],
+        "tools": ["Figma", "FigJam"],
         "link": "/work",
         "status": "comingsoon"
     },

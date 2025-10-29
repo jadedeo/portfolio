@@ -28,7 +28,6 @@ const PrhProjects = () => {
                         className="prh-hero"
                         project={projectData}
                         image="prhProjects/prhProjectsLight.png"
-                        showTools
                     />
                 </section>
 

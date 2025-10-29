@@ -2,7 +2,7 @@ import { useState } from "react";
 import AccordionItem from "./AccordionItem";
 
 const Accordion = ({ children }) => {
-    const [activeItem, setActiveItem] = useState(0);
+    const [activeItem, setActiveItem] = useState(2);
 
     const toggleItem = (index) => {
         console.log("toggle");

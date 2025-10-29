@@ -29,7 +29,6 @@ const EmailHelper = () => {
                     <Hero
                         project={projectData}
                         image="emailhelper/emailHelperLight.png"
-                        showTools
                     />
                 </section>
 
@@ -87,7 +86,7 @@ const EmailHelper = () => {
 
                     {/* problem */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="py-[50px]">
+                        <section className="py-[50px] flex flex-col gap-10">
                             <TextGroup heading="the problem">
                                 <p>
                                     <strong className="highlight">
@@ -101,6 +100,15 @@ const EmailHelper = () => {
                                     through 4+ platforms, creating a disjointed
                                     & often circular user journey.
                                 </p>
+                            </TextGroup>
+                            <TextImage
+                                // heading="the problem"
+                                imageAlt="TODO: add alt text"
+                                image="emailhelper/peter.PNG"
+                                addImageShadow={false}
+                                imagePlacement="left"
+                                mat={false}
+                            >
                                 <p>
                                     Though there are intentions to replace the
                                     main platform (ActiveNet) soon,{" "}
@@ -119,7 +127,7 @@ const EmailHelper = () => {
                                         reservation process for residents?
                                     </p>
                                 </div>
-                            </TextGroup>
+                            </TextImage>
                         </section>
                     </FadeSection>
 
@@ -374,7 +382,7 @@ const EmailHelper = () => {
                                         <div className="max-h-[300px]">
                                             <img
                                                 className="h-full mx-auto"
-                                                src="emailhelper/noCost.png"
+                                                src="emailhelper/noStorage.PNG"
                                             />
                                         </div>
                                         <h3 className="text-xl font-bold">
@@ -647,6 +655,82 @@ const EmailHelper = () => {
                                 {/* ITEM 1 */}
                                 <div>
                                     <h3 className="text-xl font-bold">
+                                        How can we handle both formatting and
+                                        email draft creation?
+                                    </h3>
+                                    <p className="mt-3">
+                                        Balancing technical limitations with
+                                        user needs
+                                    </p>
+                                    <section className="pb-3">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/formatting.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                Staff frequently used additional
+                                                styling in their emails to
+                                                emphasize and distinguish
+                                                important information, so{" "}
+                                                <strong className="highlight">
+                                                    we knew from the start that
+                                                    incorporating a rich text
+                                                    editor would be necessary.
+                                                </strong>
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                </div>
+
+                                {/* ITEM 2 */}
+                                <div>
+                                    <h3 className="text-xl font-bold">
+                                        Shifting from window-based design to a
+                                        single-page application (SPA)
+                                    </h3>
+                                    <p className="mt-3">subheading 3 test</p>
+                                    <section className="pb-3">
+                                        <TextImage
+                                            imageAlt="TODO: add alt"
+                                            image="emailhelper/windowsToSpa.png"
+                                            addImageShadow={false}
+                                            imagePlacement="bottom"
+                                        >
+                                            <p>
+                                                During development, we
+                                                discovered that using
+                                                independent windows for template
+                                                creation and email generator
+                                                proved to be counter intuitive.
+                                                Closing either of these resulted
+                                                in dismissing the root pop-up as
+                                                well — a drawback of the
+                                                impermanent nature of browser
+                                                extensions.{" "}
+                                                <strong className="highlight">
+                                                    Having to repeatedly
+                                                    relaunch the extension not
+                                                    only created an aggravating
+                                                    user experience, but it
+                                                    significantly increased time
+                                                    on task.
+                                                </strong>
+                                            </p>
+                                            <p>
+                                                The revised design consolidates
+                                                all functionality to the limited
+                                                dimensions of the extension
+                                                pop-up.
+                                            </p>
+                                        </TextImage>
+                                    </section>
+                                </div>
+
+                                {/* ITEM 3 */}
+                                <div>
+                                    <h3 className="text-xl font-bold">
                                         What method of previewing an email &
                                         completing its inputs is most intuitive?
                                     </h3>
@@ -711,82 +795,6 @@ const EmailHelper = () => {
                                                 real time, without having to
                                                 search through the template to
                                                 complete fields.
-                                            </p>
-                                        </TextImage>
-                                    </section>
-                                </div>
-
-                                {/* ITEM 2 */}
-                                <div>
-                                    <h3 className="text-xl font-bold">
-                                        How can we handle both formatting and
-                                        email draft creation?
-                                    </h3>
-                                    <p className="mt-3">
-                                        Balancing technical limitations with
-                                        user needs
-                                    </p>
-                                    <section className="pb-3">
-                                        <TextImage
-                                            imageAlt="TODO: add alt"
-                                            image="emailhelper/formatting.png"
-                                            addImageShadow={false}
-                                            imagePlacement="bottom"
-                                        >
-                                            <p>
-                                                Staff frequently used additional
-                                                styling in their emails to
-                                                emphasize and distinguish
-                                                important information, so{" "}
-                                                <strong className="highlight">
-                                                    we knew from the start that
-                                                    incorporating a rich text
-                                                    editor would be necessary.
-                                                </strong>
-                                            </p>
-                                        </TextImage>
-                                    </section>
-                                </div>
-
-                                {/* ITEM 3 */}
-                                <div>
-                                    <h3 className="text-xl font-bold">
-                                        Shifting from window-based design to a
-                                        single-page application (SPA)
-                                    </h3>
-                                    <p className="mt-3">subheading 3 test</p>
-                                    <section className="pb-3">
-                                        <TextImage
-                                            imageAlt="TODO: add alt"
-                                            image="emailhelper/windowsToSpa.png"
-                                            addImageShadow={false}
-                                            imagePlacement="bottom"
-                                        >
-                                            <p>
-                                                During development, we
-                                                discovered that using
-                                                independent windows for template
-                                                creation and email generator
-                                                proved to be counter intuitive.
-                                                Closing either of these resulted
-                                                in dismissing the root pop-up as
-                                                well — a drawback of the
-                                                impermanent nature of browser
-                                                extensions.{" "}
-                                                <strong className="highlight">
-                                                    Having to repeatedly
-                                                    relaunch the extension not
-                                                    only created an aggravating
-                                                    user experience, but it
-                                                    significantly increased time
-                                                    on task.
-                                                </strong>
-                                            </p>
-                                            <p>
-                                                The revised design consolidates
-                                                all functionality to the limited
-                                                dimensions of the extension
-                                                pop-up.
                                             </p>
                                         </TextImage>
                                     </section>

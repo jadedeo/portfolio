@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 import Chip from "./Chip";
 
-const Hero = ({ project, image, showTools = false, className }) => {
+const Hero = ({ project, image, className }) => {
+    const showTools = project.tools?.length > 0 ? true : false;
     return (
         <div
             className={`${className} hero-component h-full w-full  bg-black justify-center flex bg-cover bg-no-repeat bg-center  bg-blend-overlay px-[5%] pt-[80px]`}
