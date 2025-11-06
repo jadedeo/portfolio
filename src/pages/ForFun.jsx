@@ -19,10 +19,10 @@ const ForFun = () => {
                             <TextGroup heading="illustration">
                                 <p>
                                     I have been fortunate to contribute to a
-                                    number of publishing-related commercial
-                                    projects, such as covers, dustjackets,
-                                    tip-in pages, and endpapers, for which
-                                    clients have included{" "}
+                                    number of media- and publishing-related
+                                    commercial projects (covers, dustjackets,
+                                    tip-in pages, endpapers) for which clients
+                                    have included{" "}
                                     <a
                                         className="underline"
                                         href="https://illumicrate.com/"

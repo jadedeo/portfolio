@@ -25,7 +25,7 @@ const Hero = ({ project, image, className }) => {
                         </div>
                         <div
                             className={` ${
-                                showTools ? "flex flex-col gap-5" : ""
+                                showTools ? "flex flex-col gap-10" : ""
                             }`}
                         >
                             <div className="flex gap-10 text-nowrap">

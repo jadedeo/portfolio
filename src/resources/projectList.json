@@ -92,8 +92,8 @@
         "title": "inTouch",
         "client": ["CMU Coursework", "Digital Service Innovation"],
         "roles": ["Product Designer (1 of 4)", "Visual Designer (1 of 2)"],
-        "hook": "Long-distance communication for the chronically busy.",
-        "description": "Task: Pitch an innovative digital service to a panel of investors, clearly communicating value provided to stakeholders & showcasing a well-thought out business plan.",
+        "hook": "Reimagining long-distance communication for the chronically busy.",
+        "description": "A winning digital service concept & long-distance communication tool that isn't just another app.",
         "image": "work/intouch/inTouchProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
@@ -102,8 +102,8 @@
             { "text": "Winning Pitch 🏆", "type": "outlined" }
         ],
         "tools": ["Figma", "FigJam"],
-        "link": "/work",
-        "status": "comingsoon"
+        "link": "/work/intouch",
+        "status": "published"
     },
     {
         "id": 5,
@@ -129,8 +129,8 @@
         "title": "Blk + Brwn Book Designers",
         "client": ["Personal Project"],
         "roles": ["UI/UX Designer"],
-        "hook": "Redesigns for better brand alignment and inclusivity.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+        "hook": "Challenging taxonomical norms & seeking better brand alignment.",
+        "description": "Challenging taxonomical patterns for greater inclusivity & redesigning for brand alignment.",
         "image": "work/bbbd/bbbdProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },

@@ -13,7 +13,10 @@
     font-family: "Soria";
     src: local("Soria"), url(./fonts/soria-font.ttf) format("truetype");
 }
-
+@font-face {
+    font-family: "Pixerif";
+    src: local("Pixerif"), url(./fonts/Pixerif.ttf) format("truetype");
+}
 @theme {
     --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font-display: "Murmure", "sans-serif";
