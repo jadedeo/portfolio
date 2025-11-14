@@ -70,8 +70,8 @@ const EmailHelper = () => {
                                         One component of this is Email Helper
                                     </strong>{" "}
                                     — a browser extension created to make the
-                                    task of replying to repetitive quicker &
-                                    easier for support staff.
+                                    task of replying to repetitive inquiries
+                                    quicker & easier for support staff.
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
@@ -90,8 +90,8 @@ const EmailHelper = () => {
                             <TextGroup heading="the problem">
                                 <p>
                                     <strong className="highlight">
-                                        SFRPD logged 13,000 phone calls and
-                                        5,000 emails in the last year alone,
+                                        SFRPD logged 13,000 phone calls & 5,000
+                                        emails in the last year alone,
                                     </strong>{" "}
                                     a majority of which come from city residents
                                     experiencing frustration with the current
@@ -210,7 +210,7 @@ const EmailHelper = () => {
                                     </p>
                                     <p>50+ responses</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Gauge satisfaction and usability
+                                        Gauge satisfaction & usability
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -263,7 +263,7 @@ const EmailHelper = () => {
                                     </h3>
                                     <p>
                                         The same questions about permit
-                                        requirements, facility rules, and
+                                        requirements, facility rules &
                                         availability resurface constantly.
                                     </p>
                                 </div>
@@ -386,7 +386,7 @@ const EmailHelper = () => {
                                             />
                                         </div>
                                         <h3 className="text-xl font-bold">
-                                            The cost of hosting and data storage
+                                            The cost of hosting & data storage
                                             had to be essentially zero.
                                         </h3>
                                         <p>
@@ -410,13 +410,13 @@ const EmailHelper = () => {
                                 <p>
                                     <strong className="highlight">
                                         Email Helper is a browser extension that
-                                        facilitates the creation and use of
+                                        facilitates the creation & use of
                                         reusable templates,
                                     </strong>{" "}
                                     while seamlessly complementing existing
                                     staff workflows. It’s simple to adopt,
-                                    cost-effective to run, and tailored to
-                                    SFRPD’s specific environment.
+                                    cost-effective to run & tailored to SFRPD’s
+                                    specific environment.
                                 </p>
 
                                 <p>
@@ -502,7 +502,7 @@ const EmailHelper = () => {
                                 >
                                     <p>
                                         Use a rich text editor to format your
-                                        templates and then categorize them into
+                                        templates & then categorize them into
                                         sections as preferred
                                     </p>
                                 </TextImage>
@@ -518,7 +518,7 @@ const EmailHelper = () => {
                                 >
                                     <p>
                                         Uploads will be validated for correct
-                                        file format and structure
+                                        file format & structure
                                     </p>
                                 </TextImage>
 
@@ -589,8 +589,8 @@ const EmailHelper = () => {
                                 <p>
                                     Email Helper had a proven positive impact on
                                     staff workflows - it more than delivers on
-                                    promises of greater speed and convenience
-                                    than current workarounds.
+                                    promises of greater speed & convenience than
+                                    current workarounds.
                                 </p>
 
                                 <section className="sm:grid grid-cols-2">
@@ -655,7 +655,7 @@ const EmailHelper = () => {
                                 {/* ITEM 1 */}
                                 <div>
                                     <h3 className="text-xl font-bold">
-                                        How can we handle both formatting and
+                                        How can we handle both formatting &
                                         email draft creation?
                                     </h3>
                                     <p className="mt-3">
@@ -672,7 +672,7 @@ const EmailHelper = () => {
                                             <p>
                                                 Staff frequently used additional
                                                 styling in their emails to
-                                                emphasize and distinguish
+                                                emphasize & distinguish
                                                 important information, so{" "}
                                                 <strong className="highlight">
                                                     we knew from the start that
@@ -702,7 +702,7 @@ const EmailHelper = () => {
                                                 During development, we
                                                 discovered that using
                                                 independent windows for template
-                                                creation and email generator
+                                                creation & email generator
                                                 proved to be counter intuitive.
                                                 Closing either of these resulted
                                                 in dismissing the root pop-up as
@@ -735,7 +735,7 @@ const EmailHelper = () => {
                                         completing its inputs is most intuitive?
                                     </h3>
                                     <p className="mt-3">
-                                        Minimizing repetition and maximizing
+                                        Minimizing repetition & maximizing
                                         efficiency
                                     </p>
                                     <section className="pb-10">
@@ -789,7 +789,7 @@ const EmailHelper = () => {
                                                     Version 3 (Final)
                                                 </strong>{" "}
                                                 placed both user input
-                                                collection and previewing within
+                                                collection & previewing within
                                                 the same frame. Users can see
                                                 the effects of their inputs in
                                                 real time, without having to
@@ -824,13 +824,13 @@ const EmailHelper = () => {
                                 <p>
                                     We are interested in designing what a
                                     centralized template management system might
-                                    look like and expect to revisit the project
-                                    in the near future.
+                                    look like & expect to revisit the project in
+                                    the near future.
                                 </p>{" "}
                                 <p>
                                     While Email Helper as it stands was tailored
                                     to SFRPD’s current restrictions, it serves
-                                    as a highly-usable proof of concept and
+                                    as a highly-usable proof of concept &
                                     mechanism by which the team can determine
                                     whether the costs of a more complex system
                                     can be justified.
