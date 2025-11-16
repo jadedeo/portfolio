@@ -110,27 +110,27 @@
         "path": "libby",
         "title": "TBR Integration for Libby",
         "client": ["Personal Project"],
-        "roles": ["UX Designer"],
+        "roles": ["UX Designer", "UI Designer"],
         "hook": "Making finding your next read a breeze across platforms.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada fermentum nibh, non tristique risus vestibulum et. Maecenas arcu ex, malesuada ac mauris nec, elementum bibendum tellus. Proin ac commodo ligula.",
+        "description": "Integrating external book trackers for convenient TBR searching & rethinkig app architecture.",
         "image": "work/libby/libbyProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
             { "text": "UX Design", "type": "outlined" },
             { "text": "IYKYK 📚", "type": "outlined" }
         ],
+        "tools": ["Figma"],
         "link": "/work",
         "status": "comingsoon"
     },
-
     {
         "id": 6,
         "path": "bbbd",
         "title": "Blk + Brwn Book Designers",
-        "client": ["Personal Project"],
+        "client": ["Blk + Brwn Book Designers"],
         "roles": ["UI/UX Designer"],
         "hook": "Challenging taxonomical norms & seeking better brand alignment.",
-        "description": "Challenging taxonomical patterns for greater inclusivity & redesigning for brand alignment.",
+        "description": "A challenge against superficial racial & ethnic taxonomical patterns with an exercise in pursuing brand alignment.",
         "image": "work/bbbd/bbbdProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
@@ -138,9 +138,11 @@
             { "text": "UX Design", "type": "outlined" },
             { "text": "Web Design", "type": "outlined" }
         ],
+        "tools": ["Figma"],
         "link": "/work",
         "status": "comingsoon"
     },
+
     {
         "id": 7,
         "path": "jahaji",
