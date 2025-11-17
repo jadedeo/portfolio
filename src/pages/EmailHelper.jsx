@@ -678,7 +678,22 @@ const EmailHelper = () => {
                                                     we knew from the start that
                                                     incorporating a rich text
                                                     editor would be necessary.
-                                                </strong>
+                                                </strong>{" "}
+                                                However, the mailto operation
+                                                used to create email drafts does
+                                                not support styling.
+                                            </p>
+                                            <p>
+                                                To accommodate this user need
+                                                within technical constraints, we
+                                                made the addition of a
+                                                formatting toggle. When
+                                                formatting is applied, the user
+                                                is only able to copy their
+                                                completed message. If unstyled,
+                                                they're able to create a draft
+                                                (with a subject line, if
+                                                desired).
                                             </p>
                                         </TextImage>
                                     </section>
