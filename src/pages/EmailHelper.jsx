@@ -71,9 +71,9 @@ const EmailHelper = () => {
                                     </strong>{" "}
                                     — a browser extension created to make the
                                     task of replying to repetitive inquiries
-                                    quicker & easier for support staff.
+                                    quicker for support staff.
                                 </p>
-                                <div className="p-4 border-1 rounded-md">
+                                <div className="p-4 border-1 rounded-md bg-white">
                                     <p>
                                         When tested against current workflows,
                                         Email Helper produced a 67% faster
@@ -111,13 +111,13 @@ const EmailHelper = () => {
                             >
                                 <p>
                                     Though there are intentions to replace the
-                                    main platform (ActiveNet) soon,{" "}
+                                    main reservation platform (ActiveNet) soon,{" "}
                                     <strong className="highlight">
                                         staff are stuck with performing
                                         excessive follow-ups & carrying out
                                         corrective measures
                                     </strong>{" "}
-                                    for the faulty system in the interim. We
+                                    for the faulty system in the interim. So, we
                                     asked ourselves:
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
@@ -170,7 +170,7 @@ const EmailHelper = () => {
                                     </p>
                                     <p>4,900+ messages</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Identify repetitive workload patterns
+                                        Identify repetitive workflow patterns
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -210,7 +210,7 @@ const EmailHelper = () => {
                                     </p>
                                     <p>50+ responses</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Gauge satisfaction & usability
+                                        Gauge current satisfaction & usability
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -308,9 +308,11 @@ const EmailHelper = () => {
                                     solution as simultaneously effective &
                                     low-lift as possible. There were several
                                     artifacts we could provide the RPD team with
-                                    to tackle usability concerns, but nothing
-                                    yet to handle inefficiencies from the
-                                    business's side.
+                                    to tackle usability concerns, but{" "}
+                                    <strong className="highlight">
+                                        nothing yet to handle inefficiencies
+                                        from the business's side.
+                                    </strong>
                                 </p>
                                 <p>
                                     <strong className="highlight">
@@ -351,11 +353,11 @@ const EmailHelper = () => {
                                             developers.
                                         </h3>
                                         <p>
-                                            There is no one on staff to maintain
+                                            There's no one on staff to maintain
                                             or customize a complex system, so
                                             any solution requiring extensive
                                             technical upkeep would not be
-                                            sustainable for the team.
+                                            sustainable.
                                         </p>
                                     </div>
 
@@ -373,7 +375,7 @@ const EmailHelper = () => {
                                         <p>
                                             SFRPD currently utilizes reservation
                                             systems that we cannot integrate
-                                            with or modify. The helper needed to
+                                            with or modify. The tool needed to
                                             be its own standalone solution.
                                         </p>
                                     </div>
@@ -392,10 +394,10 @@ const EmailHelper = () => {
                                         <p>
                                             With limited budget, the solution
                                             can’t rely on external servers or
-                                            paid cloud storage. It needs to work
-                                            entirely within staff’s existing
-                                            tools to avoid introducing new
-                                            expenses.
+                                            paid cloud storage. It needed to
+                                            work entirely within staff’s
+                                            existing tools to avoid introducing
+                                            new expenses.
                                         </p>
                                     </div>
                                 </div>
@@ -638,9 +640,9 @@ const EmailHelper = () => {
                                     </p>
 
                                     <p className="mt-3 sm:mt-0">
-                                        Effective serves as an intermediary step
-                                        while the department procures a new
-                                        reservation system
+                                        Effectively serves as stopgap for the
+                                        influx of emails while the department
+                                        procures a new reservation system
                                     </p>
                                 </section>
                             </TextGroup>
