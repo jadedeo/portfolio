@@ -10,6 +10,8 @@ import GiantEagle from "../src/pages/GiantEagle.jsx";
 import EmailHelper from "../src/pages/EmailHelper.jsx";
 import PrhProjects from "../src/pages/PrhProjects.jsx";
 import InTouch from "../src/pages/InTouch.jsx";
+import BBBD from "../src/pages/BBBD.jsx";
+import Libby from "../src/pages/Libby.jsx";
 
 import routes from "../src/resources/routes.json";
 
@@ -25,6 +27,8 @@ const componentMap = {
     EmailHelper,
     PrhProjects,
     InTouch,
+    BBBD,
+    Libby,
 };
 
 function App() {

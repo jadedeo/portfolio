@@ -438,7 +438,7 @@ const InTouch = () => {
                                                 <li>
                                                     As a college student, I want
                                                     to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         be prompted to reach out
                                                         to people at home
                                                     </strong>
@@ -449,7 +449,7 @@ const InTouch = () => {
                                                 <li>
                                                     As a college student, I want
                                                     to be able to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         see updates on family
                                                         without having to reach
                                                         out first or ask
@@ -462,7 +462,7 @@ const InTouch = () => {
                                                 <li>
                                                     As a college student, I want
                                                     to be able to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         send quick updates
                                                     </strong>{" "}
                                                     to my family, so that I
@@ -486,7 +486,7 @@ const InTouch = () => {
                                                 <li>
                                                     As a busy professional, I
                                                     want to be{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         prompted to share
                                                         small/meaningful moments
                                                         in my life with my
@@ -502,7 +502,7 @@ const InTouch = () => {
                                                     want to send quick updates
                                                     without starting a full
                                                     conversation, so that I can{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         stay connected without
                                                         disrupting my schedule.
                                                     </strong>
@@ -513,7 +513,7 @@ const InTouch = () => {
                                                     in my own time without
                                                     feeling guilty or awkward,
                                                     so that I{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         maintain emotional
                                                         connection without the
                                                         additional stress of
@@ -523,7 +523,7 @@ const InTouch = () => {
                                                 <li>
                                                     As a busy professional,I
                                                     want to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         know the best windows of
                                                         time to connect across
                                                         time zones,
@@ -548,7 +548,7 @@ const InTouch = () => {
                                                     As someone with family in a
                                                     different timezone, I want
                                                     to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         schedule messages for
                                                         important moments
                                                     </strong>{" "}
@@ -561,7 +561,7 @@ const InTouch = () => {
                                                 <li>
                                                     As someone in a different
                                                     timezone from loved ones, I
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         want to know what they
                                                         are currently up to or
                                                         busy with,
@@ -573,7 +573,7 @@ const InTouch = () => {
                                                 <li>
                                                     As someone in a different
                                                     timezone, I{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         want updates to be as
                                                         personal/face to face as
                                                         possible,
@@ -585,7 +585,7 @@ const InTouch = () => {
                                                     As someone in a different
                                                     timezone, I want to be able
                                                     to{" "}
-                                                    <strong class="highlight">
+                                                    <strong className="highlight">
                                                         update my loved one as I
                                                         am busy with or what I
                                                         am up to, so that they

@@ -39,15 +39,15 @@ const About = () => {
                                 exposure to the realm of UX and product design.
                             </p>
                             <p>
-                                For an visual arts-oriented student whose
+                                For a visual arts-oriented student whose
                                 interests were consistently underrepresented in
-                                computer science, the fall into HCI has been a
-                                natural one.
+                                computer science, the fall into human-centered
+                                design has been a natural one.
                             </p>
                             <p>
-                                Newly graduated from Carnegie Mellon's MHCI
-                                program, I'm eager to see where my journey takes
-                                me next.
+                                Newly graduated from Carnegie Mellon's Masters
+                                of HCI program, I'm eager to see where my
+                                journey takes me next.
                             </p>
                             <div className="flex gap-1">
                                 <Chip

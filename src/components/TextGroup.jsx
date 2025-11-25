@@ -36,7 +36,10 @@ const TextGroup = ({
                         {heading && (
                             <h2 className={`font-display mb-3`}>{heading}</h2>
                         )}
-                        <div>
+                        <div
+                            className={`flex flex-col gap-2
+                            `}
+                        >
                             {subheading && (
                                 <h3 className="text-xl font-bold">
                                     {subheading}

@@ -12,7 +12,7 @@
             "Sole Developer",
             "Researcher (1/5)"
         ],
-        "hook": "Cutting response time in half for support staff at the San Francisco Recreation and Parks Department.",
+        "hook": "Cutting email response time in half for support staff at the San Francisco Recreation and Parks Department.",
         "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [
@@ -112,7 +112,7 @@
         "client": ["Personal Project"],
         "roles": ["UX Designer", "UI Designer"],
         "hook": "Making finding your next read a breeze across platforms.",
-        "description": "Integrating external book trackers for convenient TBR searching & rethinkig app architecture.",
+        "description": "Rethinking architecture & integrating external book trackers with a public library app for convenient TBR searching.",
         "image": "work/libby/libbyProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
@@ -120,8 +120,8 @@
             { "text": "IYKYK 📚", "type": "outlined" }
         ],
         "tools": ["Figma"],
-        "link": "/work",
-        "status": "comingsoon"
+        "link": "/work/libby",
+        "status": "published"
     },
     {
         "id": 6,

@@ -229,10 +229,7 @@ const GiantEagle = () => {
                                                 rel="noreferrer"
                                                 className="hover:underline text-gray-400 text-sm text-right"
                                             >
-                                                {/* <p className="text-sm text-right"> */}
-                                                r/ADHD | Overstimulated while
-                                                grocery shopping?
-                                                {/* </p> */}
+                                                @moofable
                                             </a>
                                         </ChatBubble>
 
@@ -256,8 +253,7 @@ const GiantEagle = () => {
                                                 rel="noreferrer"
                                                 className="hover:underline text-gray-400 text-sm text-right"
                                             >
-                                                r/ADHD | Grocery shopping is the
-                                                natural enemy
+                                                @AlliCakes
                                             </a>
                                         </ChatBubble>
                                     </div>
@@ -301,8 +297,7 @@ const GiantEagle = () => {
                                             rel="noreferrer"
                                             className="hover:underline text-gray-400 text-sm text-right"
                                         >
-                                            r/ADHD | Grocery shopping is the
-                                            natural enemy
+                                            @bluemint2020
                                         </a>
                                     </ChatBubble>
 

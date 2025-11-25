@@ -71,12 +71,11 @@
 
 ul {
     list-style: circle;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 ol {
-    list-style: decimal;
-    margin-left: 50px;
+    @apply list-decimal ml-[50px];
 }
 
 li {

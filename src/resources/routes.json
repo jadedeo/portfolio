@@ -5,6 +5,8 @@
     { "component": "GiantEagle", "path": "/work/gianteagle" },
     { "component": "PrhProjects", "path": "/work/prh" },
     { "component": "InTouch", "path": "/work/intouch" },
+    { "component": "BBBD", "path": "/work/bbbd" },
+    { "component": "Libby", "path": "/work/libby" },
     { "component": "ForFun", "path": "/forfun" },
     { "component": "Resume", "path": "/resume" },
     { "component": "About", "path": "/about" }
