@@ -1,9 +1,10 @@
-// import PropTypes from "prop-types";
+import { small } from "motion/react-client";
+
 const TextGroup = ({
     heading,
+    smallHeading = null,
     subheading = null,
     children,
-    subheadingFirst = false,
     numbered = null,
     className,
 }) => {
@@ -14,51 +15,29 @@ const TextGroup = ({
                     subheading || children ? "gap-3" : ""
                 } `}
             >
-                {subheadingFirst ? (
-                    <>
-                        <div className="flex flex-col gap-2">
-                            {subheading && (
-                                <h3 className="text-xl font-bold">
-                                    {subheading}
-                                </h3>
-                            )}
-                            {heading && (
-                                <h2 className="font-display ">{heading}</h2>
-                            )}
-                        </div>
-                        <div className="flex flex-col gap-5">{children}</div>
-                    </>
-                ) : (
-                    <div className={`${numbered ? "flex gap-5" : ""}`}>
-                        {numbered && (
-                            <h2 className="font-display">{numbered}</h2>
+                <div className={`${numbered ? "flex gap-5" : ""}`}>
+                    {numbered && (
+                        <h2 className="font-display text-5xl">{numbered}</h2>
+                    )}
+                    {smallHeading && (
+                        <h6 className="text-gray-400 uppercase mb-2 font-light">
+                            {smallHeading}
+                        </h6>
+                    )}
+                    {heading && (
+                        <h2 className={`font-display mb-6`}>{heading}</h2>
+                    )}
+                    <div className={`flex flex-col gap-2`}>
+                        {subheading && (
+                            <h3 className="text-xl font-bold">{subheading}</h3>
                         )}
-                        {heading && (
-                            <h2 className={`font-display mb-3`}>{heading}</h2>
-                        )}
-                        <div
-                            className={`flex flex-col gap-2
-                            `}
-                        >
-                            {subheading && (
-                                <h3 className="text-xl font-bold">
-                                    {subheading}
-                                </h3>
-                            )}
-                            <div className="flex flex-col gap-5">
-                                {children}
-                            </div>
-                        </div>
+                        <div className="flex flex-col gap-4">{children}</div>
                     </div>
-                )}
+                </div>
+                {/* )} */}
             </div>
         </section>
     );
 };
-
-// TextGroup.propTypes = {
-// 	heading: PropTypes.string,
-// 	subheading: PropTypes.string,
-// };
 
 export default TextGroup;

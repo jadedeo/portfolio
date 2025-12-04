@@ -4,6 +4,7 @@ import TextGroup from "./TextGroup";
 
 const TextImage = ({
     heading,
+    smallHeading = null,
     subheading,
     image,
     imageAlt,
@@ -48,13 +49,13 @@ const TextImage = ({
                 </motion.div>
                 <div
                     className={`w-full mx-auto ${
-                        imagePlacement === "bottom"
-                            ? "pb-5"
-                            : imagePlacement === "top"
-                            ? "pt-10"
+                        imagePlacement === `bottom`
+                            ? `pb-8`
+                            : imagePlacement === `top`
+                            ? `pt-10`
                             : imagePlacement === "left"
-                            ? "md:pl-10 md:pb-0 pb-5"
-                            : "md:pr-10 md:pb-0 pb-5"
+                            ? `md:pl-10 md:pb-0 pb-8`
+                            : `md:pr-10 md:pb-0 pb-8`
                     } ${
                         imagePlacement === "right" ||
                         imagePlacement === "bottom"
@@ -63,6 +64,7 @@ const TextImage = ({
                     }`}
                 >
                     <TextGroup
+                        smallHeading={smallHeading}
                         heading={heading}
                         subheading={subheading}
                         numbered={numbered}

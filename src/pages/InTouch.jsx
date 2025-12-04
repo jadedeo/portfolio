@@ -38,29 +38,29 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px] ">
                             <TextImage
-                                heading="overview"
+                                smallHeading="overview"
+                                heading="intouch strengthens  relationships strained by distance & busy schedules"
                                 image="intouch/poster.png"
                                 addImageShadow={false}
                                 mat={false}
                                 imagePlacement="right"
                             >
                                 <p>
-                                    <strong className="highlight">
-                                        inTouch is a service that prompts more
-                                        frequent, personalized communication to
-                                        strengthen existing relationships that
-                                        may experience strain due to distance
-                                        and/or busy schedules.
-                                    </strong>
+                                    The service uses uniquely tailored prompts
+                                    to encourage more frequent, personalized
+                                    communication and reinforce existing bonds.
                                 </p>
                                 <p>
-                                    Instead of becoming yet another app to
-                                    install and manage, inTouch was imagined as
-                                    an integration for traditional messaging
-                                    services, made to be accessed from within
-                                    those users already frequent.
+                                    <strong className="highlight">
+                                        Instead of becoming yet another app to
+                                        install and manage, inTouch was imagined
+                                        as an integration for traditional
+                                        messaging services,
+                                    </strong>{" "}
+                                    made to be accessed from within those users
+                                    already frequent.
                                 </p>
-                                <div className="p-4 border-1 rounded-md">
+                                <div className="p-4 border-1 rounded-md bg-white">
                                     <p>
                                         Of seven concepts presented on final
                                         pitch day, inTouch placed first -
@@ -77,7 +77,11 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="the starting point"
+                                smallHeading="exploring the problem"
+                                heading="inTouch began with the goal of helping
+                                        users stay in contact with those they
+                                        were unaccustomed to contacting
+                                        virtually"
                                 imageAlt="TODO: add alt"
                                 image="intouch/originalSlides.png"
                                 mat={false}
@@ -86,17 +90,26 @@ const InTouch = () => {
                             >
                                 <p>
                                     <strong className="highlight">
-                                        inTouch began with the goal of helping
-                                        users stay in contact with those they
-                                        were unaccustomed to contacting
-                                        virtually.
+                                        There was also a particular emphasis on
+                                        bridging generational gaps and their
+                                        resulting differences in communication
+                                        styles.
                                     </strong>{" "}
-                                    There was also a particular emphasis on
-                                    bridging generational gaps and their
-                                    resulting differences in communication
-                                    styles. The service included an AI-powered
+                                    The service included an AI-powered
                                     component, allowing users to access and
                                     share a summary of their recent activity.
+                                </p>
+                                <p>
+                                    This original concept was developed by{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://jenniewei.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Jennie Wei
+                                    </a>
+                                    .
                                 </p>
                             </TextImage>
                         </section>
@@ -106,7 +119,7 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="refocusing the problem space"
+                                heading="after reframing, we confirmed our interest in helping existing relationships stay connected"
                                 // subheading="Abstraction Laddering"
                                 imageAlt="TODO: add alt"
                                 image="intouch/abstractionLaddering.png"
@@ -115,7 +128,7 @@ const InTouch = () => {
                                 addImageShadow={false}
                             >
                                 <p>
-                                    This starting point was solid and presented
+                                    Our starting point was solid and presented
                                     an interesting problem space, but adjacent
                                     issues were still worth exploring.
                                     Performing an abstraction laddering exercise
@@ -129,7 +142,8 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] flex flex-col gap-10">
                             <TextImage
-                                heading="scoping the competition"
+                                smallHeading="research & findings"
+                                heading="scoping the competition told us where current solutions stand"
                                 imageAlt="TODO: add alt"
                                 image="intouch/competitorAnalysis.png"
                                 mat={false}
@@ -267,8 +281,6 @@ const InTouch = () => {
                                         Services that aren't entirely free tend
                                         to include a free tier, with additional
                                         features/access hidden behind a paywall.
-                                        Users wonder if premium subscriptions
-                                        except them from data collection.
                                     </p>
                                 </StickyNote>
                                 <StickyNote>
@@ -295,7 +307,7 @@ const InTouch = () => {
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] flex flex-col gap-10">
-                            <TextGroup heading="interviewing long-distance folks">
+                            <TextGroup heading="interviews with long-distance folks made clear both users' desires & reservations">
                                 <p>
                                     Before contemplating the features of our
                                     service, we set out to learn more about our
@@ -382,7 +394,10 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
-                                heading="further understanding + empathizing with our stakeholders"
+                                smallHeading="understanding stakeholders"
+                                heading="mapping our stakeholders and their
+                                        experiences helped us imagine the
+                                        context in which intouch would fit"
                                 imageAlt="TODO: add alt"
                                 image="intouch/stakeholderMap.png"
                                 mat={false}
@@ -392,17 +407,12 @@ const InTouch = () => {
                                 <p>
                                     We wanted inTouch to integrate as seamlessly
                                     as possible with our users' packed schedules
-                                    and existing activities,{" "}
+                                    and existing activities, so —{" "}
                                     <strong className="highlight">
-                                        so mapping our stakeholders and their
-                                        experiences helped us imagine the
-                                        context in which our service would fit.
+                                        as our most accessible user group — we
+                                        looked deepest into the day-to-day
+                                        patterns of college students.
                                     </strong>
-                                </p>
-                                <p>
-                                    As our most accessible user group, we looked
-                                    deepest into the day-to-day patterns of
-                                    college students.
                                 </p>
                             </TextImage>
                         </section>
@@ -425,7 +435,7 @@ const InTouch = () => {
                     {/* jtbd */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
-                            <TextGroup heading="defining jobs to be done + value flow">
+                            <TextGroup heading="defining jobs to be done for key stakeholders helped us piece together the flow of value through the service">
                                 <div className="mx-auto max-w-screen-lg flex flex-col gap-10 mt-3">
                                     {/* TODO: make into component */}
                                     <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] items-center gap-5 justify-items-center">
@@ -620,7 +630,10 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
-                                heading="testing desireability with an mvp"
+                                smallHeading="testing an mvp"
+                                heading={
+                                    'participants loved receiving regular updates on "the little things"... but had some slight concerns about delivery'
+                                }
                                 imageAlt="TODO: add alt"
                                 image="intouch/mvp.png"
                                 mat={false}
@@ -628,21 +641,20 @@ const InTouch = () => {
                                 addImageShadow={false}
                             >
                                 <p>
-                                    <strong className="highlight">
-                                        To validate our product concept, the
-                                        team executed some Wizard-of-Oz style
-                                        testing.
-                                    </strong>
+                                    To validate our product concept, the team
+                                    executed some Wizard-of-Oz style testing.
                                 </p>
                                 <p>
-                                    Over the course of a few days, we would
-                                    intentionally disperse a series of updates
-                                    to a number of our contacts and determine
-                                    how they were received. If possible, we
-                                    would perform the test with individuals we
-                                    were not already in constant contact with
-                                    (eg. a friend we hadn’t talked to in a
-                                    while).
+                                    <strong className="highlight">
+                                        Over the course of a few days, we would
+                                        intentionally disperse a series of
+                                        updates to a number of our contacts and
+                                        determine how they were received.
+                                    </strong>{" "}
+                                    If possible, we would perform the test with
+                                    individuals we were not already in constant
+                                    contact with (eg. a friend we hadn’t talked
+                                    to in a while).
                                 </p>
                             </TextImage>
                         </section>
@@ -675,7 +687,7 @@ const InTouch = () => {
                                     conflicting opinions on the amount of
                                     written content required to create a
                                     meaningful connection. Short-form content
-                                    was quick & easy, but it ran the risk of
+                                    was quick and easy, but it ran the risk of
                                     being too superficial.
                                 </p>
                             </TextGroup>
@@ -739,7 +751,7 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="clarifying the user journey"
+                                heading="with 11th hour solutions in mind, we could finally pin down the user journey"
                                 imageAlt="TODO: add alt"
                                 image="intouch/journeyMap.png"
                                 imagePlacement="bottom"
@@ -752,7 +764,10 @@ const InTouch = () => {
                     {/* staff-side solution */}
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px]">
-                            <TextGroup heading="the final concept">
+                            <TextGroup
+                                smallHeading="solution"
+                                heading="the convenience & flexibility of intouch's unique UX is what ultimately set it apart from the competition"
+                            >
                                 <p>
                                     inTouch came together just in time for pitch
                                     day and wholly cleared the competition. It
@@ -763,12 +778,11 @@ const InTouch = () => {
                                     strong.
                                 </p>
                                 <p>
-                                    The service's final design successfully
-                                    distinguished itself from existing platforms
-                                    and{" "}
                                     <strong className="highlight">
-                                        addressed key concerns uncovered during
-                                        the research phase: 
+                                        The service's final design successfully
+                                        distinguished itself from existing
+                                        platforms and addressed key concerns
+                                        uncovered during the research phase: 
                                     </strong>
                                 </p>
 
@@ -815,6 +829,19 @@ const InTouch = () => {
                                     </TextImage>
                                 </div>
 
+                                <p>
+                                    Pitch video animated and voiced by{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://jenniewei.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Jennie Wei
+                                    </a>
+                                    .
+                                </p>
+
                                 {/* youtube link, if needed: https://www.youtube.com/watch?v=jdjxqBqDNXg */}
                                 <video controls>
                                     <source
@@ -830,7 +857,7 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="iOS interface mockups"
+                                heading="iOS interface mockups show what to expect from the intouch experience"
                                 imageAlt="TODO: add alt"
                                 image="intouch/screensAnnotated.png"
                                 imagePlacement="bottom"
@@ -843,15 +870,15 @@ const InTouch = () => {
                     {/* business model */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="proposed business model">
+                            <TextGroup heading="the proposed business model includes a controlled rollout">
                                 <p>
                                     <strong className="highlight">
                                         To test market demand and engagement
                                         before wider consumer monetization,
                                     </strong>{" "}
-                                    we proposed a controlled and scalable
-                                    rollout including organization-wide plans
-                                    and invite incentives.
+                                    we proposed a scalable rollout including
+                                    organization-wide plans and invite
+                                    incentives.
                                 </p>
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
@@ -906,7 +933,7 @@ const InTouch = () => {
                                             />
                                         </div>
                                         <h3 className="text-xl font-bold">
-                                            Paid Expansion & Referrals
+                                            Paid Expansion and Referrals
                                         </h3>
                                         <p>
                                             Additional invites are made

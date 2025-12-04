@@ -35,15 +35,18 @@ const EmailHelper = () => {
                 <div className="flex flex-col">
                     {/* overview */}
                     <FadeSection scrollDir={scrollDir} isFilled>
-                        <section className="py-[50px] flex flex-col gap-10">
-                            <TextGroup heading="overview">
+                        <section className="py-[50px] flex flex-col gap-8">
+                            <TextGroup
+                                smallHeading="overview"
+                                heading="email helper cuts response time for sfrpd staff by 67%"
+                            >
                                 <p>
-                                    The San Francisco Recreation & Parks
+                                    The San Francisco Recreation and Parks
                                     Department services a city's worth of park
-                                    goers via their Reservations & Permits
+                                    goers via their Reservations and Permits
                                     Divison. Through processing 70,000+
-                                    reservations for 230 parks & 100 recreation
-                                    centers,{" "}
+                                    reservations for 230 parks and 100
+                                    recreation centers,{" "}
                                     <strong className="highlight">
                                         the team's support staff must satisfy
                                         thousands of inquiries annually.
@@ -73,6 +76,7 @@ const EmailHelper = () => {
                                     task of replying to repetitive inquiries
                                     quicker for support staff.
                                 </p>
+
                                 <div className="p-4 border-1 rounded-md bg-white">
                                     <p>
                                         When tested against current workflows,
@@ -87,18 +91,21 @@ const EmailHelper = () => {
                     {/* problem */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] flex flex-col gap-10">
-                            <TextGroup heading="the problem">
+                            <TextGroup
+                                smallHeading="initial problem"
+                                heading="staff field thousands of inquiries annually from residents struggling to use the department's reservation system"
+                            >
                                 <p>
                                     <strong className="highlight">
-                                        SFRPD logged 13,000 phone calls & 5,000
-                                        emails in the last year alone,
+                                        SFRPD logged 13,000 phone calls and
+                                        5,000 emails in the last year alone,
                                     </strong>{" "}
                                     a majority of which come from city residents
                                     experiencing frustration with the current
-                                    reservation & permitting system. From
+                                    reservation and permitting system. From
                                     website to permit reception, residents pass
                                     through 4+ platforms, creating a disjointed
-                                    & often circular user journey.
+                                    and often circular user journey.
                                 </p>
                             </TextGroup>
                             <TextImage
@@ -114,12 +121,13 @@ const EmailHelper = () => {
                                     main reservation platform (ActiveNet) soon,{" "}
                                     <strong className="highlight">
                                         staff are stuck with performing
-                                        excessive follow-ups & carrying out
+                                        excessive follow-ups and carrying out
                                         corrective measures
                                     </strong>{" "}
                                     for the faulty system in the interim. So, we
                                     asked ourselves:
                                 </p>
+
                                 <div className="p-4 border-1 rounded-md">
                                     <p>
                                         How might we reduce service delivery
@@ -134,18 +142,13 @@ const EmailHelper = () => {
                     {/* research + findings */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
-                            <TextImage
-                                heading="research + findings"
-                                // subheading="Methods & Analysis"
-                                // imageAlt="TODO: add alt text"
-                                // image="emailhelper/clustering.png"
-                                // addImageShadow={false}
-                                imagePlacement="bottom"
-                                mat={false}
+                            <TextGroup
+                                smallHeading="research & findings"
+                                heading="both staff & resident workflows are bogged down by faulty tech & procedural inefficiencies"
                             >
                                 <p>
                                     To ensure we had a complete an understanding
-                                    of the problem space & it's main
+                                    of the problem space and it's main
                                     stakeholders, we set out to execute a
                                     thorough research effort. This included
                                     analysis of various large datasets, as well
@@ -153,15 +156,15 @@ const EmailHelper = () => {
                                 </p>
 
                                 <section className="sm:grid grid-cols-3">
-                                    <h6 className="hidden sm:block font-bold">
+                                    <h3 className="hidden sm:block font-bold">
                                         Method
-                                    </h6>
-                                    <h6 className="hidden sm:block font-bold">
+                                    </h3>
+                                    <h3 className="hidden sm:block font-bold">
                                         Volume
-                                    </h6>
-                                    <h6 className="hidden sm:block font-bold">
+                                    </h3>
+                                    <h3 className="hidden sm:block font-bold">
                                         Purpose
-                                    </h6>
+                                    </h3>
 
                                     <hr className="hidden sm:block col-span-3 my-3" />
 
@@ -190,7 +193,8 @@ const EmailHelper = () => {
                                     </p>
                                     <p>5 participants, 8 sessions</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Understand daily workflows & pain points
+                                        Understand daily workflows and pain
+                                        points
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -200,7 +204,7 @@ const EmailHelper = () => {
                                     </p>
                                     <p>12 participants</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Identify breakdowns & opportunities
+                                        Identify breakdowns and opportunities
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -210,7 +214,7 @@ const EmailHelper = () => {
                                     </p>
                                     <p>50+ responses</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Gauge current satisfaction & usability
+                                        Gauge current satisfaction and usability
                                     </p>
 
                                     <hr className="col-span-3 my-3" />
@@ -220,11 +224,11 @@ const EmailHelper = () => {
                                     </p>
                                     <p>60+ participants</p>
                                     <p className="mt-3 sm:mt-0">
-                                        Observe & gather real-time feedback from
-                                        San Francisco park-goers
+                                        Observe and gather real-time feedback
+                                        from San Francisco park-goers
                                     </p>
                                 </section>
-                            </TextImage>
+                            </TextGroup>
                         </section>
                     </FadeSection>
                     {/* key takeaways */}
@@ -244,9 +248,9 @@ const EmailHelper = () => {
                                         incomplete service experience.
                                     </h3>
                                     <p>
-                                        Disorganized web content & a
+                                        Disorganized web content and a
                                         difficult-to-navigate reservation system
-                                        push the public to call & email.
+                                        push the public to call and email.
                                     </p>
                                 </div>
 
@@ -263,7 +267,7 @@ const EmailHelper = () => {
                                     </h3>
                                     <p>
                                         The same questions about permit
-                                        requirements, facility rules &
+                                        requirements, facility rules and
                                         availability resurface constantly.
                                     </p>
                                 </div>
@@ -280,7 +284,7 @@ const EmailHelper = () => {
                                     </h3>
                                     <p>
                                         SFRPD is beholden to contracted
-                                        agreements with vendors & can't afford
+                                        agreements with vendors and can't afford
                                         labor-intensive updates. Major usability
                                         issues, however, need to be addressed by
                                         swapping in a more holistic system.
@@ -294,7 +298,8 @@ const EmailHelper = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="adjusting our perspective"
+                                smallHeading="revisiting the problem"
+                                heading="we ultimately realized our design efforts would best serve the staff-side experience ..."
                                 imageAlt="TODO: add alt text"
                                 image="emailhelper/solutionDiagram.png"
                                 addImageShadow={false}
@@ -305,7 +310,7 @@ const EmailHelper = () => {
                                     With some serious limits on what could
                                     realistically be accomplished by the
                                     division, we sought to make our proposed
-                                    solution as simultaneously effective &
+                                    solution as simultaneously effective and
                                     low-lift as possible. There were several
                                     artifacts we could provide the RPD team with
                                     to tackle usability concerns, but{" "}
@@ -327,10 +332,10 @@ const EmailHelper = () => {
                     {/* constraints */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="designing within technical constraints">
+                            <TextGroup heading="... but there were some significant technical constraints we had to work with">
                                 <p>
                                     Though a goalpost was in sight, we needed to
-                                    be aware of any & all guardrails when
+                                    be aware of any and all guardrails when
                                     brainstorming.{" "}
                                     <strong className="highlight">
                                         Any piece of software or technical
@@ -388,7 +393,7 @@ const EmailHelper = () => {
                                             />
                                         </div>
                                         <h3 className="text-xl font-bold">
-                                            The cost of hosting & data storage
+                                            The cost of hosting and data storage
                                             had to be essentially zero.
                                         </h3>
                                         <p>
@@ -408,17 +413,20 @@ const EmailHelper = () => {
                     {/* staff-side solution */}
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px] flex flex-col gap-10">
-                            <TextGroup heading="the staff-side solution">
+                            <TextGroup
+                                smallHeading="solution"
+                                heading="a simple email templating browser extension provides staff with much needed relief"
+                            >
                                 <p>
                                     <strong className="highlight">
                                         Email Helper is a browser extension that
-                                        facilitates the creation & use of
+                                        facilitates the creation and use of
                                         reusable templates,
                                     </strong>{" "}
                                     while seamlessly complementing existing
                                     staff workflows. It’s simple to adopt,
-                                    cost-effective to run & tailored to SFRPD’s
-                                    specific environment.
+                                    cost-effective to run and tailored to
+                                    SFRPD’s specific environment.
                                 </p>
 
                                 <p>
@@ -426,7 +434,7 @@ const EmailHelper = () => {
                                     requests more quickly, they’d have more time
                                     to support residents who have complex,
                                     urgent, or unique needs that truly require
-                                    human expertise & judgement.
+                                    human expertise and judgement.
                                 </p>
                                 <p>
                                     As of September 2025,{" "}
@@ -436,14 +444,14 @@ const EmailHelper = () => {
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        Email Helper has been published to
+                                        Email Helper has been published to the
                                         Chrome web store.
                                     </a>
                                 </p>
                             </TextGroup>
 
                             <TextImage
-                                subheading="Template creation & management"
+                                subheading="Template creation and management"
                                 image="emailhelper/templatesScreens.png"
                                 imageAlt="TODO: add image alt"
                                 imagePlacement="bottom"
@@ -452,7 +460,7 @@ const EmailHelper = () => {
                             />
 
                             <TextImage
-                                subheading="Template selection & email creation"
+                                subheading="Template selection and email creation"
                                 image="emailhelper/selectionScreens.png"
                                 imageAlt="TODO: add image alt"
                                 imagePlacement="bottom"
@@ -474,7 +482,7 @@ const EmailHelper = () => {
                     {/* how it works */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="how it works"></TextGroup>
+                            <TextGroup heading="here's how it works"></TextGroup>
 
                             <div className="mx-auto max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-20">
                                 <TextImage
@@ -504,7 +512,7 @@ const EmailHelper = () => {
                                 >
                                     <p>
                                         Use a rich text editor to format your
-                                        templates & then categorize them into
+                                        templates and then categorize them into
                                         sections as preferred
                                     </p>
                                 </TextImage>
@@ -520,7 +528,7 @@ const EmailHelper = () => {
                                 >
                                     <p>
                                         Uploads will be validated for correct
-                                        file format & structure
+                                        file format and structure
                                     </p>
                                 </TextImage>
 
@@ -587,21 +595,20 @@ const EmailHelper = () => {
                     {/* measured impact */}
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px]">
-                            <TextGroup heading="measured impact">
+                            <TextGroup heading="email helper had an overwhelmingly positive impact">
                                 <p>
-                                    Email Helper had a proven positive impact on
-                                    staff workflows - it more than delivers on
-                                    promises of greater speed & convenience than
+                                    The extension more than delivers on promises
+                                    of greater speed and convenience than
                                     current workarounds.
                                 </p>
 
                                 <section className="sm:grid grid-cols-2">
-                                    <h6 className="hidden sm:block font-bold">
+                                    <h3 className="hidden sm:block font-bold">
                                         Measurement
-                                    </h6>
-                                    <h6 className="hidden sm:block font-bold">
+                                    </h3>
+                                    <h3 className="hidden sm:block font-bold">
                                         Outcome
-                                    </h6>
+                                    </h3>
 
                                     <hr className="hidden sm:block col-span-3 my-3" />
 
@@ -652,18 +659,17 @@ const EmailHelper = () => {
                     {/* key decisions + iteration */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
-                            <TextGroup heading="key decisions + iteration" />
+                            <TextGroup
+                                smallHeading="design decisions & iteration"
+                                heading="designing email helper required problem solving on 3 notable fronts"
+                            />
                             <Accordion>
                                 {/* ITEM 1 */}
                                 <div>
                                     <h3 className="text-xl font-bold">
-                                        How can we handle both formatting &
+                                        How can we handle both formatting and
                                         email draft creation?
                                     </h3>
-                                    <p className="mt-3">
-                                        Balancing technical limitations with
-                                        user needs
-                                    </p>
                                     <section className="pb-3">
                                         <TextImage
                                             imageAlt="TODO: add alt"
@@ -674,7 +680,7 @@ const EmailHelper = () => {
                                             <p>
                                                 Staff frequently used additional
                                                 styling in their emails to
-                                                emphasize & distinguish
+                                                emphasize and distinguish
                                                 important information, so{" "}
                                                 <strong className="highlight">
                                                     we knew from the start that
@@ -707,7 +713,6 @@ const EmailHelper = () => {
                                         Shifting from window-based design to a
                                         single-page application (SPA)
                                     </h3>
-                                    <p className="mt-3">subheading 3 test</p>
                                     <section className="pb-3">
                                         <TextImage
                                             imageAlt="TODO: add alt"
@@ -719,7 +724,7 @@ const EmailHelper = () => {
                                                 During development, we
                                                 discovered that using
                                                 independent windows for template
-                                                creation & email generator
+                                                creation and email generator
                                                 proved to be counter intuitive.
                                                 Closing either of these resulted
                                                 in dismissing the root pop-up as
@@ -748,13 +753,9 @@ const EmailHelper = () => {
                                 {/* ITEM 3 */}
                                 <div>
                                     <h3 className="text-xl font-bold">
-                                        What method of previewing an email &
+                                        What method of previewing an email and
                                         completing its inputs is most intuitive?
                                     </h3>
-                                    <p className="mt-3">
-                                        Minimizing repetition & maximizing
-                                        efficiency
-                                    </p>
                                     <section className="pb-10">
                                         <TextImage
                                             imageAlt="TODO: add alt"
@@ -806,7 +807,7 @@ const EmailHelper = () => {
                                                     Version 3 (Final)
                                                 </strong>{" "}
                                                 placed both user input
-                                                collection & previewing within
+                                                collection and previewing within
                                                 the same frame. Users can see
                                                 the effects of their inputs in
                                                 real time, without having to
@@ -822,37 +823,34 @@ const EmailHelper = () => {
 
                     {/* next steps */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
+                        <section className="py-[50px]">
                             <TextImage
-                                heading="next steps"
-                                subheading="Updating UI & implementing additional functionality"
+                                heading="looking ahead, we've identified some opportunities for future improvement"
                                 imageAlt="TODO: add alt"
                                 image="emailhelper/nextSteps.png"
                                 addImageShadow={false}
                                 imagePlacement="bottom"
-                            />
-                        </section>
-                    </FadeSection>
-
-                    {/* centralized alt */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px]">
-                            <TextGroup subheading="Exploring a centralized alternative">
+                            >
                                 <p>
-                                    We are interested in designing what a
-                                    centralized template management system might
-                                    look like & expect to revisit the project in
-                                    the near future.
-                                </p>{" "}
+                                    <strong className="highlight">
+                                        In addition to updating UI and
+                                        implementing additional functionality
+                                        (shown below), we are interested in
+                                        designing what a centralized template
+                                        management system might look like and
+                                        expect to revisit the project in the
+                                        near future.
+                                    </strong>
+                                </p>
                                 <p>
                                     While Email Helper as it stands was tailored
                                     to SFRPD’s current restrictions, it serves
-                                    as a highly-usable proof of concept &
+                                    as a highly-usable proof of concept and
                                     mechanism by which the team can determine
                                     whether the costs of a more complex system
                                     can be justified.
                                 </p>
-                            </TextGroup>
+                            </TextImage>
                         </section>
                     </FadeSection>
                 </div>

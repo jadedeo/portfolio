@@ -1,7 +1,7 @@
 const AccordionItem = ({ isOpen = false, children, onClick, itemNumber }) => {
     const heading = children.props?.children?.[0];
-    const subheading = children.props?.children?.[1];
-    const content = children.props?.children?.slice(2);
+    // const subheading = children.props?.children?.[1];
+    const content = children.props?.children?.slice(1);
 
     return (
         <section className="accordionitem-component my-3 pt-3 border-t-1 border-black">
@@ -29,7 +29,7 @@ const AccordionItem = ({ isOpen = false, children, onClick, itemNumber }) => {
                 </h3>
             </div>
 
-            {isOpen && <div className="mt-2">{content}</div>}
+            {isOpen && <div className="mt-4">{content}</div>}
         </section>
     );
 };

@@ -69,7 +69,7 @@ const NavbarDesktop = ({ useLightText }) => {
                             route.component === "ForFun"
                                 ? "For Fun"
                                 : route.component === "About"
-                                ? "About + Contact"
+                                ? "About & Contact"
                                 : route.component
                         }
                         outlinedIcon={iconMap[route.component].outlined}

@@ -14,7 +14,7 @@ import projectList from "../resources/projectList.json";
 
 const Libby = () => {
     const projectData = projectList.find(
-        (project) => project.title === "TBR Integration for Libby"
+        (project) => project.title === "External TBR Integration for Libby"
     );
 
     const scrollDir = useScrollDirection();
@@ -38,64 +38,49 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px] ">
                             <TextGroup
-                                heading="overview + context"
-                                // image="intouch/poster.png"
-                                // addImageShadow={false}
-                                // mat={false}
-                                // imagePlacement="right"
+                                smallHeading="overview"
+                                heading="there is currently no way of interfacing between book trackers & libby, the popular library app"
                             >
                                 <p>
                                     The Libby app, developed by Overdrive,
-                                    allows users to borrow ebooks, audiobooks &
-                                    more from their local libraries.
+                                    allows users to borrow ebooks, audiobooks
+                                    and more from their local libraries.
                                 </p>
                                 <p>
                                     Many avid readers also frequent book
-                                    trackers (such as Goodreads & Storygraph),
+                                    trackers (such as Goodreads and Storygraph),
                                     where they maintain personal collections.
                                     The use of a TBR (to-be-read) list to record
                                     books one would like to read is very common.
-                                </p>
-                                <p>
-                                    <strong className="highlight">
-                                        There is currently no way of interfacing
-                                        between the these platforms.
-                                    </strong>
                                 </p>
 
                                 <div className="p-4 border-1 rounded-md bg-white">
                                     <p>
                                         This project explores the addition of a
-                                        bridge between Libby & trackers, making
-                                        it easier for readers to search their
-                                        libraries for available items on their
-                                        TBR.
+                                        bridge between Libby and trackers,
+                                        making it easier for readers to search
+                                        their libraries for available items on
+                                        their TBR.
                                     </p>
                                 </div>
                             </TextGroup>
                         </section>
                     </FadeSection>
 
-                    {/* the problem */}
+                    {/*  problem */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
+                            <TextGroup
+                                smallHeading="problem"
+                                heading="the current process of searching libby for one's tbr items is repetitive & tedious"
+                            />
                             <TextImage
-                                heading="the problem"
                                 imageAlt="TODO: add alt"
                                 image="libby/currentFlow.gif"
                                 mat={false}
                                 imagePlacement="right"
                                 addImageShadow={false}
                             >
-                                <p>
-                                    In order to search for items on their TBR &
-                                    maintain a list of these books within the
-                                    Libby app,{" "}
-                                    <strong className="highlight">
-                                        users currently follow 3 steps :
-                                    </strong>
-                                </p>
-
                                 <div className="grid grid-cols-1 gap-y-5 mt-5">
                                     <TextImage
                                         subheading="Consult a tracker"
@@ -105,7 +90,7 @@ const Libby = () => {
                                     >
                                         <p>
                                             Readers need to refer back to their
-                                            book tracker to select a title
+                                            book tracker to identify a title
                                             they'd like to search for
                                         </p>
                                     </TextImage>
@@ -156,20 +141,19 @@ const Libby = () => {
 
                     {/* nav problem */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
-                            <TextGroup heading="revising app architecture">
+                        <section className="py-[50px]">
+                            <TextGroup
+                                heading="While integrating external trackers was
+                                        the primary goal, 
+                                        reorganization was required for effective placement"
+                            >
                                 <p>
                                     <strong className="highlight">
-                                        While integrating external trackers was
-                                        the primary goal, this required
-                                        reorganization in order to be placed
-                                        effectively within the Libby app.
+                                        The current organization of the app is
+                                        non-intutitve and doesn't prioritize
+                                        content that users need to access most
+                                        frequently.
                                     </strong>{" "}
-                                </p>
-                                <p>
-                                    The current organization of the app is
-                                    non-intutitve & does nt prioritize content
-                                    that users need to access most frequently.
                                     Abiguity around not only what navigation
                                     items represent, but how content is
                                     separated betwen their pages is a point of
@@ -248,9 +232,10 @@ const Libby = () => {
 
                     {/* nav changes */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px]">
+                        <section className="py-[50px]">
                             <TextImage
-                                subheading="I resolved these organizational concerns with 2 key changes:"
+                                smallHeading="solution"
+                                heading="organizational concerns could be alleviated by 2 key changes"
                                 imageAlt="TODO: add alt"
                                 image="libby/navigation.png"
                                 mat={false}
@@ -264,15 +249,15 @@ const Libby = () => {
                                             item into an account management
                                             page;
                                         </strong>{" "}
-                                        this becomes the last menu item
+                                        this now becomes the last menu item
                                     </li>
                                     <li>
                                         <strong className="highlight">
-                                            Combining search & browsing,
+                                            Combining search and browsing,
                                         </strong>{" "}
                                         whereas they were previously separated
                                         into 2 menu items (represented by the
-                                        magnifying glass & library icons)
+                                        magnifying glass and library icons)
                                     </li>
                                 </ol>
                             </TextImage>
@@ -283,7 +268,7 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="rethinking settings placement"
+                                heading="creating a designated account page eliminates navigation-related confusion & provides a place for our new feature"
                                 imageAlt="TODO: add alt"
                                 image="libby/settings.png"
                                 mat={false}
@@ -293,7 +278,7 @@ const Libby = () => {
                                 <p>
                                     <strong className="highlight">
                                         Instead of placing card/library
-                                        management & settings on the original,
+                                        management and settings on the original,
                                         unnamed central page, these are moved to
                                         the designated Account page.
                                     </strong>{" "}
@@ -315,23 +300,15 @@ const Libby = () => {
 
                     {/* connecting tbr */}
                     <FadeSection scrollDir={scrollDir}>
-                        <section className="pt-[50px]">
+                        <section className="py-[50px">
                             <TextImage
-                                heading="connecting tbr user flow"
+                                heading="importing a user's tbr is a straightforward, 3-step process"
                                 imageAlt="TODO: add alt"
                                 image="libby/connection.png"
                                 mat={false}
                                 imagePlacement="bottom"
                                 addImageShadow={false}
                             >
-                                <p>
-                                    <strong className="highlight">
-                                        The process of connecting a user's
-                                        preferred book tracker to their Libby
-                                        app includes 3 steps:
-                                    </strong>
-                                </p>
-
                                 <div className="mx-auto max-w-screen-lg grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 mt-5">
                                     <TextImage
                                         subheading="Enter user information"
@@ -341,8 +318,8 @@ const Libby = () => {
                                     >
                                         <p>
                                             The user selects their preferred
-                                            platform & enters their account name
-                                            to begin the pairing process.
+                                            platform and enters their account
+                                            name to begin the pairing process.
                                         </p>
                                     </TextImage>
 
@@ -367,21 +344,15 @@ const Libby = () => {
                                         numbered="03"
                                     >
                                         <p>
-                                            Both Goodreads & Storygraph provide
-                                            default shelves that function as
-                                            TBRs. These are selected by default,
-                                            but the user is free to choose
-                                            another if desired.
+                                            Both Goodreads and Storygraph
+                                            provide default shelves that
+                                            function as TBRs. These are selected
+                                            by default, but the user is free to
+                                            choose another if desired.
                                         </p>
                                     </TextImage>
                                 </div>
                             </TextImage>
-                        </section>
-                    </FadeSection>
-
-                    {/* empty/error states */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px]">
                             <TextImage
                                 // heading="connecting tbr"
                                 imageAlt="TODO: add alt"
@@ -397,7 +368,7 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
-                                heading="combining searching + browsing"
+                                heading="combining searching & browsing reinforces a clear distinction between pages & better supports exploration"
                                 subheading="Current Organization"
                                 imageAlt="TODO: add alt"
                                 image="libby/oldSearchBrowse.png"
@@ -408,10 +379,10 @@ const Libby = () => {
                                 <p>
                                     <strong className="highlight">
                                         In addition to needlessly separating
-                                        search & browsing functionality across
+                                        search and browsing functionality across
                                         two deparate pages
                                     </strong>{" "}
-                                    (marked by the magnifying glass & library
+                                    (marked by the magnifying glass and library
                                     icons),{" "}
                                     <strong className="highlight">
                                         the app also unnecessarily specifies a
@@ -453,7 +424,7 @@ const Libby = () => {
                             >
                                 <p>
                                     <strong className="highlight">
-                                        The new design combines searching &
+                                        The new design combines searching and
                                         browsing functionality into one page
                                         (marked by the magnifying glass icon).
                                     </strong>
@@ -461,10 +432,10 @@ const Libby = () => {
                                 <p>
                                     Filtering by your designated TBR shelf is
                                     now available alongside other options on the
-                                    search page & the idea of having a "current
-                                    library" has also been eliminated. This
-                                    reorganization also keeps library-specific
-                                    collections within sight.
+                                    search page and the idea of having a
+                                    "current library" has also been eliminated.
+                                    This reorganization also keeps
+                                    library-specific collections within sight.
                                 </p>
                             </TextImage>
                         </section>
@@ -474,7 +445,7 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="results page"
+                                heading="results from a tbr search maintain existing patterns"
                                 imageAlt="TODO: add alt"
                                 image="libby/tbrResults.png"
                                 mat={false}
@@ -482,11 +453,11 @@ const Libby = () => {
                                 addImageShadow={false}
                             >
                                 <p>
-                                    The results produced by a seach for TBR
-                                    items follows the same pattern as for other
-                                    queries. From here, readers may immediately
-                                    check-out, place on hold, or further tag
-                                    items.
+                                    The results produced by a search for TBR
+                                    items follows are showcased in a manner
+                                    consistent with other queries. From here,
+                                    readers may immediately check-out, place on
+                                    hold, or further tag items.
                                 </p>
                             </TextImage>
                         </section>
@@ -496,7 +467,8 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px]">
                             <TextImage
-                                heading="bonus: streamlining the shelf"
+                                smallHeading="just for funzies"
+                                heading="the shelf is further streamlined by limiting clutter"
                                 imageAlt="TODO: add alt"
                                 image="libby/shelf.png"
                                 mat={false}
@@ -507,7 +479,8 @@ const Libby = () => {
                                     <strong className="highlight">
                                         A large portion of the original Shelf
                                         page was occupied by options to view a
-                                        user's loans, holds, timeline & notices.
+                                        user's loans, holds, timeline and
+                                        notices.
                                     </strong>
                                 </p>
                                 <p>
@@ -524,7 +497,7 @@ const Libby = () => {
                                     Items are displayed top to bottom, from most
                                     recently read to least. A book may also be
                                     pushed to the top of the list if its loan is
-                                    expiring soon & requires action.
+                                    expiring soon and requires action.
                                 </p>
                             </TextImage>
                         </section>

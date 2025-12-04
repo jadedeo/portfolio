@@ -15,7 +15,7 @@ const Hero = ({ project, image, className }) => {
             >
                 <div className="flex gap-10 items-center">
                     <div className="text-white flex flex-col gap-20 justify-end">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-6">
                             <h1 className="font-display min-w-lg">
                                 {project.title}
                             </h1>
@@ -30,7 +30,7 @@ const Hero = ({ project, image, className }) => {
                         >
                             <div className="flex gap-10 text-nowrap">
                                 <div className="flex flex-col gap-2">
-                                    <h6 className="uppercase font-bold">For</h6>
+                                    <h3 className="uppercase font-bold">For</h3>
                                     <div>
                                         {project.client.map((client, index) => {
                                             return <p key={index}>{client}</p>;
@@ -38,11 +38,11 @@ const Hero = ({ project, image, className }) => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h6 className="uppercase font-bold">
+                                    <h3 className="uppercase font-bold">
                                         {project.roles.length > 1
                                             ? "Roles"
                                             : "Role"}
-                                    </h6>
+                                    </h3>
                                     <div>
                                         {project.roles.map((role, index) => {
                                             return <p key={index}>{role}</p>;
@@ -53,9 +53,9 @@ const Hero = ({ project, image, className }) => {
 
                             {showTools && (
                                 <div className="flex flex-col gap-2">
-                                    <h6 className="uppercase font-bold">
+                                    <h3 className="uppercase font-bold">
                                         Tools
-                                    </h6>
+                                    </h3>
                                     <div className="flex flex-wrap gap-1 text-white bg-black">
                                         {project.tools.map((tool, index) => {
                                             return (
@@ -80,10 +80,5 @@ const Hero = ({ project, image, className }) => {
         </div>
     );
 };
-
-// Hero.propTypes = {
-// 	pageTitle: PropTypes.string,
-// 	pageSubtitle: PropTypes.string,
-// };
 
 export default Hero;

@@ -10,16 +10,13 @@
 }
 
 @font-face {
-    font-family: "Soria";
-    src: local("Soria"), url(./fonts/soria-font.ttf) format("truetype");
+    font-family: "Belvare";
+    src: local("Belvare"), url(./fonts/ccsbelvare.otf) format("opentype");
 }
-@font-face {
-    font-family: "Pixerif";
-    src: local("Pixerif"), url(./fonts/Pixerif.ttf) format("truetype");
-}
+
 @theme {
     --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
-    --font-display: "Murmure", "sans-serif";
+    --font-display: "Belvare", "sans-serif";
     --font-handwritten: "Caveat", sans-serif;
 }
 
@@ -30,6 +27,8 @@
 
     .font-display {
         font-family: var(--font-display);
+        letter-spacing: 0.03em;
+        /* line-height: 0.9em; */
     }
 
     .font-handwritten {
@@ -37,18 +36,18 @@
     }
 
     h1 {
-        @apply text-8xl;
+        @apply text-7xl font-bold;
     }
 
-    .prh-hero h1 {
-        @apply text-[75px];
-    }
+    /* .prh-hero h1 {
+        @apply text-6xl;
+    } */
 
     h2 {
-        @apply text-6xl;
+        @apply text-5xl font-bold;
     }
     h3 {
-        @apply text-4xl;
+        @apply text-xl;
     }
     h4 {
         @apply text-2xl;
@@ -57,7 +56,7 @@
         @apply text-xl;
     }
     h6 {
-        @apply text-lg;
+        @apply text-base;
     }
 }
 
@@ -99,6 +98,8 @@ div.font-handwritten {
     @apply bg-yellow-200 px-1;
 }
 
-/* .bg-gray-100 .highlight {
-    @apply bg-transparent underline decoration-3 decoration-yellow-200;
+/* p,
+li,
+a {
+    font-size: 16px;
 } */

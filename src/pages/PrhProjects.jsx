@@ -12,7 +12,7 @@ import projectList from "../resources/projectList.json";
 
 const PrhProjects = () => {
     const projectData = projectList.find(
-        (project) => project.title === "Division Platform + Splash"
+        (project) => project.title === "Division Platform & Splash"
     );
 
     const scrollDir = useScrollDirection();
@@ -36,7 +36,8 @@ const PrhProjects = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="impact"
+                                smallHeading="overview"
+                                heading="what are these tools for?"
                                 image="prhProjects/footprints.png"
                                 addImageShadow={false}
                                 mat={false}

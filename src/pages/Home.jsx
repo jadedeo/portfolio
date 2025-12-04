@@ -26,7 +26,7 @@ const Home = () => {
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-1">
                                 <Chip
-                                    label="Designer + dev by day"
+                                    label="Designer & dev by day"
                                     type="outlined"
                                 />
                                 <Chip label="Doodler by night" type="filled" />
@@ -36,7 +36,7 @@ const Home = () => {
                                 <img className="h-5" src={starOutlineDark} />
                                 <p>Pixie-dust-powered creative</p>
                                 <img className="h-5" src={starOutlineDark} />
-                                <p>forever + always</p>
+                                <p>forever & always</p>
                             </div>
                         </div>
 

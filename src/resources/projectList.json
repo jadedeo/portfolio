@@ -43,7 +43,7 @@
             "(initially 1/5, later revised independently)"
         ],
         "hook": "Smoothing the in-store experience of ADHD shoppers at Giant Eagle.",
-        "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli & lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
+        "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli and lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
         "image": "work/gianteagle/giantEagleProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -51,13 +51,14 @@
             { "text": "UX Design", "type": "outlined" },
             { "text": "AR/MR 👓", "type": "outlined" }
         ],
-        "link": "/work/gianteagle",
-        "status": "published"
+        "tools": ["Figma", "FigJam"],
+        "link": "/work",
+        "status": "comingsoon"
     },
     {
         "id": 3,
         "path": "prh",
-        "title": "Division Platform + Splash",
+        "title": "Division Platform & Splash",
         "client": ["Penguin Random House"],
         "roles": [
             "Associate Developer (1/2-4 devs)",
@@ -93,7 +94,7 @@
         "client": ["CMU Coursework", "Digital Service Innovation"],
         "roles": ["Product Designer (1 of 4)", "Visual Designer (1 of 2)"],
         "hook": "Reimagining long-distance communication for the chronically busy.",
-        "description": "A winning digital service concept & long-distance communication tool that isn't just another app.",
+        "description": "A winning digital service concept and long-distance communication tool that isn't just another app.",
         "image": "work/intouch/inTouchProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
@@ -108,11 +109,11 @@
     {
         "id": 5,
         "path": "libby",
-        "title": "TBR Integration for Libby",
+        "title": "External TBR Integration for Libby",
         "client": ["Personal Project"],
         "roles": ["UX Designer", "UI Designer"],
         "hook": "Making finding your next read a breeze across platforms.",
-        "description": "Rethinking architecture & integrating external book trackers with a public library app for convenient TBR searching.",
+        "description": "Rethinking architecture and integrating external book trackers with a public library app for convenient TBR searching.",
         "image": "work/libby/libbyProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },
@@ -129,8 +130,8 @@
         "title": "Blk + Brwn Book Designers",
         "client": ["Blk + Brwn Book Designers"],
         "roles": ["UI/UX Designer"],
-        "hook": "Challenging taxonomical norms & seeking better brand alignment.",
-        "description": "A challenge against superficial racial & ethnic taxonomical patterns with an exercise in pursuing brand alignment.",
+        "hook": "Challenging taxonomical norms and seeking better brand alignment.",
+        "description": "A challenge against superficial racial and ethnic taxonomical patterns with an exercise in pursuing brand alignment.",
         "image": "work/bbbd/bbbdProjectCard.png",
         "tags": [
             { "text": "Mini", "type": "filled" },

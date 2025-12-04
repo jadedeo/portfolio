@@ -35,14 +35,16 @@ const GiantEagle = () => {
                 </section>
                 <div className="flex flex-col">
                     {/* what we designed */}
-                    <FadeSection scrollDir={scrollDir}>
+                    <FadeSection scrollDir={scrollDir} isFilled>
                         <section className="py-[50px]">
                             <TextImage
+                                smallHeading="overview"
                                 heading="what we designed"
                                 imageAlt="Two images of key points in the AR experience"
                                 image="gianteagle/preview.png"
                                 addImageShadow={false}
                                 imagePlacement="bottom"
+                                mat={false}
                             >
                                 <p>
                                     As is the case with most large supermarkets,
@@ -195,7 +197,10 @@ const GiantEagle = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             {/* TODO: add more explanation here */}
-                            <TextGroup heading="why we designed it">
+                            <TextGroup
+                                smallHeading="research & findings"
+                                heading="individuals with adhd often experience sensory overload when grocery shopping"
+                            >
                                 <p>
                                     Through surveying a number of ADHD- and/or
                                     neurodivergency-centered online spaces, we
