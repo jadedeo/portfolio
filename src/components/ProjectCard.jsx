@@ -1,8 +1,8 @@
 import { NavLink } from "react-router";
 import Chip from "../components/Chip";
 
-const ProjectCard = ({ id, project }) => {
-    return (
+const ProjectCard = ({ id, project, isHorizontal = true }) => {
+    return !isHorizontal ? (
         <NavLink
             to={project.link}
             className={`projectcard-component grid grid-rows-subgrid row-span-4 gap-2  bg-white transition-[filter] duration-500 ease-in-out ${
@@ -45,6 +45,53 @@ const ProjectCard = ({ id, project }) => {
                 {project.tags?.map((tag, index) => (
                     <Chip key={index} label={tag.text} type={tag.type} />
                 ))}
+            </div>
+        </NavLink>
+    ) : (
+        <NavLink
+            to={project.link}
+            className={`projectcard-component grid md:grid-cols-2 items-center gap-8 bg-white transition-[filter] duration-500 ease-in-out ${
+                project.status === "published"
+                    ? "published-project cursor-pointer"
+                    : "comingsoon-project cursor-not-allowed"
+            }`}
+        >
+            <div className="w-full h-[350px] bg-gray-100 relative">
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-contain  left-0 top-0"
+                />
+                {project.status === "comingsoon" && (
+                    <div className="w-full h-full absolute left-0 top-0 bg-slate-900/75 bg-opacity-25  flex justify-center items-center">
+                        <div className="text-white px-4 py-2 rounded-full">
+                            <p className="uppercase text-xs">Coming soon</p>
+                        </div>
+                    </div>
+                )}
+            </div>
+
+            <div className="flex flex-col gap-5">
+                <div className="flex gap-5">
+                    <h1 className="font-display">
+                        {id.toLocaleString("en-US", {
+                            minimumIntegerDigits: 2,
+                            useGrouping: false,
+                        })}
+                    </h1>
+
+                    <div className="flex flex-col gap-2">
+                        <h1 className="font-bold text-3xl leading-none">
+                            {project.title}
+                        </h1>
+                        <p>{project.hook}</p>
+                    </div>
+                </div>
+                <div className="flex gap-1 flex-wrap h-fit">
+                    {project.tags?.map((tag, index) => (
+                        <Chip key={index} label={tag.text} type={tag.type} />
+                    ))}
+                </div>
             </div>
         </NavLink>
     );

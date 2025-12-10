@@ -45,6 +45,17 @@ const Home = () => {
                             artist’s heart, I create for simplicity while
                             preserving personality. Thank you for stopping by!
                         </p>
+
+                        <StickyNote className="mt-8">
+                            <p className="font-bold">Portfolio TODOs:</p>
+                            <div>
+                                <p>{"\u2610"} Make mobile responsive</p>
+                                <p>{"\u2610"} Add a "real" resume page</p>
+                            </div>
+                            <p className="underline">
+                                Make it exist first. Make it good later.
+                            </p>
+                        </StickyNote>
                     </motion.div>
 
                     {/* Image */}
@@ -65,7 +76,7 @@ const Home = () => {
                         />
                     </motion.div>
                 </div>
-                <div>
+                {/* <div>
                     <StickyNote className="static md:flex md:absolute md:bottom-[5%] md:right-[5%] lg:right-[18%] mt-10 md:mt-0  ">
                         <p className="font-bold">Portfolio TODOs:</p>
                         <div>
@@ -77,7 +88,7 @@ const Home = () => {
                             Make it exist first. Make it good later.
                         </p>
                     </StickyNote>
-                </div>
+                </div> */}
             </main>
         </div>
     );

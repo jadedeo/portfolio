@@ -18,6 +18,7 @@
     --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font-display: "Belvare", "sans-serif";
     --font-handwritten: "Caveat", sans-serif;
+    --breakpoint-xs: 360px;
 }
 
 @layer base {
@@ -36,7 +37,7 @@
     }
 
     h1 {
-        @apply text-7xl font-bold;
+        @apply md:text-7xl text-6xl font-bold;
     }
 
     /* .prh-hero h1 {
@@ -85,10 +86,10 @@ li + li {
     @apply mt-[10px];
 }
 
-h1,
+/* h1,
 h2 {
     @apply lowercase;
-}
+} */
 
 div.font-handwritten {
     line-height: 1.1em;

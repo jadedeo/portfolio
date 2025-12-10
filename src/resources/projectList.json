@@ -13,7 +13,7 @@
             "Researcher (1/5)"
         ],
         "hook": "Cutting email response time in half for support staff at the San Francisco Recreation and Parks Department.",
-        "description": "A bite-sized browser extension for providing non-obtrusive customer service - because little fixes can have a big impact.",
+        "description": "A bite-sized browser extension for providing non-obtrusive customer service — because little fixes can have a big impact.",
         "image": "work/emailhelper/emailHelperProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
@@ -33,30 +33,46 @@
         "link": "/work/emailhelper",
         "status": "published"
     },
+
     {
         "id": 2,
-        "path": "gianteagle",
-        "title": "AR for Accessibility",
-        "client": ["CMU Coursework", "Advanced Interaction Design"],
-        "roles": [
-            "Product Designer",
-            "(initially 1/5, later revised independently)"
-        ],
-        "hook": "Smoothing the in-store experience of ADHD shoppers at Giant Eagle.",
-        "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli and lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
-        "image": "work/gianteagle/giantEagleProjectCard.png",
+        "path": "intouch",
+        "title": "inTouch",
+        "client": ["CMU Coursework", "Digital Service Innovation"],
+        "roles": ["Product Designer (1 of 4)", "Visual Designer (1 of 2)"],
+        "hook": "Reimagining long-distance communication for the chronically busy.",
+        "description": "A winning digital service concept and long-distance communication tool that isn't just another app.",
+        "image": "work/intouch/inTouchProjectCard.png",
         "tags": [
             { "text": "Case Study", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
-            { "text": "UX Design", "type": "outlined" },
-            { "text": "AR/MR 👓", "type": "outlined" }
+            { "text": "UX Research", "type": "outlined" },
+            { "text": "Winning Pitch 🏆", "type": "outlined" }
         ],
         "tools": ["Figma", "FigJam"],
-        "link": "/work",
-        "status": "comingsoon"
+        "link": "/work/intouch",
+        "status": "published"
     },
     {
         "id": 3,
+        "path": "libby",
+        "title": "External TBR Integration for Libby",
+        "client": ["Personal Project"],
+        "roles": ["UX Designer", "UI Designer"],
+        "hook": "Making finding your next read a breeze across platforms.",
+        "description": "Rethinking architecture and integrating external book trackers with a public library app for convenient TBR searching.",
+        "image": "work/libby/libbyProjectCard.png",
+        "tags": [
+            { "text": "Mini", "type": "filled" },
+            { "text": "UX Design", "type": "outlined" },
+            { "text": "IYKYK 📚", "type": "outlined" }
+        ],
+        "tools": ["Figma"],
+        "link": "/work/libby",
+        "status": "published"
+    },
+    {
+        "id": 4,
         "path": "prh",
         "title": "Division Platform & Splash",
         "client": ["Penguin Random House"],
@@ -88,42 +104,28 @@
         "status": "published"
     },
     {
-        "id": 4,
-        "path": "intouch",
-        "title": "inTouch",
-        "client": ["CMU Coursework", "Digital Service Innovation"],
-        "roles": ["Product Designer (1 of 4)", "Visual Designer (1 of 2)"],
-        "hook": "Reimagining long-distance communication for the chronically busy.",
-        "description": "A winning digital service concept and long-distance communication tool that isn't just another app.",
-        "image": "work/intouch/inTouchProjectCard.png",
+        "id": 5,
+        "path": "gianteagle",
+        "title": "AR for Accessibility",
+        "client": ["CMU Coursework", "Advanced Interaction Design"],
+        "roles": [
+            "Product Designer",
+            "(initially 1/5, later revised independently)"
+        ],
+        "hook": "Smoothing the in-store experience of ADHD shoppers at Giant Eagle.",
+        "description": "An in-store AR experience at Giant Eagle for limiting visual stimuli and lessening the cognitive overload experienced by shoppers with Attention Deficit Hyperactive Disorder (ADHD).",
+        "image": "work/gianteagle/giantEagleProjectCard.png",
         "tags": [
-            { "text": "Mini", "type": "filled" },
+            { "text": "Case Study", "type": "filled" },
             { "text": "Product Design", "type": "outlined" },
-            { "text": "UX Research", "type": "outlined" },
-            { "text": "Winning Pitch 🏆", "type": "outlined" }
+            { "text": "UX Design", "type": "outlined" },
+            { "text": "AR/MR 👓", "type": "outlined" }
         ],
         "tools": ["Figma", "FigJam"],
-        "link": "/work/intouch",
-        "status": "published"
+        "link": "/work",
+        "status": "comingsoon"
     },
-    {
-        "id": 5,
-        "path": "libby",
-        "title": "External TBR Integration for Libby",
-        "client": ["Personal Project"],
-        "roles": ["UX Designer", "UI Designer"],
-        "hook": "Making finding your next read a breeze across platforms.",
-        "description": "Rethinking architecture and integrating external book trackers with a public library app for convenient TBR searching.",
-        "image": "work/libby/libbyProjectCard.png",
-        "tags": [
-            { "text": "Mini", "type": "filled" },
-            { "text": "UX Design", "type": "outlined" },
-            { "text": "IYKYK 📚", "type": "outlined" }
-        ],
-        "tools": ["Figma"],
-        "link": "/work/libby",
-        "status": "published"
-    },
+
     {
         "id": 6,
         "path": "bbbd",
