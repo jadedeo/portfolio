@@ -29,43 +29,40 @@ const About = () => {
                                 illustrator.{" "}
                             </p>
                             <p>
-                                After graduating in 2022 from St. John's
-                                University with a degree in Computer Science, I
-                                found myself at Penguin Random House in what can
-                                only be described as a dream come true for a
-                                lifelong reader. It was during my time at PRH
-                                that I learned what it was like to work on a
-                                cross-functional product team and gained
-                                exposure to the realm of UX and product design.
+                                I'm a recent graduate of Carnegie Mellon
+                                University's Masters of Human-Computer
+                                Interaction program, Computer Science and Fine
+                                Arts alumna of St. John's University, and
+                                lifelong creative.
                             </p>
+
                             <p>
-                                For a visual arts-oriented student whose
-                                interests were consistently underrepresented in
-                                computer science, the fall into human-centered
-                                design has been a natural one.
+                                When I'm not working, you can find me making
+                                personal doodles, embarking on overly ambitious
+                                DIYs, and in the middle of at least 2 books.
                             </p>
-                            <p>
-                                Newly graduated from Carnegie Mellon's Masters
-                                of HCI program, I'm eager to see where my
-                                journey takes me next.
-                            </p>
-                            <div className="flex gap-1">
-                                <Chip
-                                    label="jadedeo@gmail.com"
-                                    type="outlined"
-                                    link="mailto:jadedeo@gmail.com"
-                                />
+                            <div className="flex gap-1 flex-wrap">
                                 <Chip
                                     label="linkedin"
                                     type="outlined"
                                     link="https://www.linkedin.com/in/jadedeo/"
+                                />
+                                <Chip
+                                    label="email: illustration"
+                                    type="outlined"
+                                    link="mailto:jadedeo@gmail.com"
+                                />
+                                <Chip
+                                    label="email: everything else"
+                                    type="filled"
+                                    link="mailto:jadedeo@gmail.com"
                                 />
                             </div>
                         </TextImage>
                     </FadeSection>
 
                     {/* row 1 */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className=" w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
                                 <StickyNote>
@@ -85,10 +82,10 @@ const About = () => {
                                 </StickyNote>
                             </div>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     {/* ethos + principles */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className="w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <TextGroup subheading="Design Ethos">
@@ -132,10 +129,10 @@ const About = () => {
                                 </TextGroup>
                             </div>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     {/* notes 2 */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className="w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
                                 <img src="general/hibiscus.png" />
@@ -154,10 +151,10 @@ const About = () => {
                                 </StickyNote>
                             </div>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     {/* when im not working + faves */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className=" w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <TextGroup subheading="When I'm not working...">
@@ -226,10 +223,10 @@ const About = () => {
                                 </TextGroup>
                             </div>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     {/* notes 3 */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px] w-full max-w-screen-lg mx-auto flex flex-col gap-2">
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 items-center">
                                 <img src="general/jewelry.png" />
@@ -248,7 +245,7 @@ const About = () => {
                                 <img src="general/buttons.png" />
                             </div>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
                 </div>
             </main>
         </div>

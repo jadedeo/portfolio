@@ -857,7 +857,7 @@ const InTouch = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
-                                heading="iOS interface mockups show what to expect from the intouch experience"
+                                heading="iOS interface mockups show what to expect from the inTouch experience"
                                 imageAlt="TODO: add alt"
                                 image="intouch/screensAnnotated.png"
                                 imagePlacement="bottom"

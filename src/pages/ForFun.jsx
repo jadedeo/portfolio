@@ -94,7 +94,7 @@ const ForFun = () => {
                                     I gravitate towards fantastical themes,
                                     serene environments, and fancy ladies.
                                 </p>
-                                <div className="flex gap-1">
+                                {/* <div className="flex gap-1">
                                     <Chip
                                         label="jadeddraws@gmail.com"
                                         type="outlined"
@@ -105,7 +105,7 @@ const ForFun = () => {
                                         type="outlined"
                                         link="https://www.instagram.com/jaded.draws/"
                                     />
-                                </div>
+                                </div> */}
                             </TextGroup>
                         </section>
                     </FadeSection>
