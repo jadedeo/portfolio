@@ -171,7 +171,7 @@ const ForFun = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
                             <TextGroup
-                                heading="marketing + social media design"
+                                heading="marketing & social media design"
                                 subheading="SJU Muse"
                             >
                                 <p>

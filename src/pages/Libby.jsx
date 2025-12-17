@@ -143,7 +143,7 @@ const Libby = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextGroup
-                                heading="While integrating external trackers was
+                                heading="while integrating external trackers was
                                         the primary goal, 
                                         reorganization was required for effective placement"
                             >
