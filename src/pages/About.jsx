@@ -25,7 +25,7 @@ const About = () => {
                             addImageShadow={false}
                         >
                             <p>
-                                I'm Jade — a NYC-based designer, developer &
+                                I'm Jade — a NYC-based designer, developer, and
                                 illustrator.{" "}
                             </p>
                             <p>

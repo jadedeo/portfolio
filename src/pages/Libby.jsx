@@ -39,7 +39,7 @@ const Libby = () => {
                         <section className="py-[50px] ">
                             <TextGroup
                                 smallHeading="overview"
-                                heading="there is currently no way of interfacing between book trackers & libby, the popular library app"
+                                heading="there is no way of interfacing between book trackers & libby, the popular library app — this integration proposes a fix"
                             >
                                 <p>
                                     The Libby app, developed by Overdrive,
