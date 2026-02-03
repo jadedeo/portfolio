@@ -22,6 +22,7 @@ import cloudOutlineLight from "/icons/cloudOutlineLight.png";
 import cloudFilledLight from "/icons/cloudFilledLight.png";
 
 const NavbarDesktop = ({ useLightText }) => {
+    // TODO: store resume link somewhere else
     const resumeLink =
         "https://drive.google.com/file/d/1_6s7bxmdunCV2haa4LtgQL4eHXhasllk/view?usp=sharing";
 
@@ -47,7 +48,7 @@ const NavbarDesktop = ({ useLightText }) => {
     return (
         <nav
             id="desktop-navbar"
-            className={`w-full justify-end flex gap-10 px-10 mt-0 py-8 items-center ${
+            className={`hidden justify-end md:flex gap-10 px-10 mt-0 py-8 items-center ${
                 useLightText
                     ? "light-nav text-white bg-black"
                     : "text-black bg-white"
@@ -55,7 +56,7 @@ const NavbarDesktop = ({ useLightText }) => {
         >
             {routes
                 .filter((r) =>
-                    ["Work", "ForFun", "Resume", "About"].includes(r.component)
+                    ["Work", "ForFun", "Resume", "About"].includes(r.component),
                 )
                 .map((route, i) => (
                     <NavItem
@@ -69,8 +70,8 @@ const NavbarDesktop = ({ useLightText }) => {
                             route.component === "ForFun"
                                 ? "For Fun"
                                 : route.component === "About"
-                                ? "About & Contact"
-                                : route.component
+                                  ? "About & Contact"
+                                  : route.component
                         }
                         outlinedIcon={iconMap[route.component].outlined}
                         filledIcon={iconMap[route.component].filled}

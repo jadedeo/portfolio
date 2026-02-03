@@ -1,4 +1,5 @@
 import NavbarDesktop from "./NavbarDesktop";
+import NavbarMobile from "./NavbarMobile";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -12,15 +13,16 @@ const Header = ({ useLightLogo }) => {
         <div className="w-full">
             <header
                 id="site-header"
-                className={`flex  w-full py-0 fixed  z-[100000] border-b-1 ${
-                    useLightLogo ? " border-gray-200" : "border-gray-900"
+                className={`flex items-center ${isHomepage ? "justify-end" : "justify-between"} w-full py-0 fixed z-[100000] border-b-1  ${
+                    useLightLogo
+                        ? " border-gray-200 bg-black"
+                        : "border-gray-900 bg-white"
                 }`}
             >
                 {!isHomepage && (
                     <div
-                        className={`px-10 mt-0 flex items-center ${
-                            useLightLogo ? "bg-black" : "bg-white"
-                        }`}
+                        className={`px-10 mt-0 flex items-center min-h-20 
+                        `}
                     >
                         <Link to="/">
                             <img
@@ -36,6 +38,7 @@ const Header = ({ useLightLogo }) => {
                 )}
 
                 <NavbarDesktop useLightText={useLightLogo} />
+                <NavbarMobile />
             </header>
         </div>
         // )
