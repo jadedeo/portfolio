@@ -25,20 +25,11 @@ const ForFun = () => {
                                     have included{" "}
                                     <a
                                         className="underline"
-                                        href="https://illumicrate.com/"
+                                        href="https://www.penguin.co.uk/"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        Illumicrate
-                                    </a>
-                                    ,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://litjoycrate.com/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        LitJoy Crate
+                                        Penguin Random House UK
                                     </a>
                                     ,{" "}
                                     <a
@@ -47,7 +38,7 @@ const ForFun = () => {
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        Knights Of
+                                        Knights Of Media
                                     </a>
                                     ,{" "}
                                     <a
@@ -70,20 +61,20 @@ const ForFun = () => {
                                     ,{" "}
                                     <a
                                         className="underline"
-                                        href="https://stonekite.com/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Stone Kite
-                                    </a>
-                                    , and{" "}
-                                    <a
-                                        className="underline"
                                         href="https://www.riotgames.com/en"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
                                         Riot Games
+                                    </a>
+                                    , and{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://illumicrate.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Illumicrate
                                     </a>
                                     .
                                 </p>
@@ -94,35 +85,34 @@ const ForFun = () => {
                                     I gravitate towards fantastical themes,
                                     serene environments, and fancy ladies.
                                 </p>
-                                {/* <div className="flex gap-1">
-                                    <Chip
-                                        label="jadeddraws@gmail.com"
-                                        type="outlined"
-                                        link="mailto:jadeddraws@gmail.com"
-                                    />
-                                    <Chip
-                                        label="instagram"
-                                        type="outlined"
-                                        link="https://www.instagram.com/jaded.draws/"
-                                    />
-                                </div> */}
                             </TextGroup>
                         </section>
                     </FadeSection>
 
                     {/* doodles */}
                     <FadeSection scrollDir={scrollDir}>
-                        {/* bhe jacket */}
-                        <section className="pb-10 w-full max-w-screen-lg mx-auto">
-                            <img
-                                className="w-full mb-5"
-                                src="forFun/doodles/BHEJacket.png"
-                            />
-                        </section>
-
-                        {/* doodle grid */}
                         <section className="pb-[50px] w-full max-w-screen-lg mx-auto">
-                            <div className="grid grid-cols-3 gap-10 items-center">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/zoyalai_table.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/tatreez.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/maliyaDark.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5 col-span-2 md:col-span-3"
+                                    src="forFun/doodles/BHEJacket.png"
+                                />
+
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/daughtersOfIzdihar.JPG"
@@ -135,12 +125,14 @@ const ForFun = () => {
 
                                 <img
                                     className="w-full mb-5"
-                                    src="forFun/doodles/maliyaDark.JPG"
+                                    src="forFun/doodles/goya.jpg"
                                 />
+
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/damesFantasyWarriors.PNG"
                                 />
+
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/classics3.png"
@@ -149,19 +141,6 @@ const ForFun = () => {
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/hereToSlay.jpeg"
-                                />
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/ayaCropped.JPG"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/tatreez.JPG"
-                                />
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/goya.jpg"
                                 />
                             </div>
                         </section>
