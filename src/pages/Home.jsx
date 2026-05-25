@@ -48,11 +48,11 @@ const Home = () => {
                             </div>
                         </div>
                         <p>
-                            With a developer’s mind, designer’s eye, and
-                            artist’s heart, I create for simplicity while
-                            preserving personality. Thanks for stopping by!
+                            This site is currently under construction! Please
+                            check back later :)
                         </p>
-                        <StickyNote className="mt-8">
+
+                        {/* <StickyNote className="mt-8">
                             <p className="font-bold">Portfolio TODOs:</p>
                             <div>
                                 <p>{"\u2610"} Make mobile responsive</p>
@@ -65,7 +65,7 @@ const Home = () => {
                                 <br />
                                 <span>Make it great later.</span>
                             </p>
-                        </StickyNote>
+                        </StickyNote> */}
                     </motion.div>
 
                     {/* Image */}

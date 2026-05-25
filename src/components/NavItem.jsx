@@ -2,7 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavItem = ({ to, label, outlinedIcon, filledIcon, isExternal }) => {
     const location = useLocation();
-    const isActive = location.pathname === to;
+    const isActive = false;
+    // TODO: reactivate nav item hover effect
+    // const isActive = location.pathname === to;
 
     const Wrapper = isExternal ? "a" : Link;
     const wrapperProps = isExternal
@@ -12,7 +14,7 @@ const NavItem = ({ to, label, outlinedIcon, filledIcon, isExternal }) => {
     return (
         <Wrapper
             {...wrapperProps}
-            className="flex gap-1 items-center text-sm uppercase group"
+            className="flex gap-1 items-center text-sm uppercase group cursor-not-allowed"
         >
             <div className="relative w-6 h-6 shrink-0">
                 {/* outlined */}
@@ -20,15 +22,12 @@ const NavItem = ({ to, label, outlinedIcon, filledIcon, isExternal }) => {
                     src={outlinedIcon}
                     alt={`${label} outlined`}
                     className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300
-                        ${
-                            isActive
-                                ? "opacity-0"
-                                : "opacity-100 group-hover:opacity-0"
-                        }
+                        ${isActive ? "opacity-0" : "opacity-100"}
                     `}
+                    // TODO: readd 'group-hover:opacity-0' class to the above & uncomment 'filled' below
                 />
                 {/* filled */}
-                <img
+                {/* <img
                     src={filledIcon}
                     alt={`${label} filled`}
                     className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300
@@ -38,7 +37,7 @@ const NavItem = ({ to, label, outlinedIcon, filledIcon, isExternal }) => {
                                 : "opacity-0 group-hover:opacity-100"
                         }
                     `}
-                />
+                /> */}
             </div>
 
             {label}

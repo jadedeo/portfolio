@@ -59,9 +59,10 @@ const NavbarMobile = () => {
                             <NavItem
                                 key={i}
                                 to={
-                                    route.component === "Resume"
-                                        ? resumeLink
-                                        : route.path
+                                    "/"
+                                    // route.component === "Resume"
+                                    //     ? resumeLink
+                                    //     : route.path
                                 }
                                 label={
                                     route.component === "ForFun"
@@ -72,14 +73,14 @@ const NavbarMobile = () => {
                                 }
                                 outlinedIcon={iconMap[route.component].outlined}
                                 filledIcon={iconMap[route.component].filled}
-                                isExternal={route.component === "Resume"}
+                                // isExternal={route.component === "Resume"}
                             />
                         ))}
 
-                    <StickyNote>
+                    {/* <StickyNote>
                         Please excuse the less-than-cute nav — she's a work in
                         progress!
-                    </StickyNote>
+                    </StickyNote> */}
                 </div>
             )}
         </nav>

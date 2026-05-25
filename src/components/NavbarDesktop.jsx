@@ -62,9 +62,10 @@ const NavbarDesktop = ({ useLightText }) => {
                     <NavItem
                         key={i}
                         to={
-                            route.component === "Resume"
-                                ? resumeLink
-                                : route.path
+                            "/"
+                            // route.component === "Resume"
+                            //     ? resumeLink
+                            //     : route.path
                         }
                         label={
                             route.component === "ForFun"
@@ -75,7 +76,7 @@ const NavbarDesktop = ({ useLightText }) => {
                         }
                         outlinedIcon={iconMap[route.component].outlined}
                         filledIcon={iconMap[route.component].filled}
-                        isExternal={route.component === "Resume"}
+                        // isExternal={route.component === "Resume"}
                     />
                 ))}
         </nav>
