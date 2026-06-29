@@ -13,6 +13,139 @@ const ForFun = () => {
             <Header />
             <main className="min-h-[100dvh] pt-25 pb-10 flex flex-col justify-center">
                 <div className="flex flex-col">
+                    {/* illustration intro */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="">
+                            <TextGroup heading="illustration">
+                                <p>
+                                    I have been fortunate to contribute to a
+                                    number of media- and publishing-related
+                                    commercial projects (covers, dustjackets,
+                                    tip-in pages, endpapers) for which clients
+                                    have included{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://www.penguin.co.uk/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Penguin Random House UK
+                                    </a>
+                                    ,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://knightsof.media/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Knights Of Media
+                                    </a>
+                                    ,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://www.bonnierbooks.co.uk/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Bonnier Books UK
+                                    </a>
+                                    ,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://www.harpercollins.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        HarperCollins Publishers
+                                    </a>
+                                    ,{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://www.riotgames.com/en"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Riot Games
+                                    </a>
+                                    , and{" "}
+                                    <a
+                                        className="underline"
+                                        href="https://illumicrate.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Illumicrate
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    I often incorporate cultural details into my
+                                    works, and enjoy performing the research to
+                                    do so with authenticity and utmost respect.
+                                    I gravitate towards fantastical themes,
+                                    serene environments, and fancy ladies.
+                                </p>
+                            </TextGroup>
+                        </section>
+                    </FadeSection>
+
+                    {/* doodles */}
+                    <FadeSection scrollDir={scrollDir}>
+                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/zoyalai_table.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/tatreez.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/maliyaDark.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5 col-span-2 md:col-span-3"
+                                    src="forFun/doodles/BHEJacket.png"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/daughtersOfIzdihar.JPG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/LAFFCover.png"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/goya.jpg"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/damesFantasyWarriors.PNG"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/classics3.png"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/hereToSlay.jpeg"
+                                />
+                            </div>
+                        </section>
+                    </FadeSection>
+
                     {/* muse */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
@@ -189,139 +322,6 @@ const ForFun = () => {
                                     />
                                 </div>
                             </TextGroup>
-                        </section>
-                    </FadeSection>
-
-                    {/* illustration intro */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="">
-                            <TextGroup heading="illustration">
-                                <p>
-                                    I have been fortunate to contribute to a
-                                    number of media- and publishing-related
-                                    commercial projects (covers, dustjackets,
-                                    tip-in pages, endpapers) for which clients
-                                    have included{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://www.penguin.co.uk/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Penguin Random House UK
-                                    </a>
-                                    ,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://knightsof.media/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Knights Of Media
-                                    </a>
-                                    ,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://www.bonnierbooks.co.uk/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Bonnier Books UK
-                                    </a>
-                                    ,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://www.harpercollins.com/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        HarperCollins Publishers
-                                    </a>
-                                    ,{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://www.riotgames.com/en"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Riot Games
-                                    </a>
-                                    , and{" "}
-                                    <a
-                                        className="underline"
-                                        href="https://illumicrate.com/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Illumicrate
-                                    </a>
-                                    .
-                                </p>
-                                <p>
-                                    I often incorporate cultural details into my
-                                    works, and enjoy performing the research to
-                                    do so with authenticity and utmost respect.
-                                    I gravitate towards fantastical themes,
-                                    serene environments, and fancy ladies.
-                                </p>
-                            </TextGroup>
-                        </section>
-                    </FadeSection>
-
-                    {/* doodles */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <section className="pb-[50px] w-full max-w-screen-lg mx-auto">
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/zoyalai_table.JPG"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/tatreez.JPG"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/maliyaDark.JPG"
-                                />
-
-                                <img
-                                    className="w-full mb-5 col-span-2 md:col-span-3"
-                                    src="forFun/doodles/BHEJacket.png"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/daughtersOfIzdihar.JPG"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/LAFFCover.png"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/goya.jpg"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/damesFantasyWarriors.PNG"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/classics3.png"
-                                />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/hereToSlay.jpeg"
-                                />
-                            </div>
                         </section>
                     </FadeSection>
                 </div>
