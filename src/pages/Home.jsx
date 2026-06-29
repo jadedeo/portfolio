@@ -48,11 +48,12 @@ const Home = () => {
                             </div>
                         </div>
                         <p>
-                            This site is currently under construction! Please
-                            check back later :)
+                            Currently refining the digital experience for a K-5
+                            literacy product & illustrating special edition
+                            covers for an award-winning fantasy series.
                         </p>
 
-                        {/* <StickyNote className="mt-8">
+                        <StickyNote className="mt-8">
                             <p className="font-bold">Portfolio TODOs:</p>
                             <div>
                                 <p>{"\u2610"} Make mobile responsive</p>
@@ -65,7 +66,7 @@ const Home = () => {
                                 <br />
                                 <span>Make it great later.</span>
                             </p>
-                        </StickyNote> */}
+                        </StickyNote>
                     </motion.div>
 
                     {/* Image */}

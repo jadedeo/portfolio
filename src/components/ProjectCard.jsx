@@ -60,7 +60,7 @@ const ProjectCard = ({ id, project, isHorizontal = true }) => {
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-contain  left-0 top-0"
+                    className="w-full object-contain absolute left-0 bottom-0"
                 />
                 {project.status === "comingsoon" && (
                     <div className="w-full h-full absolute left-0 top-0 bg-slate-900/75 bg-opacity-25  flex justify-center items-center">

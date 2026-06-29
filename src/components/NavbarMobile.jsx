@@ -23,7 +23,7 @@ const NavbarMobile = () => {
 
     // TODO: store resume link somewhere else
     const resumeLink =
-        "https://drive.google.com/file/d/1_6s7bxmdunCV2haa4LtgQL4eHXhasllk/view?usp=sharing";
+        "https://drive.google.com/file/d/1Grom3kadEXfFJYg6qGl1KzGkegjBGf9i/view?usp=sharing";
 
     const iconMap = {
         ForFun: {
@@ -59,10 +59,9 @@ const NavbarMobile = () => {
                             <NavItem
                                 key={i}
                                 to={
-                                    "/"
-                                    // route.component === "Resume"
-                                    //     ? resumeLink
-                                    //     : route.path
+                                    route.component === "Resume"
+                                        ? resumeLink
+                                        : route.path
                                 }
                                 label={
                                     route.component === "ForFun"
@@ -73,7 +72,7 @@ const NavbarMobile = () => {
                                 }
                                 outlinedIcon={iconMap[route.component].outlined}
                                 filledIcon={iconMap[route.component].filled}
-                                // isExternal={route.component === "Resume"}
+                                isExternal={route.component === "Resume"}
                             />
                         ))}
 

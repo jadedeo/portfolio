@@ -24,7 +24,7 @@ import cloudFilledLight from "/icons/cloudFilledLight.png";
 const NavbarDesktop = ({ useLightText }) => {
     // TODO: store resume link somewhere else
     const resumeLink =
-        "https://drive.google.com/file/d/1_6s7bxmdunCV2haa4LtgQL4eHXhasllk/view?usp=sharing";
+        "https://drive.google.com/file/d/1Grom3kadEXfFJYg6qGl1KzGkegjBGf9i/view?usp=sharing";
 
     const iconMap = {
         ForFun: {
@@ -62,10 +62,9 @@ const NavbarDesktop = ({ useLightText }) => {
                     <NavItem
                         key={i}
                         to={
-                            "/"
-                            // route.component === "Resume"
-                            //     ? resumeLink
-                            //     : route.path
+                            route.component === "Resume"
+                                ? resumeLink
+                                : route.path
                         }
                         label={
                             route.component === "ForFun"
@@ -76,7 +75,7 @@ const NavbarDesktop = ({ useLightText }) => {
                         }
                         outlinedIcon={iconMap[route.component].outlined}
                         filledIcon={iconMap[route.component].filled}
-                        // isExternal={route.component === "Resume"}
+                        isExternal={route.component === "Resume"}
                     />
                 ))}
         </nav>

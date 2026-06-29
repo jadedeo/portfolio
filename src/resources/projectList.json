@@ -5,7 +5,7 @@
         "title": "Email Helper",
         "client": [
             "San Francisco Recreation & Parks Department",
-            "CMU MHCI Capstone"
+            "CMU MHCI 2025 Capstone"
         ],
         "roles": [
             "Product Designer (1/2)",
@@ -71,8 +71,29 @@
         "link": "/work/libby",
         "status": "published"
     },
+
     {
         "id": 4,
+        "path": "bbbd",
+        "title": "Freelance Directory Redesign",
+        "client": ["Blk + Brwn Book Designers"],
+        "roles": ["UI/UX Designer"],
+        "hook": "Seeking better brand alignment & visual harmony — while challenging taxonomical norms.",
+        "description": "An exercise in visual design & a challenge against reductive taxonomical patterns.",
+        "image": "work/bbbd/bbbdProjectCard.png",
+        "tags": [
+            { "text": "Mini", "type": "filled" },
+            { "text": "UI/UX Design", "type": "outlined" },
+            { "text": "Web Design", "type": "outlined" },
+            { "text": "Non-Profit 📢", "type": "outlined" }
+        ],
+        "tools": ["Figma"],
+        "link": "/work/bbbd",
+        "status": "published"
+    },
+
+    {
+        "id": 5,
         "path": "prh",
         "title": "Division Platform & Splash",
         "client": ["Penguin Random House"],
@@ -104,7 +125,7 @@
         "status": "published"
     },
     {
-        "id": 5,
+        "id": 6,
         "path": "gianteagle",
         "title": "AR for Accessibility",
         "client": ["CMU Coursework", "Advanced Interaction Design"],
@@ -122,26 +143,6 @@
             { "text": "AR/MR 👓", "type": "outlined" }
         ],
         "tools": ["Figma", "FigJam"],
-        "link": "/work",
-        "status": "comingsoon"
-    },
-
-    {
-        "id": 6,
-        "path": "bbbd",
-        "title": "Blk + Brwn Book Designers",
-        "client": ["Blk + Brwn Book Designers"],
-        "roles": ["UI/UX Designer"],
-        "hook": "Challenging taxonomical norms and seeking better brand alignment.",
-        "description": "A challenge against superficial racial and ethnic taxonomical patterns with an exercise in pursuing brand alignment.",
-        "image": "work/bbbd/bbbdProjectCard.png",
-        "tags": [
-            { "text": "Mini", "type": "filled" },
-            { "text": "UI Design", "type": "outlined" },
-            { "text": "UX Design", "type": "outlined" },
-            { "text": "Web Design", "type": "outlined" }
-        ],
-        "tools": ["Figma"],
         "link": "/work",
         "status": "comingsoon"
     },

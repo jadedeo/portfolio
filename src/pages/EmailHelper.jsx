@@ -14,7 +14,7 @@ import projectList from "../resources/projectList.json";
 
 const EmailHelper = () => {
     const projectData = projectList.find(
-        (project) => project.title === "Email Helper"
+        (project) => project.title === "Email Helper",
     );
 
     const scrollDir = useScrollDirection();
@@ -299,7 +299,7 @@ const EmailHelper = () => {
                         <section className="py-[50px]">
                             <TextImage
                                 smallHeading="revisiting the problem"
-                                heading="we ultimately realized our design efforts would best serve the staff-side experience ..."
+                                heading="the biggest takeaway was that our design efforts would best serve the staff-side experience ..."
                                 imageAlt="TODO: add alt text"
                                 image="emailhelper/solutionDiagram.png"
                                 addImageShadow={false}

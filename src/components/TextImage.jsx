@@ -23,13 +23,13 @@ const TextImage = ({
                     imagePlacement === "bottom" || imagePlacement === "top"
                         ? "md:grid-cols-1"
                         : "md:grid-cols-2"
-                }  grid-cols-1 items-center   ${className}`}
+                }  grid-cols-1 items-center ${className}`}
             >
                 <motion.div
                     className={`${
                         imageSize === "small" ? "max-h-[300px]" : ""
                     } w-full h-full  overflow-hidden ${
-                        mat ? "p-9 bg-gray-100" : "p-0"
+                        mat ? "p-6 bg-gray-100" : "p-0"
                     }  place-content-center ${
                         imagePlacement === "right" ||
                         imagePlacement === "bottom"
@@ -52,10 +52,10 @@ const TextImage = ({
                         imagePlacement === `bottom`
                             ? `pb-8`
                             : imagePlacement === `top`
-                            ? `pt-10`
-                            : imagePlacement === "left"
-                            ? `md:pl-10 md:pb-0 pb-8`
-                            : `md:pr-10 md:pb-0 pb-8`
+                              ? `pt-10`
+                              : imagePlacement === "left"
+                                ? `md:pl-10 md:pb-0 pt-8`
+                                : `md:pr-10 md:pb-0 pb-8`
                     } ${
                         imagePlacement === "right" ||
                         imagePlacement === "bottom"

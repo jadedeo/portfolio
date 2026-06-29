@@ -36,7 +36,7 @@ const Work = () => {
                         })}
                 </section>
 
-                <section className="projects-list grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-6  w-full max-w-screen-lg mx-auto gap-8">
+                {/* <section className="projects-list grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-6  w-full max-w-screen-lg mx-auto gap-8">
                     {projectList
                         .filter((project) => project.status === "comingsoon")
                         .map((project, index) => {
@@ -59,7 +59,7 @@ const Work = () => {
                                 </motion.div>
                             );
                         })}
-                </section>
+                </section> */}
             </main>
         </div>
     );

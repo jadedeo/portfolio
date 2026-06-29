@@ -14,7 +14,7 @@ import projectList from "../resources/projectList.json";
 
 const InTouch = () => {
     const projectData = projectList.find(
-        (project) => project.title === "inTouch"
+        (project) => project.title === "inTouch",
     );
 
     const scrollDir = useScrollDirection();
@@ -116,7 +116,7 @@ const InTouch = () => {
                     </FadeSection>
 
                     {/* reframe 1 */}
-                    <FadeSection scrollDir={scrollDir}>
+                    {/* <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px]">
                             <TextImage
                                 heading="after reframing, we confirmed our interest in helping existing relationships stay connected"
@@ -137,13 +137,13 @@ const InTouch = () => {
                                 </p>
                             </TextImage>
                         </section>
-                    </FadeSection>
+                    </FadeSection> */}
 
                     <FadeSection scrollDir={scrollDir}>
                         <section className="py-[50px] flex flex-col gap-10">
                             <TextImage
                                 smallHeading="research & findings"
-                                heading="scoping the competition told us where current solutions stand"
+                                heading="to start, scoping the competition told us where current solutions stand"
                                 imageAlt="TODO: add alt"
                                 image="intouch/competitorAnalysis.png"
                                 mat={false}

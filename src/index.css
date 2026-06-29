@@ -6,12 +6,16 @@
 
 @font-face {
     font-family: "Murmure";
-    src: local("Murmure"), url(./fonts/LeMurmure-Regular.woff) format("woff");
+    src:
+        local("Murmure"),
+        url(./fonts/LeMurmure-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: "Belvare";
-    src: local("Belvare"), url(./fonts/ccsbelvare.otf) format("opentype");
+    src:
+        local("Belvare"),
+        url(./fonts/ccsbelvare.otf) format("opentype");
 }
 
 @theme {

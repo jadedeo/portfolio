@@ -14,7 +14,7 @@ import projectList from "../resources/projectList.json";
 
 const Libby = () => {
     const projectData = projectList.find(
-        (project) => project.title === "External TBR Integration for Libby"
+        (project) => project.title === "External TBR Integration for Libby",
     );
 
     const scrollDir = useScrollDirection();

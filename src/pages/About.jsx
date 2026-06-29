@@ -5,6 +5,7 @@ import FadeSection from "../components/FadeSection";
 import StickyNote from "../components/StickyNote";
 import TextGroup from "../components/TextGroup";
 import Chip from "../components/Chip";
+import aboutPhoto from "/general/aboutPhoto.png";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 
@@ -17,12 +18,22 @@ const About = () => {
             <main className="min-h-[100dvh] pt-25 py-10 flex flex-col justify-center">
                 <div className="flex flex-col gap-10">
                     {/* intro */}
-                    <FadeSection scrollDir={scrollDir}>
-                        <TextImage
+                    <FadeSection
+                        scrollDir={scrollDir}
+                        // className="flex flex-col gap-5"
+                    >
+                        {/* <img
+                            className="flex w-[25%] h-[25%] rounded-full bg-gray-200"
+                            src={aboutPhoto}
+                        /> */}
+
+                        <TextGroup
                             heading="hello!"
-                            image="general/aboutPhoto.png"
-                            mat={false}
-                            addImageShadow={false}
+                            // image="general/aboutPhoto.png"
+                            // mat={false}
+                            // addImageShadow={false}
+                            // imagePlacement="left"
+                            // imageSize="small"
                         >
                             <p>
                                 I'm Jade — a NYC-based designer, developer, and
@@ -37,9 +48,10 @@ const About = () => {
                             </p>
 
                             <p>
-                                When I'm not working, you can find me making
-                                personal doodles, embarking on overly ambitious
-                                DIYs, and in the middle of at least 2 books.
+                                When I'm not working, you can find me attempting
+                                to learn my figure skating edges, embarking on
+                                overly ambitious DIYs, and in the middle of at
+                                least 2 books.
                             </p>
                             <div className="flex gap-1 flex-wrap">
                                 <Chip
@@ -58,7 +70,7 @@ const About = () => {
                                     link="mailto:jadedeo@gmail.com"
                                 />
                             </div>
-                        </TextImage>
+                        </TextGroup>
                     </FadeSection>
 
                     {/* row 1 */}
