@@ -16,7 +16,7 @@ const ForFun = () => {
                     {/* illustration intro */}
                     <FadeSection scrollDir={scrollDir}>
                         <section className="">
-                            <TextGroup heading="illustration">
+                            {/* <TextGroup heading="illustration">
                                 <p>
                                     I have been fortunate to contribute to a
                                     number of media- and publishing-related
@@ -85,7 +85,7 @@ const ForFun = () => {
                                     I gravitate towards fantastical themes,
                                     serene environments, and fancy ladies.
                                 </p>
-                            </TextGroup>
+                            </TextGroup> */}
                         </section>
                     </FadeSection>
 
@@ -93,6 +93,11 @@ const ForFun = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pb-[50px] w-full max-w-screen-lg mx-auto">
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
+                                <img
+                                    className="w-full mb-5 col-span-2 md:col-span-3"
+                                    src="forFun/doodles/BHEJacket.png"
+                                />
+
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/zoyalai_table.JPG"
@@ -109,18 +114,18 @@ const ForFun = () => {
                                 />
 
                                 <img
-                                    className="w-full mb-5 col-span-2 md:col-span-3"
-                                    src="forFun/doodles/BHEJacket.png"
-                                />
-
-                                <img
                                     className="w-full mb-5"
-                                    src="forFun/doodles/daughtersOfIzdihar.JPG"
+                                    src="forFun/doodles/theSoulmateBakery.png"
                                 />
 
                                 <img
                                     className="w-full mb-5"
                                     src="forFun/doodles/LAFFCover.png"
+                                />
+
+                                <img
+                                    className="w-full mb-5"
+                                    src="forFun/doodles/hereToSlay.jpeg"
                                 />
 
                                 <img
@@ -137,11 +142,6 @@ const ForFun = () => {
                                     className="w-full mb-5"
                                     src="forFun/doodles/classics3.png"
                                 />
-
-                                <img
-                                    className="w-full mb-5"
-                                    src="forFun/doodles/hereToSlay.jpeg"
-                                />
                             </div>
                         </section>
                     </FadeSection>
@@ -150,7 +150,7 @@ const ForFun = () => {
                     <FadeSection scrollDir={scrollDir}>
                         <section className="pt-[50px] w-full max-w-screen-lg mx-auto">
                             <TextGroup
-                                heading="miscellaneous visual design"
+                                // heading="miscellaneous visual design"
                                 subheading="SJU Muse"
                             >
                                 <p>
@@ -186,7 +186,7 @@ const ForFun = () => {
                                     .
                                 </p>
 
-                                <div className="grid grid-cols-4 gap-5">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
                                     {/* new row */}
                                     <img
                                         className="w-full col-span-2"
@@ -248,13 +248,13 @@ const ForFun = () => {
                                     Security, SJU ACM's focus is on providing
                                     students with hands-on experience, industry
                                     connections, and a supportive community of
-                                    tech enthusiasts. The org aim to enhance the
-                                    experience of STJ tech students by providing
-                                    a platform to learn, share, and collaborate
-                                    through labs and presentations.
+                                    tech enthusiasts. The org aims to enhance
+                                    the experience of STJ tech students by
+                                    providing a platform to learn, share, and
+                                    collaborate through labs and presentations.
                                 </p>
 
-                                <div className="grid grid-cols-4 gap-5">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                                     {/* new row */}
                                     <img
                                         className="w-full"
