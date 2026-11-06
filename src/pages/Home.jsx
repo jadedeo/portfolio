@@ -48,9 +48,9 @@ const Home = () => {
                             </div>
                         </div>
                         <p>
-                            Currently refining the digital experience for a K-5
-                            literacy product & illustrating special edition
-                            covers for an award-winning fantasy series.
+                            Currently designing the digital experience for PK-5
+                            literacy products & illustrating special edition
+                            endpapers.
                         </p>
 
                         <StickyNote className="mt-8">
